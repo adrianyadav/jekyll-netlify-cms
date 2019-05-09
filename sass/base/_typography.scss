@@ -97,6 +97,7 @@ blockquote {
     border-left: 8px solid $color-secondary-dark2;
     line-height: 1.6;
     position: relative;
+    background: $color-grey-light-1;
 
     &::before {
         font-family: Arial;

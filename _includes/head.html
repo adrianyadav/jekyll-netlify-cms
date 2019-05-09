@@ -1,15 +1,12 @@
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {% seo %} <link rel="stylesheet" href="{{
-        "/assets/main.css" | relative_url
-    }}">
-    <link
-        href="https://fonts.googleapis.com/css?family=Raleway:200,400,700"
-        rel="stylesheet"
-    />
-    {% feed_meta %} {% if site.google_analytics and jekyll.environment ==
-    'production' %} {% include analytics.html %} {% endif %}
-    <script src="https://identity-js.netlify.com/v1/netlify-identity-widget.js"></script>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  {% seo %}
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,700" rel="stylesheet"/>
+  {% feed_meta %}
+  <!-- {% if site.google_analytics and jekyll.environment ==
+              'production' %} {% include analytics.html %} {% endif %} -->
+  <script src="https://identity-js.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>

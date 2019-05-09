@@ -39,6 +39,8 @@ minima:
 # GA
 google_analytics: UA-93042573-1
 
+future: true
+
 # social links
 # twitter_username: jekyllrb
 github_username: adrianyadav

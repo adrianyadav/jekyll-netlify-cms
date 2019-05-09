@@ -1,0 +1,59 @@
+.navigation {
+    position: fixed;
+    display: block;
+    float: right;
+    height: 6rem;
+    width: 100%;
+    z-index: 9999;
+
+    .nav {
+        position: relative;
+        height: 5rem;
+
+        &__list {
+            list-style-type: none;
+            @include absCenter;
+
+            @include respond(tab-port) {
+                width: 32rem;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+
+        &__item {
+            text-align: center;
+            display: inline;
+            padding: 0;
+        }
+
+        &__link {
+            font-size: 1.6rem;
+            color: $default-font-color;
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            margin-left: 0.5rem;
+            transition: all 0.2s;
+            box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+
+            &:hover,
+            &:focus,
+            &:active {
+                box-shadow: none;
+                background-color: $color-primary;
+                color: $color-white;
+                transform: translateY(0) scale(1.05);
+            }
+        }
+    }
+
+    .current {
+        box-shadow: none;
+        background-color: $color-primary;
+        color: $color-white;
+        transform: translateY(0) scale(1.05);
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+}

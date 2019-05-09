@@ -2,13 +2,9 @@
 layout: default
 ---
 
-<section class="section" id="blog">
-    <div class="u-center-text">
-        <h2 class="heading-secondary u-center-margin u-margin-bottom-medium">
-            Blog
-        </h2>
-    </div>
+{%- include header-blog.html -%}
 
+<section class="section" id="blog">
     {%- if site.posts.size > 0 -%} {%- for post in site.posts -%}
 
     <article class="blog">
@@ -18,7 +14,7 @@ layout: default
             </a>
             {%- assign date_format = site.minima.date_format | default: "%b %-d,
             %Y" -%}
-            <time datetime=" {{ post.date }}" class="blog__date">
+            <time datetime="{{ post.date }}" class="blog__date">
                 {{ post.date | date: date_format }}
             </time>
             <p class="blog__intro">

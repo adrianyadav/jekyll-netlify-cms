@@ -1,0 +1,86 @@
+.section {
+    padding: 5rem 0;
+}
+
+.section-about {
+    padding: 10rem 0;
+}
+
+.section-features {
+    padding: 20rem 0;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+
+    background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary, 0.85),
+            rgba($color-primary-light, 0.85)
+        ),
+        url(../../img/skills-unsplash-1x.jpg);
+
+    @media (min-width: 1600px) {
+        background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary, 0.85),
+                rgba($color-primary-light, 0.85)
+            ),
+            url(../../img/skills-unsplash-2x.jpg);
+    }
+
+    background-size: cover;
+    transform: skewY(-8deg);
+    margin-top: -10rem;
+}
+
+.section-features > * {
+    -webkit-transform: skewY(8deg);
+    transform: skewY(8deg);
+}
+
+.section-projects {
+    padding: 10rem 0;
+
+    @include respond(tab-port) {
+        padding: 5rem 0;
+    }
+}
+
+.section-contact {
+    padding: 20rem 0;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+
+    @include respond(tab-land) {
+        transform: skewY(-8deg);
+    }
+
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(7, 104, 159, 0.9),
+            rgba(162, 213, 242, 0.9)
+        ),
+        url(../../img/contact-unsplash.jpg);
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(7, 104, 159, 0.9),
+            rgba(162, 213, 242, 0.9)
+        ),
+        url(../../img/contact-unsplash.jpg);
+    position: relative;
+    padding: 15rem 0;
+    transform: skewY(-4deg);
+    background-size: cover;
+}
+
+.section-contact > * {
+    -webkit-transform: skewY(8deg);
+    transform: skewY(4deg);
+
+    @include respond(tab-land) {
+        transform: skewY(8deg);
+    }
+}

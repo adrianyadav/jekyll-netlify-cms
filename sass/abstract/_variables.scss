@@ -1,0 +1,45 @@
+// COLORS
+$color-primary: #07689f;
+$color-primary-light: #a2d5f2;
+$color-primary-dark: #ff7e67;
+$color-white: #fafafa;
+
+$color-white-gradient: rgba($color-white, 1);
+
+$color-secondary-dark: #1b242f;
+$color-secondary-dark2: #1e242c;
+
+$color-grey-light-1: #f7f7f7f7;
+$color-grey-light-2: #eeeeee;
+
+$color-gray-dark: #777777;
+$color-gray-dark-2: #999;
+$color-gray-dark-3: #333;
+
+$color-white: #ffffff;
+$color-black: #000;
+
+// NIB TRAVEL
+$color-nib-primary-light: #aecd8b;
+$color-nib-primary: #16954a;
+
+// UPAGED
+$color-upaged-primary: #193363;
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+
+// FONT
+$default-font-size: 1.6rem;
+$default-font-color: #36454f;
+$light-weight: 200;
+$medium-weight: 400;
+
+// MEDIA QUERIES
+$phone: 37.5em; //600 px
+$tab-port: 56.25em; //900px;
+$tab-land: 75em; //1200px;
+$big-desktop: 112.5em; //1800px;

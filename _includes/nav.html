@@ -2,18 +2,21 @@
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__item">
-                <a class="nav__link btn btn--white" href="/#about">About</a>
-            </li>
-            <li class="nav__item">
                 <a class="nav__link btn btn--white" href="/#projects"
                     >Projects</a
                 >
             </li>
             <li class="nav__item">
-                <a class="nav__link btn btn--white" href="/#contact">Contact</a>
+                {% if page.title == blog %}
+                <a class="nav__link btn btn--white " href="/blog">blog </a>
+                {% else %}
+                <a class="nav__link btn btn--white current" href="/blog"
+                    >blog
+                </a>
+                {% endif %}
             </li>
             <li class="nav__item">
-                <a class="nav__link btn btn--white" href="/blog">Blog</a>
+                <a class="nav__link btn btn--white" href="/#contact">Contact</a>
             </li>
         </ul>
     </nav>

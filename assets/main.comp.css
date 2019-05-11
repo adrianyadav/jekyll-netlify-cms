@@ -125,7 +125,7 @@ body {
   font-weight: 200; }
   @media (max-width: 37.5em) {
     .heading-tertiary {
-      font-size: 1.5rem; } }
+      font-size: 2rem; } }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -467,6 +467,10 @@ blockquote {
     font-size: 1.6rem; }
 
 .feature-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30.5rem;
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
   padding: 2.5rem;

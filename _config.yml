@@ -37,7 +37,7 @@ minima:
 # - about.html
 
 # GA
-google_analytics: UA-93042573-1
+google_analytics: "UA-93042573-1"
 
 future: true
 

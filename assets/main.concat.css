@@ -603,7 +603,8 @@ blockquote {
   padding: 1.2rem 3rem 1.2rem 7.5rem;
   border-left: 8px solid #1e242c;
   line-height: 1.6;
-  position: relative; }
+  position: relative;
+  background: #f7f7f7f7; }
   blockquote::before {
     font-family: Arial;
     content: "\201C";
@@ -705,17 +706,24 @@ blockquote {
     .blog {
       width: 100%;
       padding: 4rem;
-      padding-left: 7rem; } }
+      padding-left: 5rem; } }
   .blog__title {
     font-size: 3.5rem;
     font-weight: 400;
     color: #36454f;
-    text-decoration: none; }
+    text-decoration: none;
+    line-height: 1.5; }
+    @media (max-width: 56.25em) {
+      .blog__title {
+        font-size: 2.3rem; } }
     .blog__title:link, .blog__title:visited {
       font-size: 3.5rem;
       font-weight: 400;
       color: #36454f;
       text-decoration: none; }
+      @media (max-width: 56.25em) {
+        .blog__title:link, .blog__title:visited {
+          font-size: 2.3rem; } }
   .blog__sub-title {
     font-size: 2rem;
     font-weight: bold;
@@ -772,7 +780,7 @@ blockquote {
     border-top-left-radius: 0.3rem;
     border-top-right-radius: 0.3rem; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #a2d5f2, #07689f), url("../img/hero-unsplash.jpg"); }
+      background-image: linear-gradient(to right bottom, #a2d5f2, #07689f), url("../img/hero-unsplash-1x.jpg"); }
     .card__picture--2 {
       background-image: linear-gradient(to right bottom, #aecd8b, #16954a), url("../img/nibtravel.jpg"); }
     .card__picture--3 {
@@ -862,6 +870,11 @@ blockquote {
   @media (max-width: 37.5em) {
     .contact {
       width: 70%; } }
+  .contact__label {
+    display: block;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    font-size: 1rem; }
   .contact input,
   .contact textarea {
     font-family: "Raleway", sans-serif;
@@ -870,7 +883,7 @@ blockquote {
     outline: none;
     padding: 1rem 1.5rem;
     border-width: 0;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
     background: #1e242c;
     font-size: 1.6rem;
     color: #ffffff; }
@@ -1014,8 +1027,8 @@ blockquote {
   clip-path: polygon(0 0, 100% 20vh, 100% 75vh, 0 100%);
   background-image: linear-gradient(to right bottom, rgba(7, 104, 159, 0.85), rgba(162, 213, 242, 0.85)), url(../../img/hero-unsplash-1x.jpg); }
   .header--blog {
-    height: 30vh;
-    clip-path: none;
+    height: 30rem;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     background-image: linear-gradient(to right bottom, rgba(7, 104, 159, 0.85), rgba(162, 213, 242, 0.85)), url(../../img/contact-unsplash.jpg);
     z-index: 2; }
     .header--blog .header__text-box > h1 {

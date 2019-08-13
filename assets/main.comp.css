@@ -250,7 +250,8 @@ blockquote {
     filter: blur(0.3rem) brightness(80%); }
 
 .blog {
-  width: 75%;
+  max-width: 78rem;
+  width: 100%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.6);
@@ -431,7 +432,9 @@ blockquote {
     display: block;
     text-transform: uppercase;
     margin-top: 0.5rem;
-    font-size: 1rem; }
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 0.7rem; }
   .contact input,
   .contact textarea {
     font-family: "Raleway", sans-serif;
@@ -440,7 +443,7 @@ blockquote {
     outline: none;
     padding: 1rem 1.5rem;
     border-width: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     background: #1e242c;
     font-size: 1.6rem;
     color: #ffffff; }
@@ -694,13 +697,13 @@ blockquote {
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
   .row .col-2-of-3 {
-    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
   .row .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
   .row .col-2-of-4 {
-    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
-    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 *6rem); }
+    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 *6rem); }
 
 .footer {
   background-color: #1b242f;

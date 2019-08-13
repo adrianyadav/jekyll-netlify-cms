@@ -1,8 +1,7 @@
-# _data/navigation.yml
 items:
-    - title: Projects
-      url: "#projects"
-    - title: Blog
-      url: blog
-    - title: Contact
-      url: "#contact"
+  - title: Blog
+    url: blog
+  - title: Projects
+    url: '#projects'
+  - title: Contact
+    url: '#contact'

@@ -20,7 +20,7 @@ description: "Developer based in Sydney"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "htttps://www.adrianyadav.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-permalink: /:categories/:title/
+permalink: blog/:categories/:title/
 
 # Build settings
 theme: minima

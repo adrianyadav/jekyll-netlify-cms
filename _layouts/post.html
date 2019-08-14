@@ -1,29 +1,29 @@
 ---
 layout: default
 ---
+
 {%- include header-blog.html -%}
 
 <section class="section" id="post">
-
-  <article class="blog">
-
-    <div class="u-center-margin ">
-      <div class="breadcrumb">
-        <a class="breadcrumb__link" href="/blog">Blog</a>
-        <span class="breadcrumb__seperator">/</span>
-        <span class="breadcrumb__link">{{ page.title }}</span>
-      </div>
-    </a>
-    <h1 class="blog__title">
-      {{ page.title | escape }}
-    </h1>
-    {%- assign date_format = site.minima.date_format | default: "%b
-                %-d, %Y" -%}
-    <time datetime="{{ page.date }}" class="blog__date">
-      {{ page.date | date: date_format }}</time>
-
-    {{ content }}
-
-  </div>
-</article>
+	<article class="blog">
+		<div class="u-center-margin ">
+			<div class="breadcrumb">
+				<a class="breadcrumb__link" href="/blog">Blog</a>
+				<span class="breadcrumb__seperator">/</span>
+				<span class="breadcrumb__link">{{ page.title }}</span>
+			</div>
+			<h1 class="blog__title">
+				{{ page.title | escape }}
+			</h1>
+			{%- assign date_format = site.minima.date_format | default: "%b %-d,
+			%Y" -%}
+			<time
+				datetime="{{ page.date | date: '%Y-%m-%d' }}"
+				class="blog__date"
+			>
+				{{ page.date | date: date_format }}
+			</time>
+			{{ content }}
+		</div>
+	</article>
 </section>

@@ -11,6 +11,7 @@ collections: # A list of collections the CMS should be able to edit
       sort: "date:desc" # Default is title:asc
       create: true # Allow users to create new documents in this collection
       slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+      summary: "{{title}} -- {{year}}/{{month}}/{{day}}"
       fields: # The fields each document in this collection have
           - {
                 label: "Layout",
@@ -34,8 +35,9 @@ collections: # A list of collections the CMS should be able to edit
                 format: "YYYY-MM-DD hh:mm:ss",
             }
 
-    - name: "Manage navigation links here"
+    - name: "navigation"
       label: "Navigation"
+      description: "Manage navigation links here"
       editor:
           preview: false
       files:
@@ -50,8 +52,10 @@ collections: # A list of collections the CMS should be able to edit
                       - { label: "Title", name: "title", widget: string }
                       - { label: "Url", name: "url", widget: string }
 
-    - name: "Maximum of 4 skills can be active currently, manage them here."
-      label: "Skills"
+    - name: "skills"
+      label: "skills"
+      description: "Maximum of 4 skills can be active currently, manage them here."
+      create: false
       editor:
           preview: false
       files:

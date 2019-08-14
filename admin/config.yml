@@ -34,8 +34,8 @@ collections: # A list of collections the CMS should be able to edit
                 format: "YYYY-MM-DD hh:mm:ss",
             }
 
-    - name: "Navigation"
-      label: "Manage navigation items here"
+    - name: "Manage navigation links here"
+      label: "Navigation"
       editor:
           preview: false
       files:
@@ -50,8 +50,8 @@ collections: # A list of collections the CMS should be able to edit
                       - { label: "Title", name: "title", widget: string }
                       - { label: "Url", name: "url", widget: string }
 
-    - name: "Skills"
-      label: "Maximum of 4 skills can be active currently, manage them here."
+    - name: "Maximum of 4 skills can be active currently, manage them here."
+      label: "Skills"
       editor:
           preview: false
       files:

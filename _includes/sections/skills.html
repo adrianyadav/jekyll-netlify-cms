@@ -1,0 +1,24 @@
+<section class="section-features u-margin-top-huge">
+    <div class="u-center-text">
+        <h2
+            class="heading-secondary heading-secondary--light u-center-margin u-margin-bottom-medium"
+        >
+            Skills
+        </h2>
+    </div>
+    <div class="row">
+        {% for item in site.data.skills.items %}
+        <div class="col-1-of-4">
+            <div class="feature-box">
+                <i class="feature-box__icon {{ item.skillIcon }}"></i>
+                <h3 class="heading-tertiary u-margin-bottom-small">
+                    {{ item.skillName }}
+                </h3>
+                <p class="feature-box__text">
+                    {{ item.skillDescription }}
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

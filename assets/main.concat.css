@@ -651,7 +651,6 @@ blockquote {
     height: 15rem;
     float: left;
     -webkit-shape-outside: circle(50% at 50% 50%);
-    shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translate(-3rem) skewX(12deg);
@@ -929,6 +928,9 @@ blockquote {
   @media (max-width: 56.25em) {
     .feature-box {
       padding: 2rem; } }
+  @media (max-width: 37.5em) {
+    .feature-box {
+      height: auto; } }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: 0.5rem;
@@ -939,6 +941,8 @@ blockquote {
     @media (max-width: 56.25em) {
       .feature-box__icon {
         margin-bottom: 0rem; } }
+  .feature-box__text {
+    flex-grow: 1; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
@@ -1014,7 +1018,7 @@ blockquote {
   text-decoration: none;
   border-bottom: 0.1rem solid #ff7e67;
   padding: 0.5rem 1rem;
-  transition: all 0.2; }
+  transition: all 0.2s; }
 
 .btn-text:hover, .btn-text:focus {
   background-color: #ff7e67;

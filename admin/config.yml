@@ -1,76 +1,82 @@
 backend:
-    name: git-gateway
-    branch: master # Branch to update (master by default)
+  name: git-gateway
+  branch: master # Branch to update (master by default)
 
 media_folder: "img/uploads" # Folder where user uploaded files should go
 
 collections: # A list of collections the CMS should be able to edit
-    - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-      label: "Post" # Used in the UI, ie.: "New Post"
-      folder: "_posts" # The path to the folder where the documents are stored
-      sort: "date:desc" # Default is title:asc
-      create: true # Allow users to create new documents in this collection
-      slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-      summary: "{{title}} -- {{year}}/{{month}}/{{day}}"
-      fields: # The fields each document in this collection have
-          - {
-                label: "Layout",
-                name: "layout",
-                widget: "hidden",
-                default: "post",
-            }
-          - { label: "Title", name: "title", widget: "string", tagname: "h1" }
-          - { label: "Body", name: "body", widget: "markdown" }
-          - {
-                label: "Categories",
-                name: "categories",
-                widget: "string",
-                required: false,
-            }
-      meta: # Meta data fields. Just like fields, but without any preview element
-          - {
-                label: "Publish Date",
-                name: "date",
-                widget: "datetime",
-                format: "YYYY-MM-DD hh:mm:ss",
-            }
+  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Post" # Used in the UI, ie.: "New Post"
+    folder: "_posts" # The path to the folder where the documents are stored
+    sort: "date:desc" # Default is title:asc      d
+    description: "Manage your posts here"
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} -- {{year}}/{{month}}/{{day}}"
+    fields: # The fields each document in this collection have
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string", tagname: "h1" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Categories",
+          name: "categories",
+          widget: "string",
+          required: false,
+        }
+    meta: # Meta data fields. Just like fields, but without any preview element
+      - {
+          label: "Publish Date",
+          name: "date",
+          widget: "datetime",
+          format: "YYYY-MM-DD hh:mm:ss",
+        }
+  - name: "homepage"
+    label: "Homepage"
+    description: "Manage homepage here"
+    files:
+      - label: "Homepage"
+        name: "homepage"
+        file: "_data/home.yml"
+        fields:
+          - label: "author"
+            name: "author"
+            widget: "string"
 
-    - name: "navigation"
-      label: "Navigation"
-      description: "Manage navigation links here"
-      editor:
-          preview: false
-      files:
-          - label: "Navigation"
-            name: "navigation"
-            file: "_data/nav.yml"
+  - name: "navigation"
+    label: "Navigation"
+    description: "Manage navigation links here"
+    editor:
+      preview: false
+    files:
+      - label: "Navigation"
+        name: "navigation"
+        file: "_data/nav.yml"
+        fields:
+          - label: "Navigation Items"
+            name: "items"
+            widget: "list"
             fields:
-                - label: "Navigation Items"
-                  name: "items"
-                  widget: "list"
-                  fields:
-                      - { label: "Title", name: "title", widget: string }
-                      - { label: "Url", name: "url", widget: string }
+              - { label: "Title", name: "title", widget: string }
+              - { label: "Url", name: "url", widget: string }
 
-    - name: "skills"
-      label: "Skills"
-      description: "Maximum of 4 skills can be active currently, manage them here."
-      create: false
-      editor:
-          preview: false
-      files:
-          - label: "Skills"
-            name: "skills"
-            file: "_data/skills.yml"
+  - name: "skills"
+    label: "Skills"
+    description: "Maximum of 4 skills can be active currently, manage them here."
+    editor:
+      preview: false
+    files:
+      - label: "Skills"
+        name: "skills"
+        file: "_data/skills.yml"
+        fields:
+          - label: "Skill Items"
+            name: "items"
+            widget: "list"
             fields:
-                - label: "Skill Items"
-                  name: "items"
-                  widget: "list"
-                  fields:
-                      - { label: "title", name: "skillTitle", widget: string }
-                      - {
-                            label: "Description",
-                            name: "skillDescription",
-                            widget: string,
-                        }
-                      - { label: "Icon", name: "skillIcon", widget: string }
+              - { label: "title", name: "skillTitle", widget: string }
+              - {
+                  label: "Description",
+                  name: "skillDescription",
+                  widget: string,
+                }
+              - { label: "Icon", name: "skillIcon", widget: string }

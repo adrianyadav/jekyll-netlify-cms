@@ -53,7 +53,7 @@ collections: # A list of collections the CMS should be able to edit
                       - { label: "Url", name: "url", widget: string }
 
     - name: "skills"
-      label: "skills"
+      label: "Skills"
       description: "Maximum of 4 skills can be active currently, manage them here."
       create: false
       editor:

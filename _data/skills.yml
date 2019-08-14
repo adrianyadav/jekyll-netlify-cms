@@ -1,14 +1,13 @@
-# _data/skills.yml
 items:
-  - skillTitle: Fast
-    skillDescription: "Fast load times and lag free interaction are my highest priority."
-    skillIcon: "icon-basic-watch"
-  - skillTitle: Responsive
-    skillDescription: "My layouts will work well on any device"
-    skillIcon: "icon-basic-smartphone"
-  - skillTitle: Intuitive
-    skillDescription: "Easy to use, minimal thinking required - intuitive UX/UI."
-    skillIcon: "icon-basic-lightbulb"
-  - skillTitle: Dynamic
-    skillDescription: "Websites don't have to be static, I love making pages come to life."
-    skillIcon: "icon-basic-webpage-txt"
+  - skillDescription: Fast load times and lag free interaction are my highest priority.
+    skillIcon: icon-basic-watch
+    skillTitle: Fastest
+  - skillDescription: My layouts will work well on any device
+    skillIcon: icon-basic-smartphone
+    skillTitle: Responsive
+  - skillDescription: 'Easy to use, minimal thinking required - intuitive UX/UI.'
+    skillIcon: icon-basic-lightbulb
+    skillTitle: Intuitive
+  - skillDescription: 'Websites don''t have to be static, I love making pages come to life.'
+    skillIcon: icon-basic-webpage-txt
+    skillTitle: Dynamic

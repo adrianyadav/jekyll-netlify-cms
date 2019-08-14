@@ -3,14 +3,16 @@
         <ul class="nav__list">
             {% for item in site.data.nav.items %}
             <li class="nav__item">
-                <a class="nav__link btn btn--white 
-                {% if item.url == "blog"
+                <a
+                    class="nav__link btn btn--white 
+                {% if page.url contains item.url
                   %}current
-               {% endif %}" href="{{ site.baseurl }}{{ item.url }}">{{
-                      item.title
-                  }}
+               {% endif %}"
+                    href="{{ site.baseurl }}{{ item.url }}"
+                    >{{ item.title }}
                 </a>
             </li>
+
             {% endfor %}
         </ul>
     </nav>

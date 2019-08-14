@@ -34,8 +34,8 @@ collections: # A list of collections the CMS should be able to edit
                 format: "YYYY-MM-DD hh:mm:ss",
             }
 
-    - name: "config"
-      label: "Config"
+    - name: "Navigation"
+      label: "Navigation"
       editor:
           preview: false
       files:
@@ -49,3 +49,32 @@ collections: # A list of collections the CMS should be able to edit
                   fields:
                       - { label: "Title", name: "title", widget: string }
                       - { label: "Url", name: "url", widget: string }
+
+    - name: "Skills"
+      label: "Skills"
+      editor:
+          preview: false
+      files:
+          - label: "Skills"
+            name: "skills"
+            file: "_data/skills.yml"
+            fields:
+                - label: "Skill Items"
+                  name: "items"
+                  widget: "list"
+                  fields:
+                      - {
+                            label: "Skillname",
+                            name: "skillname",
+                            widget: string,
+                        }
+                      - {
+                            label: "Skilldescription",
+                            name: "skilldescription",
+                            widget: string,
+                        }
+                      - {
+                            label: "Skillicon",
+                            name: "Skillicon",
+                            widget: string,
+                        }

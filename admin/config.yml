@@ -33,13 +33,43 @@ collections: # A list of collections the CMS should be able to edit
   - name: "homepage"
     label: "Homepage"
     description: "Manage homepage here"
+    editor:
+      preview: false
     files:
       - label: "Homepage"
         name: "homepage"
         file: "_data/home.yml"
         fields:
-          - label: "author"
+          - label: "Author Name"
             name: "author"
+            widget: "string"
+          - label: "Main Button Text"
+            name: "mainButtonText"
+            widget: "string"
+          - label: "Main Button URL"
+            name: "mainButtonUrl"
+            widget: "string"
+          - label: "Section About Title"
+            name: "sectionAboutTitle"
+            widget: "string"
+          - label: "Profile Image"
+            name: "profileImage"
+            widget: "image"
+            default: "/uploads/profile.jpg"
+            media_library:
+              config:
+              multiple: false
+          - label: "Section About Sub Title"
+            name: "sectionAboutSubTitle"
+            widget: "string"
+          - label: "Section About Information"
+            name: "sectionAboutInfo"
+            widget: "string"
+          - label: "Section Contact Title"
+            name: "sectionContactTitle"
+            widget: "string"
+          - label: "Section Contact Sub Title"
+            name: "sectionContactSubTitle"
             widget: "string"
 
   - name: "navigation"

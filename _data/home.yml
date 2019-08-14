@@ -1,13 +1,8 @@
-items:
-  - skillDescription: Fast load times and lag free interaction are my highest priority.
-    skillIcon: icon-basic-watch
-    skillTitle: Fastest
-  - skillDescription: My layouts will work well on any device
-    skillIcon: icon-basic-smartphone
-    skillTitle: Responsive
-  - skillDescription: "Easy to use, minimal thinking required - intuitive UX/UI."
-    skillIcon: icon-basic-lightbulb
-    skillTitle: Intuitive
-  - skillDescription: "Websites don't have to be static, I love making pages come to life."
-    skillIcon: icon-basic-webpage-txt
-    skillTitle: Dynamic
+author: Adrian Yadavs
+mainButtonText: View my work
+mainButtonUrl: '#projects'
+sectionAboutTitle: about
+sectionAboutSubTitle: Who is this guy
+sectionAboutInfo: Currently I am a software developer working for World Nomads"
+sectionContactTitle: Contact
+sectionContactSubTitle: Have a question or want to work together?

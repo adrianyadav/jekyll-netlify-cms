@@ -74,3 +74,5 @@ github_username: adrianyadav
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude: [css, _sass]
+

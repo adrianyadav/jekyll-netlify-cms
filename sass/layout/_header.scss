@@ -1,66 +1,63 @@
 .header {
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    height: 95vh;
-    width: auto;
-    clip-path: polygon(0 0, 100% 20vh, 100% 75vh, 0 100%);
-    &--blog {
-        height: 30rem;
-        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-        background-image: linear-gradient(
-                to right bottom,
-                rgba($color-primary, 0.85),
-                rgba($color-primary-light, 0.85)
-            ),
-            url(../../img/contact-unsplash.jpg);
-        z-index: 2;
-        .header__text-box > h1 {
-            font-size: 3rem;
-        }
-    }
-    background-image: linear-gradient(
-            to right bottom,
-            rgba($color-primary, 0.85),
-            rgba($color-primary-light, 0.85)
-        ),
-        url(../../img/hero-unsplash-1x.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	height: 95vh;
+	width: auto;
+	clip-path: polygon(0 0, 100% 20vh, 100% 75vh, 0 100%);
+	&--blog {
+		height: 40rem;
+		clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+		background-image: linear-gradient(
+				to right bottom,
+				rgba($color-primary, 0.85),
+				rgba($color-primary-light, 0.85)
+			),
+			url(../../img/contact-unsplash.jpg);
+		z-index: 2;
+	}
+	background-image: linear-gradient(
+			to right bottom,
+			rgba($color-primary, 0.85),
+			rgba($color-primary-light, 0.85)
+		),
+		url(../../img/hero-unsplash-1x.jpg);
 
-    @media (min-width: 1600px) {
-        background-image: linear-gradient(
-                to right bottom,
-                rgba($color-primary, 0.85),
-                rgba($color-primary-light, 0.85)
-            ),
-            url(../../img/hero-unsplash-2x.jpg);
-    }
+	@media (min-width: 1600px) {
+		background-image: linear-gradient(
+				to right bottom,
+				rgba($color-primary, 0.85),
+				rgba($color-primary-light, 0.85)
+			),
+			url(../../img/hero-unsplash-2x.jpg);
+	}
 
-    @media (min-width: 3000px) {
-        background-image: linear-gradient(
-                to right bottom,
-                rgba($color-primary, 0.85),
-                rgba($color-primary-light, 0.85)
-            ),
-            url(../../img/hero-unsplash-3x.jpg);
-    }
+	@media (min-width: 3000px) {
+		background-image: linear-gradient(
+				to right bottom,
+				rgba($color-primary, 0.85),
+				rgba($color-primary-light, 0.85)
+			),
+			url(../../img/hero-unsplash-3x.jpg);
+	}
 
-    &__text-box {
-        @include absCenter;
-        text-align: center;
-        width: 100%;
-    }
+	&__text-box {
+		@include absCenter;
+		text-align: center;
+		width: 100%;
+	}
 }
 
 @include respond(phone) {
-    .header {
-        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+	.header {
+		clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
 
-        &__text-box {
-            width: 100%;
+		&__text-box {
+			width: 100%;
 
-            > h1 {
-                margin-bottom: 3rem;
-            }
-        }
-    }
+			> h1 {
+				margin-bottom: 3rem;
+			}
+		}
+	}
 }

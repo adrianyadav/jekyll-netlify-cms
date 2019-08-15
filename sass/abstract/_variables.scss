@@ -33,13 +33,18 @@ $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
 
 // FONT
-$default-font-size: 1.6rem;
+$default-font-size: 1.72rem;
 $default-font-color: #36454f;
-$light-weight: 200;
-$medium-weight: 400;
+$light-weight: 100;
+$medium-weight: 300;
+$heavy-weight: 700;
 
 // MEDIA QUERIES
 $phone: 37.5em; //600 px
 $tab-port: 56.25em; //900px;
 $tab-land: 75em; //1200px;
 $big-desktop: 112.5em; //1800px;
+
+// MARGINS
+$default-margin-top: 3rem;
+$default-margin-bottom: 1.5rem;

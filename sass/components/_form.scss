@@ -1,62 +1,66 @@
 .contact {
-    max-width: 500px;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
+	max-width: 500px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
 
-    @include respond(phone) {
-        width: 70%;
-    }
+	@include respond(phone) {
+		width: 70%;
+	}
 
-    &__label {
-        display: block;
-        text-transform: uppercase;
-        margin-top: 0.5rem;
-        font-size: 1.3rem;
-        color: $color-white;
-        margin-bottom: 0.7rem;
-    }
+	&__label {
+		display: block;
+		text-transform: uppercase;
+		margin-top: 0.5rem;
+		font-size: 1.3rem;
+		color: $color-white;
+		margin-bottom: 0.7rem;
+	}
 
-    input,
-    textarea {
-        font-family: "Raleway", sans-serif;
-        display: block;
-        width: 100%;
-        outline: none;
-        padding: 1rem 1.5rem;
-        border-width: 0;
-        margin-bottom: 1rem;
-        background: $color-secondary-dark2;
-        font-size: $default-font-size;
-        color: $color-white;
+	input,
+	textarea {
+		font-family: 'Raleway', sans-serif;
+		display: block;
+		width: 100%;
+		outline: none;
+		padding: 1rem 1.5rem;
+		border-width: 0;
+		margin-bottom: 1rem;
+		background: $color-secondary-dark2;
+		font-size: $default-font-size;
+		font-weight: $medium-weight;
+		color: $color-white;
 
-        &:focus {
-            color: $color-secondary-dark2;
-            background-color: white;
-            outline: 0;
+		&:focus {
+			color: $color-secondary-dark2;
+			background-color: white;
+			outline: 0;
 
-            &::placeholder {
-                color: $color-secondary-dark2;
-            }
-        }
+			&::placeholder {
+				color: $color-secondary-dark2;
+				font-weight: $medium-weight;
+			}
+		}
 
-        &::placeholder {
-            color: rgba($color-white, 0.6);
-        }
+		&::placeholder {
+			color: rgba($color-white, 0.6);
+			font-weight: $medium-weight;
+		}
 
-        @include respond(phone) {
-            margin: 0.3rem auto;
-        }
-    }
+		@include respond(phone) {
+			margin: 0.3rem auto;
+		}
+	}
 
-    textarea {
-        min-height: 10rem;
-        margin-bottom: 1rem;
-    }
+	textarea {
+		min-height: 10rem;
+		margin-bottom: 1rem;
+	}
 
-    &__btn {
-        float: right;
-        font-family: "Raleway", sans-serif;
-        font-size: $default-font-size;
-    }
+	&__btn {
+		float: right;
+		font-family: 'Raleway', sans-serif;
+		font-size: $default-font-size;
+		font-weight: $medium-weight;
+	}
 }

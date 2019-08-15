@@ -1,7 +1,17 @@
 <header class="header header--blog">
-    <div class="header__text-box">
-        <h1 class="heading-primary">
-            <span class="heading-primary__main">Adrian Yadav</span>
-        </h1>
-    </div>
+	<div class="header__text-box">
+		<h1 class="blog__title">
+			<span class="heading-primary__main">
+				{{ page.title | escape }}
+			</span>
+		</h1>
+		{%- assign date_format = site.minima.date_format | default: "%d %b %Y"
+		-%}
+		<time
+			datetime="{{ page.date | date: '%Y-%m-%d' }}"
+			class="blog__date blog__date--light"
+		>
+			{{ page.date | date: '%d %b %Y' }}
+		</time>
+	</div>
 </header>

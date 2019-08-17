@@ -2,8 +2,20 @@
 layout: post
 title: 3 Life changing books
 ---
-I hesitate to use "Life-changing" as it is way too casually thrown out but I feel the term really applies here. While I was exploring europe, I looked for a few audio books to digest (on an unrelated note - I had recently spent $500 on Bose QC35 headphones and they were amazing - I have been buying cheap $20 earphones every couple of months for long as I remember). These books made a huge measurable impact one and I wanted to share the ideas.
+## Sleep, Habits and Resilence
 
-1. **Why We Sleep** - By Matthew Walker
+I hesitate to use "**Life-changing**" as it is way too casually thrown out but I feel the term really applies here. While I was traveling, I looked for a few audio books to digest while there was downtime. These three books made a huge measurable impact on me.
 
-I'll summarise this book in one sentenance - if you are not getting 8-9 hours of quality (interupted) sleep on a daily basis - then you really and I mean **really** need change your habits. Sleep is the greatest performance enhancer we have available to us - why not make the most use of it? Top athletes like LeBron James, Usain Bolt, Roger Federer - routinely get 8-12 hourrs of sleep on a daily basis. The book explains in detail how sleep benefits you and what the ramifications are of not getting enough of sleep. Matthew Walker makes a good case for how we don't value sleep on a societial level - and this has to change. For example, we respect the CEO that comes to work at 5AM and checks his email at @2AM - and think wow he is so hard working - but is he efficient? Not necessarily - bottom line is you need to sleep.
+**Why We Sleep - By Matthew Walker**
+
+I'll summarise this book in one sentence - if you are not getting 8-9 hours of quality (interrupted) sleep on a daily basis - then you need to make a change. Sleep is the greatest performance enhancer we have available to us - why not make the most use of it? Top athletes like LeBron James, Usain Bolt, Roger Federer - routinely get 8-12 hours of sleep on a daily basis. The book explains in detail how sleep benefits you and what the downsides are of not getting enough sleep. Matthew Walker makes a good case for how we don't value sleep on a societal level and it is the unspoken epidemic. For example, we respect the CEO that comes to work at 6AM and responds to an email at 1AM and applaud him for how hardworking and dedicated he is but is he efficient? Not necessarily - bottom line is you need more quality sleep and this will make you do better in every aspect of your life.
+
+**Atomic Habits - By James Clear**
+
+> **We are what we do.  Excellence, then, is not an act, but a habit**
+
+\- Will Durant
+
+The book is a comprehensive guide on how habits are formed, tips on how to make the good ones stay around and remove the bad ones - and generally how to get 1% better everyday.
+
+When you have a new habit that you want to form for example: I want to get fit. This book will give you the tools to make sure that you can make exercise a habit and have it stick.

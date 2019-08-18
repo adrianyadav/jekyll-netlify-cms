@@ -94,6 +94,9 @@ blockquote {
 .u-center-margin {
   margin: 0 auto; }
 
+.u-margin-bottom-none {
+  margin-bottom: 0 !important; }
+
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
 
@@ -140,7 +143,7 @@ body {
     letter-spacing: 0.75rem; }
   @media (max-width: 37.5em) {
     .heading-primary {
-      font-size: 2.5rem; } }
+      font-size: 3.5rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -176,6 +179,9 @@ h2 {
   margin-top: 3rem;
   margin-bottom: 1.5rem;
   line-height: 140%; }
+  @media (max-width: 56.25em) {
+    h2 {
+      font-size: 2.5rem; } }
 
 .paragraph,
 p {
@@ -291,7 +297,7 @@ a:hover, a:active {
     text-transform: capitalize; }
     @media (max-width: 56.25em) {
       .post__title {
-        font-size: 2.3rem; } }
+        font-size: 2.5rem; } }
     .post__title:link, .post__title:visited {
       font-size: 4rem;
       font-weight: 300;
@@ -319,6 +325,9 @@ a:hover, a:active {
       color: #ffffff;
       font-size: 2rem;
       text-transform: uppercase; }
+      @media (max-width: 56.25em) {
+        .post__date--light {
+          font-size: 1.6rem; } }
   .post__intro {
     font-size: 1.8rem;
     margin-bottom: 1.5rem; }
@@ -624,10 +633,14 @@ a:hover, a:active {
   clip-path: polygon(0 0, 100% 20vh, 100% 75vh, 0 100%);
   background-image: linear-gradient(to right bottom, rgba(7, 104, 159, 0.85), rgba(162, 213, 242, 0.85)), url(../../img/hero-unsplash-1x.jpg); }
   .header--blog {
-    height: 40rem;
+    height: auto;
+    min-height: 30rem;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     background-image: linear-gradient(to right bottom, rgba(7, 104, 159, 0.85), rgba(162, 213, 242, 0.85)), url(../../img/contact-unsplash.jpg);
     z-index: 2; }
+    @media (max-width: 37.5em) {
+      .header--blog {
+        min-height: 25rem; } }
   @media (min-width: 1600px) {
     .header {
       background-image: linear-gradient(to right bottom, rgba(7, 104, 159, 0.85), rgba(162, 213, 242, 0.85)), url(../../img/hero-unsplash-2x.jpg); } }
@@ -646,9 +659,10 @@ a:hover, a:active {
   .header {
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); }
     .header__text-box {
-      width: 100%; }
+      width: 100%;
+      top: 60%; }
       .header__text-box > h1 {
-        margin-bottom: 3rem; } }
+        margin-bottom: 1.5rem; } }
 
 .navigation {
   position: fixed;

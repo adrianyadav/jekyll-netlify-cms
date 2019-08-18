@@ -6,7 +6,11 @@
 	width: auto;
 	clip-path: polygon(0 0, 100% 20vh, 100% 75vh, 0 100%);
 	&--blog {
-		height: 40rem;
+		height: auto;
+		min-height: 30rem;
+		@include respond(phone) {
+			min-height: 25rem;
+		}
 		clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 		background-image: linear-gradient(
 				to right bottom,
@@ -54,9 +58,10 @@
 
 		&__text-box {
 			width: 100%;
+			top: 60%;
 
 			> h1 {
-				margin-bottom: 3rem;
+				margin-bottom: 1.5rem;
 			}
 		}
 	}

@@ -1,11 +1,7 @@
-.blog {
+.post {
 	max-width: 78rem;
 	width: 100%;
 	margin: 0 auto;
-	box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
-	background-color: rgba($color-white, 0.6);
-	border-radius: 0.3rem;
-	padding: 3rem 5rem 4rem 8rem;
 	font-size: $default-font-size;
 	position: relative;
 	margin-bottom: 3rem;
@@ -27,12 +23,15 @@
 		}
 		&:link,
 		&:visited {
-			font-size: 3.5rem;
+			font-size: 4rem;
 			font-weight: $medium-weight;
-			color: $default-font-color;
+			color: $color-primary;
 			text-decoration: none;
 			@include respond(tab-port) {
 				font-size: 2.3rem;
+			}
+			&:hover {
+				color: $color-primary-dark;
 			}
 		}
 	}
@@ -50,14 +49,12 @@
 	&__date {
 		display: block;
 		margin-bottom: 1.5rem;
-		font-weight: $heavy-weight;
-		text-transform: uppercase;
+		font-weight: $medium-weight;
 		font-size: 1.6rem;
-
 		&--light {
-			font-weight: $medium-weight;
 			color: $color-white;
 			font-size: 2rem;
+			text-transform: uppercase;
 		}
 	}
 	&__intro {

@@ -4,13 +4,11 @@ layout: default
 
 {%- include header-blog.html -%}
 
-<section class="section" id="post">
-	<article class="blog">
-		<div class="u-center-margin ">
-			{%- assign date_format = site.minima.date_format | default: "%d %b
-			%Y" -%}
+<article class="post section" id="post">
+	<div class="u-center-margin text-readability">
+		{%- assign date_format = site.minima.date_format | default: "%d %b %Y"
+		-%}
 
-			{{ content }}
-		</div>
-	</article>
-</section>
+		{{ content }}
+	</div>
+</article>

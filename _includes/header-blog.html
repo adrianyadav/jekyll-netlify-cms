@@ -1,6 +1,6 @@
 <header class="header header--blog">
 	<div class="header__text-box">
-		<h1 class="blog__title">
+		<h1 class="post__title">
 			<span class="heading-primary__main">
 				{{ page.title | escape }}
 			</span>
@@ -9,7 +9,7 @@
 		-%}
 		<time
 			datetime="{{ page.date | date: '%Y-%m-%d' }}"
-			class="blog__date blog__date--light"
+			class="post__date post__date--light"
 		>
 			{{ page.date | date: '%d %b %Y' }}
 		</time>

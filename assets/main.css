@@ -33,16 +33,17 @@ ol {
   margin-left: 1.6rem; }
 
 blockquote {
-  font-size: 1.8rem;
   width: 100%;
   margin: 3rem auto;
-  font-style: italic;
-  padding: 1.2rem 3rem 1.2rem 7.5rem;
+  padding: 1.2rem 3rem 1.2rem 5.5rem;
   border-left: 8px solid #1e242c;
   line-height: 1.6;
   position: relative;
   background: #f7f7f7f7;
   margin-bottom: 3rem; }
+  blockquote p {
+    font-weight: 300;
+    font-size: 1.9rem; }
   blockquote::before {
     font-family: Arial;
     content: '\201C';
@@ -114,6 +115,14 @@ blockquote {
 .text-white {
   color: #ffffff; }
 
+.text-readability {
+  padding-left: 5.75rem;
+  padding-right: 15rem; }
+  @media (max-width: 37.5em) {
+    .text-readability {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem; } }
+
 .hidden {
   display: none; }
 
@@ -165,11 +174,12 @@ h2 {
   font-weight: 300;
   display: block;
   margin-top: 3rem;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  line-height: 140%; }
 
 .paragraph,
 p {
-  font-size: 1.72rem;
+  font-size: 1.8rem;
   line-height: 3rem; }
   .paragraph:not(last-child),
   p:not(last-child) {
@@ -197,7 +207,7 @@ a:hover, a:active {
   border-radius: 0.3rem;
   padding: 6rem;
   padding-left: 9rem;
-  font-size: 1.72rem;
+  font-size: 1.8rem;
   transform: skewX(-12deg);
   position: relative; }
   @media (max-width: 56.25em) {
@@ -260,23 +270,19 @@ a:hover, a:active {
     transform: scale(1);
     filter: blur(0.3rem) brightness(80%); }
 
-.blog {
+.post {
   max-width: 78rem;
   width: 100%;
   margin: 0 auto;
-  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 0.3rem;
-  padding: 3rem 5rem 4rem 8rem;
-  font-size: 1.72rem;
+  font-size: 1.8rem;
   position: relative;
   margin-bottom: 3rem; }
   @media (max-width: 56.25em) {
-    .blog {
+    .post {
       width: 100%;
       padding: 4rem;
       padding-left: 5rem; } }
-  .blog__title {
+  .post__title {
     font-size: 4rem;
     font-weight: 300;
     color: #ffffff;
@@ -284,36 +290,37 @@ a:hover, a:active {
     line-height: 1.5;
     text-transform: capitalize; }
     @media (max-width: 56.25em) {
-      .blog__title {
+      .post__title {
         font-size: 2.3rem; } }
-    .blog__title:link, .blog__title:visited {
-      font-size: 3.5rem;
+    .post__title:link, .post__title:visited {
+      font-size: 4rem;
       font-weight: 300;
-      color: #36454f;
+      color: #07689f;
       text-decoration: none; }
       @media (max-width: 56.25em) {
-        .blog__title:link, .blog__title:visited {
+        .post__title:link, .post__title:visited {
           font-size: 2.3rem; } }
-  .blog__sub-title {
+      .post__title:link:hover, .post__title:visited:hover {
+        color: #003e70; }
+  .post__sub-title {
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 1rem; }
     @media (max-width: 37.5em) {
-      .blog__sub-title {
+      .post__sub-title {
         font-size: 1.5rem; } }
-  .blog__date {
+  .post__date {
     display: block;
     margin-bottom: 1.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-weight: 300;
     font-size: 1.6rem; }
-    .blog__date--light {
-      font-weight: 300;
+    .post__date--light {
       color: #ffffff;
-      font-size: 2rem; }
-  .blog__intro {
-    font-size: 1.72rem;
+      font-size: 2rem;
+      text-transform: uppercase; }
+  .post__intro {
+    font-size: 1.8rem;
     margin-bottom: 1.5rem; }
 
 .card {
@@ -462,7 +469,7 @@ a:hover, a:active {
     border-width: 0;
     margin-bottom: 1rem;
     background: #1e242c;
-    font-size: 1.72rem;
+    font-size: 1.8rem;
     font-weight: 300;
     color: #ffffff; }
     .contact input:focus,
@@ -488,7 +495,7 @@ a:hover, a:active {
   .contact__btn {
     float: right;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.72rem;
+    font-size: 1.8rem;
     font-weight: 300; }
 
 .feature-box {
@@ -530,7 +537,7 @@ a:hover, a:active {
   display: inline-block;
   transition: all 0.2s;
   position: relative;
-  font-size: 1.72rem;
+  font-size: 1.8rem;
   border: none;
   cursor: pointer; }
 
@@ -590,16 +597,16 @@ a:hover, a:active {
   animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
-  font-size: 1.72rem;
-  color: #ff7e67;
+  font-size: 1.8rem;
+  color: #003e70;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 0.1rem solid #ff7e67;
+  border-bottom: 0.1rem solid #003e70;
   padding: 0.5rem 1rem;
   transition: all 0.2s; }
 
 .btn-text:hover, .btn-text:focus {
-  background-color: #ff7e67;
+  background-color: #003e70;
   color: #ffffff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
@@ -740,7 +747,7 @@ a:hover, a:active {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.72rem;
+    font-size: 1.8rem;
     font-weight: 100; }
   .footer__copyright {
     color: #ff7e67; }
@@ -748,7 +755,7 @@ a:hover, a:active {
     color: #a2d5f2; }
 
 .section {
-  padding: 5rem 0; }
+  padding: 2.5rem 0; }
 
 .section-about {
   padding: 10rem 0; }

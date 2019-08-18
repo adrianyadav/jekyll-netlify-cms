@@ -1,40 +1,48 @@
 .u-center-text {
-    text-align: center !important;
+	text-align: center !important;
 }
 
 .u-center-margin {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 .u-margin-bottom-small {
-    margin-bottom: 1.5rem !important;
+	margin-bottom: 1.5rem !important;
 }
 
 .u-margin-bottom-medium {
-    margin-bottom: 4rem !important;
+	margin-bottom: 4rem !important;
 }
 
 .u-margin-bottom-big {
-    margin-bottom: 8rem !important;
+	margin-bottom: 8rem !important;
 }
 
 .u-margin-bottom-huge {
-    margin-bottom: 10rem !important;
+	margin-bottom: 10rem !important;
 }
 
 .u-margin-top-huge {
-    margin-top: 10rem !important;
+	margin-top: 10rem !important;
 }
 
 .u-margin-top-big {
-    margin-top: 8rem !important;
+	margin-top: 8rem !important;
 }
 
 .text-white {
-    color: $color-white;
+	color: $color-white;
+}
+
+.text-readability {
+	padding-left: 5.75rem;
+	padding-right: 15rem;
+	@include respond(phone) {
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+	}
 }
 
 .hidden {
-    display: none;
-    ;
+	display: none;
 }

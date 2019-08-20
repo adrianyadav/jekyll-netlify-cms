@@ -8,5 +8,31 @@
 	</head>
 	<body>
 		<script src="https://unpkg.com/netlify-cms@^2.0/dist/cms.js"></script>
+		<script>
+			CMS.registerEditorComponent({
+				id: 'highlight',
+				label: 'hightlight',
+				fields: [
+					{ name: 'id', label: 'Word name', widget: 'string' }
+				],
+				pattern: /^<span class="highlight><\/span>/,
+				fromBlock: function(match) {
+					console.log(match);
+					return {
+						id: match[1]
+					};
+				},
+				toBlock: function(obj) {
+					return `<span class="highlight"${
+						obj.id
+					}</span>`;
+				},
+				toPreview: function(obj) {
+					return `<span class="highlight"${
+						obj.id
+					}"</span>;
+				}
+			});
+		</script>
 	</body>
 </html>

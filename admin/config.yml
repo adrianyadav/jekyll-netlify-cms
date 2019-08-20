@@ -118,16 +118,23 @@ collections: # A list of collections the CMS should be able to edit
     files:
       - label: "Projects"
         name: "projects"
-        file: "_data/Projects.yml"
+        file: "_data/projects.yml"
         fields:
           - label: "Project cards"
             name: "items"
             widget: "list"
             fields:
-              - { label: "title", name: "projectTitle", widget: string }
-              - { label: "details", name: "projectDetails", widget: string }
+              - { label: "title", name: "projectName", widget: string }
+              - { label: "details", name: "body", widget: markdown }
               - {
                   label: "Available github repo?",
                   name: "projectGithubRepo",
                   widget: boolean,
                 }
+              - {
+                  label: "Github link",
+                  name: "projectGithubLink",
+                  required: false,
+                  widget: string,
+                }
+              - { label: "Live link", name: "projectLiveLink", widget: string }

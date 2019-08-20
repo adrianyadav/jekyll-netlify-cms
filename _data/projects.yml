@@ -1,16 +1,20 @@
 items:
-  - projectName: This website!
-    projectDetails: HTML5/CSS3 (SASS)
+  - projectDetails: |-
+      * HTML5/CSS3 (SASS)
+      * Jekyll + Netlify CMS
+      * Deployed using Netlify
+      * Category: Personal
     projectGithubRepo: true
-    projectGithubLink: https://github.com/adrianyadav/adrianyadav.com"
-    projectLiveLink: #
-  - projectName: This website!
-    projectDetails: HTML5/CSS3 (SASS)
-    projectGithubRepo: true
-    projectGithubLink: https://github.com/adrianyadav/adrianyadav.com"
-    projectLiveLink: #
-  - projectName: This website!
-    projectDetails: HTML5/CSS3 (SASS)
-    projectGithubRepo: true
-    projectGithubLink: https://github.com/adrianyadav/adrianyadav.com"
-    projectLiveLink: #
+    projectName: This website!
+  - projectDetails: |-
+      * HTML5/CSS3 (SASS)
+      * Nunjucks
+      * Category: Work
+    projectGithubRepo: false
+    projectName: nib Travel
+  - projectDetails: |-
+      * React
+      * Landing Page
+      * Category: Work
+    projectGithubRepo: false
+    projectName: uPaged

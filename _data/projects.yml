@@ -6,7 +6,7 @@ items:
       * Category: Work
     projectGithubRepo: true
     projectLiveLink: 'https://github.com/adrianyadav/adrianyadav-netlify'
-    projectName: adrianyadav.com
+    projectName: adrianyadav
   - body: |-
       * HTML5/CSS (SASS)
       * Nunjucks

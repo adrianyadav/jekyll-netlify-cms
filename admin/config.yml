@@ -110,3 +110,24 @@ collections: # A list of collections the CMS should be able to edit
                   widget: string,
                 }
               - { label: "Icon", name: "skillIcon", widget: string }
+  - name: "projects"
+    label: "Projects"
+    description: "Manage projects here"
+    editor:
+      preview: false
+    files:
+      - label: "Projects"
+        name: "projects"
+        file: "_data/Projects.yml"
+        fields:
+          - label: "Project cards"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "title", name: "projectTitle", widget: string }
+              - { label: "details", name: "projectDetails", widget: string }
+              - {
+                  label: "Available github repo?",
+                  name: "projectGithubRepo",
+                  widget: boolean,
+                }

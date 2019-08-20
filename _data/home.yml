@@ -1,9 +1,10 @@
-author: 'Adrian Yadav '
+author: "Adrian Yadav "
 mainButtonText: View my work
-mainButtonUrl: '#projects'
+mainButtonUrl: "#projects"
 sectionAboutTitle: about
 profileImage: /img/adrian-yadav.jpg
 sectionAboutSubTitle: Who is this guy
 sectionAboutInfo: Currently I am a software developer working for World Nomads
+sectionProjectTitle: Projects
 sectionContactTitle: Contact
 sectionContactSubTitle: Have a question or want to work together?

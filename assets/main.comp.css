@@ -211,6 +211,9 @@ a:link, a:visited {
 a:hover, a:active {
   color: #1e242c; }
 
+.highlight {
+  color: #07689f; }
+
 .story {
   width: 75%;
   margin: 0 auto;
@@ -261,8 +264,6 @@ a:hover, a:active {
       .story__text {
         transform: skewX(0);
         clear: both; } }
-  .story__highlight {
-    color: #07689f; }
   .story__caption {
     position: absolute;
     top: 50%;

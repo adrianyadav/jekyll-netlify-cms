@@ -1,93 +1,89 @@
 .story {
-    width: 75%;
-    margin: 0 auto;
-    box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
-    background-color: rgba($color-white, 0.6);
-    border-radius: 0.3rem;
-    padding: 6rem;
-    padding-left: 9rem;
-    font-size: $default-font-size;
-    transform: skewX(-12deg);
-    position: relative;
+	width: 75%;
+	margin: 0 auto;
+	box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+	background-color: rgba($color-white, 0.6);
+	border-radius: 0.3rem;
+	padding: 6rem;
+	padding-left: 9rem;
+	font-size: $default-font-size;
+	transform: skewX(-12deg);
+	position: relative;
 
-    @include respond(tab-port) {
-        width: 100%;
-        padding: 4rem;
-        padding-left: 7rem;
-        transform: skewX(0);
-    }
+	@include respond(tab-port) {
+		width: 100%;
+		padding: 4rem;
+		padding-left: 7rem;
+		transform: skewX(0);
+	}
 
-    @include respond(phone) {
-        width: 100%;
-        padding: 4rem;
-        padding-left: 7rem;
-    }
+	@include respond(phone) {
+		width: 100%;
+		padding: 4rem;
+		padding-left: 7rem;
+	}
 
-    &__container {
-        margin: 0 auto;
-        display: block;
-    }
+	&__container {
+		margin: 0 auto;
+		display: block;
+	}
 
-    &__shape {
-        width: 15rem;
-        height: 15rem;
-        float: left;
-        -webkit-shape-outside: circle(50% at 50% 50%);
-        -webkit-clip-path: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%);
-        transform: translate(-3rem) skewX(12deg);
-        position: relative;
-        overflow: hidden;
+	&__shape {
+		width: 15rem;
+		height: 15rem;
+		float: left;
+		-webkit-shape-outside: circle(50% at 50% 50%);
+		-webkit-clip-path: circle(50% at 50% 50%);
+		clip-path: circle(50% at 50% 50%);
+		transform: translate(-3rem) skewX(12deg);
+		position: relative;
+		overflow: hidden;
 
-        @include respond(tab-port) {
-            left: 50%;
-            transform: translate(-50%, -10%) skewX(0);
-        }
-    }
+		@include respond(tab-port) {
+			left: 50%;
+			transform: translate(-50%, -10%) skewX(0);
+		}
+	}
 
-    &__img {
-        height: 100%;
-        transform: translateX(-1rem) scale(1.4);
-        backface-visibility: hidden;
-        transition: all 0.5s;
-    }
+	&__img {
+		height: 100%;
+		transform: translateX(-1rem) scale(1.4);
+		backface-visibility: hidden;
+		transition: all 0.5s;
+	}
 
-    &__text {
-        transform: skewX(12deg);
+	&__text {
+		transform: skewX(12deg);
 
-        @include respond(tab-port) {
-            transform: skewX(0);
-            clear: both;
-        }
-    }
+		@include respond(tab-port) {
+			transform: skewX(0);
+			clear: both;
+		}
+	}
 
-    &__highlight {
-        color: $color-primary;
-    }
+	&__caption {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, 20%);
+		color: $color-white;
+		text-transform: uppercase;
+		font-size: 1.7rem;
+		text-align: center;
+		opacity: 0;
+		transition: all 0.5s;
+		backface-visibility: hidden;
+	}
 
-    &__caption {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 20%);
-        color: $color-white;
-        text-transform: uppercase;
-        font-size: 1.7rem;
-        text-align: center;
-        opacity: 0;
-        transition: all 0.5s;
-        backface-visibility: hidden;
-    }
+	&__shape:hover &__caption {
+		opacity: 1;
+		transform: translate(-50%, -50%);
+	}
 
-    &__shape:hover &__caption {
-        opacity: 1;
-        transform: translate(-50%, -50%);
-    }
-
-    &__shape:hover &__img {
-        transform: scale(1);
-        filter: blur(0.3rem) brightness(80%);
-    }
+	&__shape:hover &__img {
+		transform: scale(1);
+		filter: blur(0.3rem) brightness(80%);
+	}
 }
 
 @include respond(tab-port) {

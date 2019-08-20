@@ -64,7 +64,7 @@ collections: # A list of collections the CMS should be able to edit
             widget: "string"
           - label: "Section About Information"
             name: "sectionAboutInfo"
-            widget: "string"
+            widget: "markdown"
           - label: "Section Contact Title"
             name: "sectionContactTitle"
             widget: "string"

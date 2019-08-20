@@ -5,9 +5,7 @@ items:
       * Deployed using Netlify
       * Category: Work
 
-
-
-      <span class="highlight"test</span>
+      <span class="highlight">test</span>
     projectGithubRepo: true
     projectLiveLink: 'https://github.com/adrianyadav/adrianyadav-netlify'
     projectName: This website!

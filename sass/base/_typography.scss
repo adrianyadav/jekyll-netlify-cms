@@ -1,7 +1,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: $medium-weight;
-	line-height: 1.7;
+	line-height: 1.6;
 	color: $default-font-color;
 }
 
@@ -12,6 +12,11 @@ body {
 
 	&__main {
 		letter-spacing: 0.75rem;
+	}
+	&__sub {
+		display: block;
+		font-size: 2rem;
+		letter-spacing: 1rem;
 	}
 	@include respond(phone) {
 		font-size: 3.5rem;
@@ -65,7 +70,6 @@ h2 {
 .paragraph,
 p {
 	font-size: $default-font-size;
-	line-height: 3rem;
 	&:not(last-child) {
 		margin-bottom: $default-margin-bottom;
 	}

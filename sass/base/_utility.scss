@@ -6,6 +6,10 @@
 	margin: 0 auto;
 }
 
+.u-padding-sml {
+	padding: 1rem;
+}
+
 .u-margin-bottom-none {
 	margin-bottom: 0 !important;
 }
@@ -38,12 +42,13 @@
 	color: $color-white;
 }
 
-.text-readability {
-	padding-left: 5.75rem;
-	padding-right: 15rem;
-	@include respond(phone) {
-		padding-left: 2.5rem;
-		padding-right: 2.5rem;
+.content {
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+	p,
+	h2,
+	ul {
+		max-width: 58rem;
 	}
 }
 

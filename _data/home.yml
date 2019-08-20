@@ -1,6 +1,6 @@
-author: 'Adrian Yadav '
+author: "Adrian Yadav "
 mainButtonText: View my work
-mainButtonUrl: '#projects'
+mainButtonUrl: "#projects"
 sectionAboutTitle: about
 profileImage: /img/adrian-yadav.jpg
 sectionAboutSubTitle: Who is this guy
@@ -10,5 +10,6 @@ sectionAboutInfo: >
   solutions which are <span class="highlight">fast</span>, <span
   class="highlight">responsive</span> and <span
   class="highlight">accessible</span>.
+sectionProjectTitle: Projects
 sectionContactTitle: Contact
 sectionContactSubTitle: Have a question or want to work together?

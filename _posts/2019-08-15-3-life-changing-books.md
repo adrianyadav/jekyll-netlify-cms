@@ -3,7 +3,7 @@ layout: post
 title: 3 Life changing books
 categories: ''
 ---
-I hesitate to use "**Life-changing**" as it is way too casually thrown out but it is definitely applicable here. While I was traveling, I looked for a few audio books to digest on the flight(s) and these stood out in particular.
+I hesitate to use "**Life-changing**" as it is way too casually thrown out but it is definitely applicable here. While I was traveling, I was looking for a few audio books to digest on the flight(s) and came across these three books.
 
 ## 1. Why We Sleep - By Matthew Walker
 

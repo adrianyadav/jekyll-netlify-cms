@@ -4,30 +4,6 @@ mainButtonUrl: "#projects"
 sectionAboutTitle: about
 profileImage: /img/adrian-yadav.jpg
 sectionAboutSubTitle: Who is this guy
-<<<<<<< HEAD
-sectionAboutInfo: Currently I am a software developer working for World Nomads
-sectionProjectTitle: Projects
-=======
-sectionAboutInfo: >-
-  Currently I am a software developer working for [World
-  Nomads](https://www.worldnomads.com"). I specialise in creating frontend
-  solutions which are 
-
-
-  <span class="highlight">fast</span>
-
-
-  , 
-
-
-  <span class="highlight">responsive</span>
-
-   and 
-
-  <span class="highlight">accessible</span>
-
-
-  .
->>>>>>> c970b33eec1cafe74dcb499daaa8386905f279b3
+sectionAboutInfo: Currently I am a software developer working for World Nomadss
 sectionContactTitle: Contact
 sectionContactSubTitle: Have a question or want to work together?

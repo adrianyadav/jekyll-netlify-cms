@@ -20,7 +20,11 @@
 						{{ site.data.home.sectionAboutSubTitle }}
 					</h3>
 					<p>
-						{{ site.data.home.sectionAboutInfo }}
+						{{
+							site.data.home.sectionAboutInfo
+								| markdownify
+								| strip
+						}}
 					</p>
 				</div>
 			</div>

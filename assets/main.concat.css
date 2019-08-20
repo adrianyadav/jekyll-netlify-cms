@@ -816,11 +816,11 @@ a:hover, a:active {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 0.3rem;
     border-top-right-radius: 0.3rem; }
-    .card__picture--1 {
+    .card__picture--adrianyadav {
       background-image: linear-gradient(to right bottom, #a2d5f2, #07689f), url("../img/hero-unsplash-1x.jpg"); }
-    .card__picture--2 {
+    .card__picture--nibtravel {
       background-image: linear-gradient(to right bottom, #aecd8b, #16954a), url("../img/nibtravel.jpg"); }
-    .card__picture--3 {
+    .card__picture--upaged {
       background-image: linear-gradient(to right bottom, #193363, #193363), url("../img/upaged.jpg"); }
   .card__heading {
     font-size: 2.8rem;
@@ -834,11 +834,11 @@ a:hover, a:active {
   .card__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone; }
-    .card__heading-span--1 {
+    .card__heading-span--adrianyadav {
       background-image: linear-gradient(to right bottom, rgba(162, 213, 242, 0.85), rgba(7, 104, 159, 0.85)); }
-    .card__heading-span--2 {
+    .card__heading-span--nibtravel {
       background-image: linear-gradient(to right bottom, #aecd8b, #16954a); }
-    .card__heading-span--3 {
+    .card__heading-span--upaged {
       background-image: linear-gradient(to right bottom, rgba(25, 51, 99, 0.95), rgba(25, 51, 99, 0.8)); }
   .card__details {
     padding: 3rem; }

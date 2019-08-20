@@ -5,7 +5,13 @@ sectionAboutTitle: about
 profileImage: /img/adrian-yadav.jpg
 sectionAboutSubTitle: Who is this guy
 sectionAboutInfo: >-
-  Currently I am a software developer working for World Nomads <span
-  class="highlight">test</span> test <span class="highlight">test</span>
+  Currently I am a software developer working for World Nomads and I specialise
+  in 
+
+
+  <span class="highlight">test</span>
+
+
+  test
 sectionContactTitle: Contact
 sectionContactSubTitle: Have a question or want to work together?

@@ -7,12 +7,15 @@
 		</h1>
 
 		{%- assign date_format = site.minima.date_format | default: "%d %b %Y"
-		-%}
+		-%} {% if page.date %}
+
 		<time
 			datetime="{{ page.date | date: '%Y-%m-%d' }}"
 			class="post__date post__date--light"
 		>
 			{{ page.date | date: '%d %b %Y' }}
 		</time>
+
+		{% endif %}
 	</div>
 </header>

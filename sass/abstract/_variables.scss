@@ -25,8 +25,12 @@ $color-black: #000;
 $color-nib-primary-light: #aecd8b;
 $color-nib-primary: #16954a;
 
-// UPAGED
+// UPAGED2
 $color-upaged-primary: #193363;
+
+// TRANSITIONS
+$default-transition: all 0.2s;
+$easeInSine: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
 
 // GRID
 $grid-width: 114rem;

@@ -22,21 +22,21 @@
 		}
 		&--back {
 			transform: rotateY(180deg);
-			&-1 {
+			&-adrianyadav {
 				background-image: linear-gradient(
 					to right bottom,
 					rgba($color-primary-light, 0.85),
 					rgba($color-primary, 0.85)
 				);
 			}
-			&-2 {
+			&-nibtravel {
 				background-image: linear-gradient(
 					to right bottom,
 					$color-nib-primary-light,
 					$color-nib-primary
 				);
 			}
-			&-3 {
+			&-upaged {
 				background-image: linear-gradient(
 					to right bottom,
 					$color-upaged-primary,
@@ -153,18 +153,10 @@
 		width: 90%;
 		text-align: center;
 	}
-	&__price-box {
+	&__button-box {
 		text-align: center;
 		margin-bottom: 8rem;
 		color: $color-white;
-	}
-	&__price-only {
-		font-size: 1.4rem;
-		text-transform: uppercase;
-	}
-	&__price-value {
-		font-size: 6rem;
-		font-weight: $light-weight;
 	}
 
 	@include respond(tab-port) {
@@ -201,13 +193,6 @@
 			transform: translate(0);
 			width: 100%;
 			padding: 7rem 4rem 4rem 4rem;
-		}
-		&__price-box {
-			margin-bottom: 3rem;
-		}
-
-		&__price-value {
-			font-size: 4rem;
 		}
 	}
 }

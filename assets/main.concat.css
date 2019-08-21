@@ -736,7 +736,7 @@ a:hover, a:active {
   margin-bottom: 3rem; }
   .post__title {
     font-size: 4rem;
-    font-weight: 300;
+    font-weight: 100;
     color: #ffffff;
     text-decoration: none;
     line-height: 1.5;
@@ -798,11 +798,11 @@ a:hover, a:active {
       background-color: #ffffff; }
     .card__side--back {
       transform: rotateY(180deg); }
-      .card__side--back-1 {
+      .card__side--back-adrianyadav {
         background-image: linear-gradient(to right bottom, rgba(162, 213, 242, 0.85), rgba(7, 104, 159, 0.85)); }
-      .card__side--back-2 {
+      .card__side--back-nibtravel {
         background-image: linear-gradient(to right bottom, #aecd8b, #16954a); }
-      .card__side--back-3 {
+      .card__side--back-upaged {
         background-image: linear-gradient(to right bottom, #193363, #ffffff); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
@@ -859,16 +859,10 @@ a:hover, a:active {
     transform: translate(-50%, -50%);
     width: 90%;
     text-align: center; }
-  .card__price-box {
+  .card__button-box {
     text-align: center;
     margin-bottom: 8rem;
     color: #ffffff; }
-  .card__price-only {
-    font-size: 1.4rem;
-    text-transform: uppercase; }
-  .card__price-value {
-    font-size: 6rem;
-    font-weight: 100; }
   @media (max-width: 56.25em) {
     .card {
       position: relative;
@@ -893,11 +887,7 @@ a:hover, a:active {
         left: 0%;
         transform: translate(0);
         width: 100%;
-        padding: 7rem 4rem 4rem 4rem; }
-      .card__price-box {
-        margin-bottom: 3rem; }
-      .card__price-value {
-        font-size: 4rem; } }
+        padding: 7rem 4rem 4rem 4rem; } }
 
 .contact {
   max-width: 500px;
@@ -914,8 +904,12 @@ a:hover, a:active {
     font-size: 1.3rem;
     color: #ffffff;
     margin-bottom: 0.7rem; }
-  .contact input,
-  .contact textarea {
+  .contact__btn {
+    float: right;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300; }
+  .contact__input, .contact__textarea {
     font-family: 'Raleway', sans-serif;
     display: block;
     width: 100%;
@@ -926,32 +920,24 @@ a:hover, a:active {
     background: #1e242c;
     font-size: 1.8rem;
     font-weight: 300;
-    color: #ffffff; }
-    .contact input:focus,
-    .contact textarea:focus {
+    color: #ffffff;
+    transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715); }
+    .contact__input:focus, .contact__textarea:focus {
       color: #1e242c;
       background-color: white;
       outline: 0; }
-      .contact input:focus::placeholder,
-      .contact textarea:focus::placeholder {
+      .contact__input:focus::placeholder, .contact__textarea:focus::placeholder {
         color: #1e242c;
         font-weight: 300; }
-    .contact input::placeholder,
-    .contact textarea::placeholder {
+    .contact__input::placeholder, .contact__textarea::placeholder {
       color: rgba(255, 255, 255, 0.6);
       font-weight: 300; }
     @media (max-width: 37.5em) {
-      .contact input,
-      .contact textarea {
+      .contact__input, .contact__textarea {
         margin: 0.3rem auto; } }
-  .contact textarea {
+  .contact__textarea {
     min-height: 10rem;
     margin-bottom: 1rem; }
-  .contact__btn {
-    float: right;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 300; }
 
 .feature-box {
   display: flex;
@@ -1009,7 +995,7 @@ a:hover, a:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn::after {
-  content: "";
+  content: '';
   display: inline-block;
   height: 100%;
   width: 100%;
@@ -1041,11 +1027,11 @@ a:hover, a:active {
     background-color: #777777; }
 
 .btn--black {
-  background-color: #1e242c;
+  background-color: #1b242f;
   color: #ffffff;
   padding: 1.5rem 4rem; }
   .btn--black::after {
-    background-color: #777777; }
+    background-color: #ffffff; }
 
 .btn--animated {
   animation: 0.5s ease-out 0.75s moveInBottom;

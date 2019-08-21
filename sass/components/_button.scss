@@ -1,116 +1,116 @@
 .btn {
-    &,
-    &:link,
-    &:visited {
-        text-transform: uppercase;
-        text-decoration: none;
-        display: inline-block;
-        transition: all 0.2s;
-        position: relative;
-        font-size: $default-font-size;
-        border: none;
-        cursor: pointer;
-    }
+	&,
+	&:link,
+	&:visited {
+		text-transform: uppercase;
+		text-decoration: none;
+		display: inline-block;
+		transition: $default-transition;
+		position: relative;
+		font-size: $default-font-size;
+		border: none;
+		cursor: pointer;
+	}
 
-    &:hover,
-    &:focus {
-        transform: translateY(-0.3rem);
-        box-shadow: 0 1rem 2.5rem rgba($color-black, 0.2);
+	&:hover,
+	&:focus {
+		transform: translateY(-0.3rem);
+		box-shadow: 0 1rem 2.5rem rgba($color-black, 0.2);
 
-        &::after {
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0;
-        }
-    }
+		&::after {
+			transform: scaleX(1.4) scaleY(1.6);
+			opacity: 0;
+		}
+	}
 
-    &:active,
-    &:focus {
-        outline: none;
-        transform: translateY(-0.1rem);
-        box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
-    }
+	&:active,
+	&:focus {
+		outline: none;
+		transform: translateY(-0.1rem);
+		box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+	}
 
-    &::after {
-        content: "";
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: all 0.4s;
-    }
+	&::after {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		transition: all 0.4s;
+	}
 
-    &--white {
-        &:link,
-        &:visited {
-            background-color: $color-white-gradient;
-            color: $color-secondary-dark;
-            padding: 1.5rem 4rem;
-        }
+	&--white {
+		&:link,
+		&:visited {
+			background-color: $color-white-gradient;
+			color: $color-secondary-dark;
+			padding: 1.5rem 4rem;
+		}
 
-        &::after {
-            background-color: $color-white-gradient;
-        }
-        &:hover,
-        &:focus,
-        &:active {
-            box-shadow: none;
-            background-color: $color-primary;
-            color: $color-white;
-            transform: translateY(0) scale(1.05);
-        }
-    }
+		&::after {
+			background-color: $color-white-gradient;
+		}
+		&:hover,
+		&:focus,
+		&:active {
+			box-shadow: none;
+			background-color: $color-primary;
+			color: $color-white;
+			transform: translateY(0) scale(1.05);
+		}
+	}
 
-    &--dark {
-        background-color: $color-primary;
-        color: $color-white;
-        padding: 1.5rem 4rem;
+	&--dark {
+		background-color: $color-primary;
+		color: $color-white;
+		padding: 1.5rem 4rem;
 
-        &::after {
-            background-color: $color-gray-dark;
-        }
-    }
+		&::after {
+			background-color: $color-gray-dark;
+		}
+	}
 
-    &--black {
-        background-color: $color-secondary-dark2;
-        color: $color-white;
-        padding: 1.5rem 4rem;
+	&--black {
+		background-color: $color-secondary-dark;
+		color: $color-white;
+		padding: 1.5rem 4rem;
 
-        &::after {
-            background-color: $color-gray-dark;
-        }
-    }
+		&::after {
+			background-color: $color-white;
+		}
+	}
 
-    &--animated {
-        animation: 0.5s ease-out 0.75s moveInBottom;
-        animation-fill-mode: backwards;
-    }
+	&--animated {
+		animation: 0.5s ease-out 0.75s moveInBottom;
+		animation-fill-mode: backwards;
+	}
 }
 
 .btn-text {
-    &:link,
-    &:visited {
-        font-size: $default-font-size;
-        color: $color-primary-dark;
-        display: inline-block;
-        text-decoration: none;
-        border-bottom: 0.1rem solid $color-primary-dark;
-        padding: 0.5rem 1rem;
-        transition: all 0.2s;
-    }
+	&:link,
+	&:visited {
+		font-size: $default-font-size;
+		color: $color-primary-dark;
+		display: inline-block;
+		text-decoration: none;
+		border-bottom: 0.1rem solid $color-primary-dark;
+		padding: 0.5rem 1rem;
+		transition: $default-transition;
+	}
 
-    &:hover,
-    &:focus {
-        background-color: $color-primary-dark;
-        color: $color-white;
-        box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
-        transform: translateY(-2px);
-    }
+	&:hover,
+	&:focus {
+		background-color: $color-primary-dark;
+		color: $color-white;
+		box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+		transform: translateY(-2px);
+	}
 
-    &:active {
-        box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
-        transform: translateY(0);
-    }
+	&:active {
+		box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+		transform: translateY(0);
+	}
 }

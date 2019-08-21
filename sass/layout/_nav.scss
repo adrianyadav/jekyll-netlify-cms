@@ -33,7 +33,7 @@
 			text-decoration: none;
 			padding: 1rem 1.5rem;
 			margin-left: 0.5rem;
-			transition: all 0.2s;
+			transition: $default-transition;
 			box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
 			font-weight: $medium-weight;
 			letter-spacing: 0.05rem;

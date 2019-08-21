@@ -900,7 +900,7 @@ a:hover, a:active {
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
-  transition: all 0.2s;
+  transition: $default-transition;
   position: relative;
   font-size: 1.6rem;
   border: none;
@@ -1048,7 +1048,7 @@ a:hover, a:active {
       text-decoration: none;
       padding: 1rem 1.5rem;
       margin-left: 0.5rem;
-      transition: all 0.2s;
+      transition: $default-transition;
       box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1); }
       .navigation .nav__link:hover, .navigation .nav__link:focus, .navigation .nav__link:active {
         box-shadow: none;

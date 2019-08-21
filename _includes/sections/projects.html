@@ -31,22 +31,26 @@
 						{{ item.body | markdownify }}
 					</div>
 				</div>
-				<div class="card__side card__side--back card__side--back-1">
+				<div
+					class="card__side card__side--back card__side--back-{{
+							item.projectName | replace_first: ' ', '' | downcase
+						}}"
+				>
 					<div class="card__cta">
 						{% if item.projectGithubRepo == true %}
-						<div class="card__price-box">
-							<a
-								class="btn btn--white"
-								href="{{ item.projectLiveLink }}"
-								rel="noreferrer"
-								target="_blank"
-								>Github repo
-							</a>
-						</div>
+						<a
+							class="btn btn--white"
+							href="{{ item.projectLiveLink }}"
+							rel="noreferrer"
+							target="_blank"
+							rel="noopener"
+							>Github repo
+						</a>
 						{% else %}
 						<a
 							class="btn btn--white"
 							href="{{ item.projectLiveLink }}"
+							rel="noopener"
 							target="_blank"
 							>Visit website
 						</a>

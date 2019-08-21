@@ -4,10 +4,10 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 
 	{% seo %}
+
 	<link
-		as="style"
-		href="{{ '/assets/main.css' | relative_url }}"
-		rel=" preload"
+		rel="canonical"
+		href="{{ site.url }}{{ page.url | replace:'index.html',''}}"
 	/>
 	<link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}" />
 

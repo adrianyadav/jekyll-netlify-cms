@@ -74,4 +74,8 @@ github_username: adrianyadav
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+plugins:
+    - jekyll-sitemap
+
 exclude: [css, _sass]

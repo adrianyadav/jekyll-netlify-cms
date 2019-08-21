@@ -18,7 +18,7 @@ email: adrianyadav@gmail.com
 description: "Developer based in Sydney"
 # this means to ignore newlines until "baseurl:"
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "htttps://www.adrianyadav.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.adrianyadav.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: blog/:categories/:title/
 

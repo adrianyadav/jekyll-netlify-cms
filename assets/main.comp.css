@@ -513,16 +513,6 @@ a:hover, a:active {
   @media (max-width: 37.5em) {
     .feature-box {
       height: auto; } }
-  .feature-box__icon {
-    font-size: 6rem;
-    margin-bottom: 0.5rem;
-    display: inline-block;
-    background-image: linear-gradient(to right, #a2d5f2, #07689f);
-    -webkit-background-clip: text;
-    color: transparent; }
-    @media (max-width: 56.25em) {
-      .feature-box__icon {
-        margin-bottom: 0rem; } }
   .feature-box__text {
     flex-grow: 1; }
   .feature-box:hover {
@@ -611,6 +601,20 @@ a:hover, a:active {
 .btn-text:active {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
+
+.icon {
+  width: 6rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  fill: url(#gradient-horizontal) #07689f;
+  -webkit-background-clip: text; }
+  .icon--center {
+    margin-left: auto;
+    margin-right: auto; }
+
+#gradient-horizontal {
+  --color-primary-light: #07689f;
+  --color-primary: #a2d5f2; }
 
 .header {
   background-size: cover;
@@ -714,7 +718,7 @@ a:hover, a:active {
       max-width: 50rem;
       padding: 0 3rem; } }
   .row::after {
-    content: "";
+    content: '';
     display: table;
     clear: both; }
   .row [class^="col-"] {

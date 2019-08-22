@@ -3,11 +3,11 @@ items:
     skillIcon: watch
     skillTitle: Fast
   - skillDescription: My layouts will work well on any device
-    skillIcon: icon-basic-smartphone
+    skillIcon: phone
     skillTitle: Responsive
   - skillDescription: 'Easy to use, minimal thinking required - intuitive UX/UI.'
-    skillIcon: icon-basic-lightbulb
+    skillIcon: ightbulb
     skillTitle: Intuitive
   - skillDescription: 'Websites don''t have to be static, I love making pages come to life.'
-    skillIcon: icon-basic-webpage-txt
+    skillIcon: webpagetxt
     skillTitle: Dynamic

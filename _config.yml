@@ -77,4 +77,23 @@ github_username: adrianyadav
 plugins:
     - jekyll-sitemap
 
-exclude: [css, _sass]
+exclude:
+    [
+        "lib",
+        "config.rb",
+        "Gemfile",
+        "Capfile",
+        "Gemfile.lock",
+        "config",
+        "log",
+        "Rakefile",
+        "Rakefile.rb",
+        "tmp",
+        "less",
+        "package.json",
+        "node_modules",
+        "README.md",
+        "src",
+        "css",
+        "_sass",
+    ]

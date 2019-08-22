@@ -10,7 +10,7 @@
 		{% for item in site.data.skills.items %}
 		<div class="col-1-of-4">
 			<div class="feature-box">
-				{% include icon.html icon="{{ item.skillIcon }}" %}
+				{% include icon.html icon=item.skillIcon %}
 
 				<h3 class="heading-tertiary u-margin-bottom-small">
 					{{ item.skillTitle }}

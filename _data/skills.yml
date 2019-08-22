@@ -6,7 +6,7 @@ items:
     skillIcon: phone
     skillTitle: Responsive
   - skillDescription: 'Easy to use, minimal thinking required - intuitive UX/UI.'
-    skillIcon: ightbulb
+    skillIcon: lightbulb
     skillTitle: Intuitive
   - skillDescription: 'Websites don''t have to be static, I love making pages come to life.'
     skillIcon: webpagetxt

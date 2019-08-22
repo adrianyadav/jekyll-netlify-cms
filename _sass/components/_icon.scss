@@ -1,0 +1,21 @@
+.icon {
+	width: 6rem;
+	margin-bottom: 2rem;
+	display: inline-block;
+	// background-image: linear-gradient(
+	// 	to right,
+	// 	$color-primary-light,
+	// 	$color-primary
+	// );
+	fill: url(#gradient-horizontal) $color-primary;
+	-webkit-background-clip: text;
+	color: transparent;
+	@include respond(tab-port) {
+		margin-bottom: 0rem;
+	}
+}
+
+#gradient-horizontal {
+	--color-primary-light: #07689f;
+	--color-primary: #a2d5f2;
+}

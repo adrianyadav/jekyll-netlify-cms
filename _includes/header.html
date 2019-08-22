@@ -1,3 +1,4 @@
+{% if page.url == "/" %}
 <header class="header">
 	<div class="header__text-box">
 		<h1 class="heading-primary">
@@ -12,3 +13,26 @@
 		>
 	</div>
 </header>
+{% else %}
+<header class="header header--blog">
+	<div class="header__text-box">
+		<h1 class="post__title">
+			<span class="heading-primary__main">
+				{{ page.title | escape }}
+			</span>
+		</h1>
+
+		{% if page.date %}
+
+		<time
+			datetime="{{ page.date | date: '%Y-%m-%d' }}"
+			class="post__date post__date--light"
+		>
+			{{ page.date | date: site.date_format }}
+		</time>
+
+		{% endif %}
+	</div>
+</header>
+
+{% endif %}

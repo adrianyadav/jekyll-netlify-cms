@@ -1,6 +1,6 @@
 # Jekyll + Netlify CMS with Netlify Identity
 
-This site uses Jekyll + Netlify CMS with Netlify Identiy
+This site uses Jekyll + Netlify CMS 
 
 ## Local Development
 

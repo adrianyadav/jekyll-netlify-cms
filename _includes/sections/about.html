@@ -9,6 +9,7 @@
 					<img
 						alt="{{ site.data.home.author }}"
 						class="story__img"
+						loading="lazy"
 						src="{{ site.data.home.profileImage }}"
 					/>
 					<figcaption class="story__caption">
@@ -19,11 +20,7 @@
 					<h3 class="heading-tertiary u-margin-bottom-small">
 						{{ site.data.home.sectionAboutSubTitle }}
 					</h3>
-						{{
-							site.data.home.sectionAboutInfo
-								| markdownify
-								| strip
-						}}
+					{{ site.data.home.sectionAboutInfo | markdownify | strip }}
 				</div>
 			</div>
 		</div>

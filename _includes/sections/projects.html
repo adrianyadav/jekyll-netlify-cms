@@ -8,23 +8,21 @@
 		</h2>
 	</div>
 	<div class="row">
-		{% for item in site.data.projects.items %}
+		{% for item in site.data.projects.items %} {% assign projectName =
+		item.projectName | replace_first: ' ', '' | downcase %}
+
 		<div class="col-1-of-3">
 			<div class="card">
 				<div class="card__side card__side--front">
-					<div
-						class="card__picture card__picture--{{
-							item.projectName | replace_first: ' ', '' | downcase
-						}}"
-					>
+					<div class="card__picture card__picture--{{ projectName }}">
 						&nbsp;
 					</div>
 					<h3 class="card__heading">
 						<span
 							class="card__heading-span card__heading-span--{{
-							item.projectName | replace_first: ' ', '' | downcase
-						}}"
-							>{{ item.projectName }}</span
+								projectName
+							}}"
+							>{{ projectName }}</span
 						>
 					</h3>
 					<div class="card__details">
@@ -33,8 +31,8 @@
 				</div>
 				<div
 					class="card__side card__side--back card__side--back-{{
-							item.projectName | replace_first: ' ', '' | downcase
-						}}"
+						projectName
+					}}"
 				>
 					<div class="card__cta">
 						{% if item.projectGithubRepo == true %}

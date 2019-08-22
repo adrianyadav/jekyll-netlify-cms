@@ -19,21 +19,6 @@
         height: auto;
     }
 
-    &__icon {
-        font-size: 6rem;
-        margin-bottom: 0.5rem;
-        display: inline-block;
-        background-image: linear-gradient(
-            to right,
-            $color-primary-light,
-            $color-primary
-        );
-        -webkit-background-clip: text;
-        color: transparent;
-        @include respond(tab-port) {
-            margin-bottom: 0rem;
-        }
-    }
 
     &__text {
         flex-grow: 1;

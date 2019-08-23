@@ -3,13 +3,13 @@ items:
       * HTML5/CSS (SASS)
       * Jekyll + Netlify CMS
       * Deployed using Netlify
-      * Category: Work
+      * Category: Personal
     projectGithubRepo: true
     projectLiveLink: 'https://github.com/adrianyadav/adrianyadav-netlify'
     projectName: adrianyadav
   - body: |-
       * HTML5/CSS (SASS)
-      * Nunjucks
+      * Templating engine: Nunjucks
       * Category: Work
     projectGithubRepo: false
     projectLiveLink: 'https://nibtravel.com/'

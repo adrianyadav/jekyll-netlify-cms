@@ -1,9 +1,16 @@
 .section {
 	padding: 2.5rem 0;
+
+	@include respond(tab-port) {
+		padding: 1.25rem 0;
+	}
 }
 
 .section-about {
-	padding: 10rem 0;
+	padding: 8rem 0;
+	@include respond(tab-port) {
+		padding: 4rem 0;
+	}
 }
 
 .section-features {

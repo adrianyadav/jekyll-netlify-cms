@@ -8,24 +8,22 @@
 
 	&__title {
 		font-size: 4rem;
-		font-weight: $light-weight;
+		font-weight: $medium-weight;
 		color: $color-white;
 		text-decoration: none;
 		line-height: 1.5;
 		text-transform: capitalize;
 		@include respond(tab-port) {
-			font-size: 2.5rem;
+			font-size: 3rem;
 		}
-		&:link,
-		&:visited {
+		a:link,
+		a:visited {
 			font-size: 4rem;
 			font-weight: $medium-weight;
 			color: $color-primary;
 			text-decoration: none;
-			@include respond(tab-port) {
-				font-size: 2.3rem;
-			}
-			&:hover {
+
+			a:hover {
 				color: $color-primary-dark;
 			}
 		}

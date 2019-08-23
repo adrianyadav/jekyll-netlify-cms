@@ -5,12 +5,9 @@
 	height: 95vh;
 	width: auto;
 	clip-path: polygon(0 0, 100% 20vh, 100% 75vh, 0 100%);
+
 	&--blog {
-		height: auto;
-		min-height: 30rem;
-		@include respond(phone) {
-			min-height: 25rem;
-		}
+		height: 55vh;
 		clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 		background-image: linear-gradient(
 				to right bottom,
@@ -47,22 +44,38 @@
 
 	&__text-box {
 		@include absCenter;
+		top: 47.5%;
 		text-align: center;
 		width: 100%;
+
+		> h1 {
+			margin-bottom: 1.5rem;
+		}
+		> time {
+			margin-bottom: 0;
+		}
 	}
 }
 
 @include respond(phone) {
 	.header {
-		clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
+		height: 55vh;
+
+		&--blog {
+			clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+			height: 45vh;
+		}
 
 		&__text-box {
 			width: 100%;
-			top: 60%;
 			padding: 1rem;
 
 			> h1 {
 				margin-bottom: 1.5rem;
+			}
+			> time {
+				margin-bottom: 0;
 			}
 		}
 	}

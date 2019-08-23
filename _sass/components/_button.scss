@@ -10,24 +10,27 @@
 		font-size: $default-font-size;
 		border: none;
 		cursor: pointer;
+		font-weight: $light-weight;
+		background-color: $color-white-gradient;
+		color: $color-secondary-dark;
+		padding: 1.5rem 4rem;
 	}
 
 	&:hover,
+	&:focus,
 	&:focus {
 		transform: translateY(-0.3rem);
 		box-shadow: 0 1rem 2.5rem rgba($color-black, 0.2);
+		outline: none;
+		box-shadow: none;
+		background-color: $color-primary;
+		color: $color-white;
+		transform: translateY(0) scale(1.05);
 
 		&::after {
 			transform: scaleX(1.4) scaleY(1.6);
 			opacity: 0;
 		}
-	}
-
-	&:active,
-	&:focus {
-		outline: none;
-		transform: translateY(-0.1rem);
-		box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
 	}
 
 	&::after {
@@ -40,77 +43,33 @@
 		left: 0;
 		z-index: -1;
 		transition: all 0.4s;
-	}
-
-	&--white {
-		&:link,
-		&:visited {
-			background-color: $color-white-gradient;
-			color: $color-secondary-dark;
-			padding: 1.5rem 4rem;
-		}
-
-		&::after {
-			background-color: $color-white-gradient;
-		}
-		&:hover,
-		&:focus,
-		&:active {
-			box-shadow: none;
-			background-color: $color-primary;
-			color: $color-white;
-			transform: translateY(0) scale(1.05);
-		}
+		background-color: $color-white-gradient;
 	}
 
 	&--dark {
-		background-color: $color-primary;
+		background-color: $color-secondary-dark2;
 		color: $color-white;
 		padding: 1.5rem 4rem;
+		transition: all 0.4s;
 
 		&::after {
-			background-color: $color-gray-dark;
+			background-color: $color-secondary-dark2;
+			color: $color-white;
 		}
-	}
 
-	&--black {
-		background-color: $color-secondary-dark;
-		color: $color-white;
-		padding: 1.5rem 4rem;
-
-		&::after {
-			background-color: $color-white;
+		&:hover,
+		&:active,
+		&:focus {
+			outline: none;
+			box-shadow: none;
+			background-color: $color-white-gradient;
+			color: $color-secondary-dark;
+			transform: translateY(0) scale(1.05);
 		}
 	}
 
 	&--animated {
 		animation: 0.5s ease-out 0.75s moveInBottom;
 		animation-fill-mode: backwards;
-	}
-}
-
-.btn-text {
-	&:link,
-	&:visited {
-		font-size: $default-font-size;
-		color: $color-primary-dark;
-		display: inline-block;
-		text-decoration: none;
-		border-bottom: 0.1rem solid $color-primary-dark;
-		padding: 0.5rem 1rem;
-		transition: $default-transition;
-	}
-
-	&:hover,
-	&:focus {
-		background-color: $color-primary-dark;
-		color: $color-white;
-		box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
-		transform: translateY(-2px);
-	}
-
-	&:active {
-		box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
-		transform: translateY(0);
 	}
 }

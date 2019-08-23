@@ -9,9 +9,15 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+	&--logo {
+		fill: $color-white;
+		width: 10rem;
+		margin-bottom: 0;
+	}
 }
 
 #gradient-horizontal {
-	--color-primary-light: #07689f;
+	--color-primary-dark: #3f76a3;
 	--color-primary: #a2d5f2;
 }

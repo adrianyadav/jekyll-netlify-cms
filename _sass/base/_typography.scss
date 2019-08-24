@@ -11,8 +11,16 @@ body {
 	font-weight: $light-weight;
 	letter-spacing: 0.75rem;
 
-	&__main {
+	&--blog {
+		font-size: 4rem;
 		font-weight: $light-weight;
+		color: $color-white;
+		text-decoration: none;
+		line-height: 1.5;
+		text-transform: capitalize;
+		@include respond(tab-port) {
+			font-size: 3rem;
+		}
 	}
 	@include respond(phone) {
 		font-size: 4rem;

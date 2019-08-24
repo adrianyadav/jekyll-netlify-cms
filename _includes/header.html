@@ -3,9 +3,7 @@
 	<div class="header__text-box">
 		{% include icon.html class="icon--logo" icon="logo" %}
 		<h1 class="heading-primary">
-			<span class="heading-primary__main">
-				{{ site.data.home.author }}
-			</span>
+			{{ site.data.home.author }}
 		</h1>
 		<a
 			href="{{ site.data.home.mainButtonUrl }}"
@@ -17,11 +15,8 @@
 {% else %}
 <header class="header header--blog">
 	<div class="header__text-box">
-		{% include icon.html class="icon--logo" icon="logo" %}
-		<h1 class="heading-primary">
-			<span class="heading-primary__main">
-				{{ site.data.home.author }}
-			</span>
+		<h1 class="heading-primary heading-primary--blog">
+			{{ page.title }}
 		</h1>
 
 		{% if page.date %}

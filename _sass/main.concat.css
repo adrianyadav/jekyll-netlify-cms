@@ -595,7 +595,7 @@ a:link, a:visited {
 a:hover, a:active {
   color: #1e242c; }
 
-.story {
+.profile {
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
@@ -607,20 +607,20 @@ a:hover, a:active {
   transform: skewX(-12deg);
   position: relative; }
   @media (max-width: 56.25em) {
-    .story {
+    .profile {
       width: 100%;
       padding: 4rem;
       padding-left: 7rem;
       transform: skewX(0); } }
   @media (max-width: 37.5em) {
-    .story {
+    .profile {
       width: 100%;
       padding: 4rem;
       padding-left: 7rem; } }
-  .story__container {
+  .profile__container {
     margin: 0 auto;
     display: block; }
-  .story__shape {
+  .profile__shape {
     width: 15rem;
     height: 15rem;
     float: left;
@@ -631,23 +631,23 @@ a:hover, a:active {
     transform: translate(-3rem) skewX(12deg);
     position: relative; }
     @media (max-width: 56.25em) {
-      .story__shape {
+      .profile__shape {
         left: 50%;
         transform: translate(-50%, -10%) skewX(0); } }
-  .story__img {
+  .profile__img {
     height: 100%;
     transform: translateX(-1rem) scale(1.4);
     backface-visibility: hidden;
     transition: all 0.5s; }
-  .story__text {
+  .profile__text {
     transform: skewX(12deg); }
     @media (max-width: 56.25em) {
-      .story__text {
+      .profile__text {
         transform: skewX(0);
         clear: both; } }
-  .story__highlight {
+  .profile__highlight {
     color: #07689f; }
-  .story__caption {
+  .profile__caption {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -659,10 +659,10 @@ a:hover, a:active {
     opacity: 0;
     transition: all 0.5s;
     backface-visibility: hidden; }
-  .story__shape:hover .story__caption {
+  .profile__shape:hover .profile__caption {
     opacity: 1;
     transform: translate(-50%, -50%); }
-  .story__shape:hover .story__img {
+  .profile__shape:hover .profile__img {
     transform: scale(1);
     filter: blur(0.3rem) brightness(80%); }
 

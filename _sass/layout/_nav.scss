@@ -12,6 +12,7 @@
 
 		&__list {
 			list-style-type: none;
+			margin-left: 0;
 			@include absCenter;
 
 			@include respond(tab-port) {

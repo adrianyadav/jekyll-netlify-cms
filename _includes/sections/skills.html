@@ -9,13 +9,13 @@
 	<div class="row">
 		{% for item in site.data.skills.items %}
 		<div class="col-1-of-4">
-			<div class="skills">
-				{% include icon.html icon=item.skillIcon %}
+			<div class="skill">
+				{% include icon.html class="skill__icon" icon=item.skillIcon %}
 
-				<h3 class="heading-tertiary u-margin-bottom-small">
+				<h3 class="skill__title heading-tertiary u-margin-bottom-small">
 					{{ item.skillTitle }}
 				</h3>
-				<p class="skills__text">
+				<p class="skill__description">
 					{{ item.skillDescription }}
 				</p>
 			</div>

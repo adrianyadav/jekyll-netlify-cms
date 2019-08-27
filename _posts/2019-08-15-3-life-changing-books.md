@@ -23,9 +23,30 @@ Not necessarily - **bottom line** is you need more quality sleep which will make
 >
 >  —  Will Durant
 
-The book is a comprehensive guide on how habits are formed, tips on how to make the good ones stay around and remove the bad ones.
+The book is a comprehensive guide on how habits are formed, tips on how to make the good ones stay  and eliminate the bad ones.
 
 When you have a new habit that you want to form, for example: I want to get fit. Then this book will give you the tools to make sure that you can make that habit stick and incorporate it in your daily routine.
+
+James introduces these 4 laws that can be used to form a habit.
+
+1. Make it **obvious**
+2. Make it **attractive**
+3. Make it **easy**
+4. Make it **satisfying**
+
+How do you incorporate the above? Well it depends on the habit. 
+
+Let's say that I want to get fit. 
+
+Then, to make it "easy" - I could say that every day I will go to the gym but I will only exercise for 5 minutes. I can leave after that point - and I've accomplished my goal. 
+
+If I stay consistent and do this every day, at some point I will feel that, hey five minutes isn't that long of a time - let's do 10 minutes and so on. The idea is to start small and build up slowly, if your goal is too ambitious (e.g. I will do 100 push ups every day) from day one then it's going to be difficult to form this habit.
+
+Another example, how do I make something obvious? I choose a gym that is on the way to home or work - that means I will always walk past it and it's not a hassle to get to it.
+
+Finally, how can I make it attractive? If I go to the gym every day for two weeks then I am allowed to buy myself a massage (you could say, I get to have a cheat day but that would be counterproductive to the goal of being fit).
+
+Lots more practical examples are included in the book, I highly recommend you at least check out his [cheatsheet](https://s3.amazonaws.com/jamesclear/Atomic+Habits/Habits+Cheat+Sheet.pdf).
 
 ## 3. Can't Hurt Me By David Goggins
 

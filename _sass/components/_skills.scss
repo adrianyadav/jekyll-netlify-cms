@@ -1,0 +1,57 @@
+.skill {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 30.5rem;
+	background: rgba($color-white, 0.8);
+	font-size: 1.5rem;
+	padding: 2.5rem;
+	text-align: center;
+	border-radius: 0.3rem;
+	box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+	transition: $easeOutQuad;
+	overflow: hidden;
+
+	@include respond(tab-port) {
+		padding: 2rem;
+	}
+
+	@include respond(phone) {
+		height: auto;
+	}
+
+	&__text {
+		flex-grow: 1;
+	}
+
+	&:hover {
+		transform: translateY(0rem);
+		background: $background-primary-gradient;
+
+		.skill__icon,
+		.skill__title,
+		.skill__description {
+			color: $color-white;
+			fill: $color-white;
+		}
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 200%;
+		height: 0%;
+		transform: rotate(-50deg) translateX(-50%);
+		transform-origin: top left;
+		background: $background-primary-gradient;
+		z-index: -1;
+	}
+
+	&:hover::after {
+		height: 150%;
+		transform: rotate(-50deg) translateX(-50%);
+		transition: $easeOutQuad;
+	}
+}

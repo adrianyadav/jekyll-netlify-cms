@@ -14,7 +14,7 @@
 }
 
 .section-features {
-	padding: 20rem 0;
+	padding: 10rem 0;
 
 	@include respond(tab-port) {
 		padding: 10rem 0;
@@ -55,14 +55,8 @@
 }
 
 .section-contact {
-	padding: 20rem 0;
-
 	@include respond(tab-port) {
 		padding: 10rem 0;
-	}
-
-	@include respond(tab-land) {
-		transform: skewY(-8deg);
 	}
 
 	background-image: linear-gradient(
@@ -78,16 +72,6 @@
 		),
 		url(../../img/contact-unsplash.jpg);
 	position: relative;
-	padding: 15rem 0;
-	transform: skewY(-4deg);
+	padding: 10rem 0;
 	background-size: cover;
-}
-
-.section-contact > * {
-	-webkit-transform: skewY(8deg);
-	transform: skewY(4deg);
-
-	@include respond(tab-land) {
-		transform: skewY(8deg);
-	}
 }

@@ -481,40 +481,62 @@ a:hover, a:active {
     min-height: 10rem;
     margin-bottom: 1rem; }
 
-.skills {
+.skill {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 30.5rem;
-  background-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
   border-radius: 0.3rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s; }
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  overflow: hidden; }
   @media (max-width: 56.25em) {
-    .skills {
+    .skill {
       padding: 2rem; } }
   @media (max-width: 37.5em) {
-    .skills {
+    .skill {
       height: auto; } }
-  .skills__text {
+  .skill__text {
     flex-grow: 1; }
-  .skills:hover {
-    transform: translateY(-1.5rem) scale(1.03); }
+  .skill:hover {
+    transform: translateY(0rem);
+    background: rgba(3, 63, 99, 0.7); }
+    .skill:hover .skill__icon,
+    .skill:hover .skill__title,
+    .skill:hover .skill__description {
+      color: #ffffff;
+      fill: #ffffff; }
+  .skill:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 0%;
+    transform: rotate(-50deg) translateX(-50%);
+    transform-origin: top left;
+    background: rgba(3, 63, 99, 0.7);
+    z-index: -1; }
+  .skill:hover::after {
+    height: 150%;
+    transform: rotate(-50deg) translateX(-50%);
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
-  transition: all 0.2s;
+  transition: all 0.3s;
   position: relative;
   font-size: 1.8rem;
   border: none;
   cursor: pointer;
   font-weight: 100;
-  background-color: #fafafa;
+  background-color: white;
   color: #1b242f;
   padding: 1.5rem 4rem; }
 
@@ -540,7 +562,7 @@ a:hover, a:active {
   left: 0;
   z-index: -1;
   transition: all 0.4s;
-  background-color: #fafafa; }
+  background-color: white; }
 
 .btn--dark {
   background-color: #1e242c;
@@ -553,7 +575,7 @@ a:hover, a:active {
   .btn--dark:hover, .btn--dark:active, .btn--dark:focus {
     outline: none;
     box-shadow: none;
-    background-color: #fafafa;
+    background-color: white;
     color: #1b242f;
     transform: translateY(0) scale(1.05); }
 
@@ -656,7 +678,7 @@ a:hover, a:active {
       text-decoration: none;
       padding: 1rem 1.5rem;
       margin-left: 0.5rem;
-      transition: all 0.2s;
+      transition: all 0.3s;
       box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
       letter-spacing: 0.05rem; }
       .navigation .nav__link:hover, .navigation .nav__link:focus, .navigation .nav__link:active {
@@ -713,20 +735,21 @@ a:hover, a:active {
     width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 *6rem); }
 
 .footer {
-  background-color: #1b242f;
   height: 7rem;
-  position: relative; }
+  position: relative;
+  background: #333; }
   .footer--text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.8rem;
-    font-weight: 100; }
+    font-weight: 100;
+    color: #ffffff; }
   .footer__copyright {
-    color: #ff7e67; }
+    color: #ffffff; }
   .footer__author {
-    color: #a2d5f2; }
+    color: #ffffff; }
 
 .section {
   padding: 2.5rem 0; }
@@ -741,7 +764,7 @@ a:hover, a:active {
       padding: 4rem 0; } }
 
 .section-features {
-  padding: 20rem 0;
+  padding: 10rem 0;
   background-image: linear-gradient(to right bottom, rgba(7, 104, 159, 0.85), rgba(162, 213, 242, 0.85)), url(../../img/skills-unsplash-1x.jpg);
   background-size: cover;
   transform: skewY(-8deg);
@@ -764,23 +787,11 @@ a:hover, a:active {
       padding: 5rem 0; } }
 
 .section-contact {
-  padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(7, 104, 159, 0.9), rgba(162, 213, 242, 0.9)), url(../../img/contact-unsplash.jpg);
   background-image: linear-gradient(to right bottom, rgba(7, 104, 159, 0.9), rgba(162, 213, 242, 0.9)), url(../../img/contact-unsplash.jpg);
   position: relative;
-  padding: 15rem 0;
-  transform: skewY(-4deg);
+  padding: 10rem 0;
   background-size: cover; }
   @media (max-width: 56.25em) {
     .section-contact {
       padding: 10rem 0; } }
-  @media (max-width: 75em) {
-    .section-contact {
-      transform: skewY(-8deg); } }
-
-.section-contact > * {
-  -webkit-transform: skewY(8deg);
-  transform: skewY(4deg); }
-  @media (max-width: 75em) {
-    .section-contact > * {
-      transform: skewY(8deg); } }

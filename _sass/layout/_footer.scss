@@ -1,17 +1,18 @@
 .footer {
-	background-color: $color-secondary-dark;
 	height: 7rem;
 	position: relative;
+	background: $color-gray-dark-3;
 
 	&--text {
 		@include absCenter;
 		font-size: $default-font-size;
 		font-weight: $light-weight;
+		color: $color-white;
 	}
 	&__copyright {
-		color: $color-tertiary;
+		color: $color-white;
 	}
 	&__author {
-		color: $color-primary-light;
+		color: $color-white;
 	}
 }

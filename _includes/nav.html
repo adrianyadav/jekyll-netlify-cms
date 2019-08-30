@@ -1,19 +1,19 @@
 <div class="navigation">
-    <nav class="nav">
-        <ul class="nav__list">
-            {% for item in site.data.nav.items %}
-            <li class="nav__item">
-                <a
-                    class="nav__link btn btn--white 
+	<nav class="nav">
+		<ul class="nav__list">
+			{% for item in site.data.nav.items %}
+			<li class="nav__item">
+				<a
+					class="nav__link btn hvr-sweep-to-right
                 {% if page.url contains item.url
                   %}current
                {% endif %}"
-                    href="{{ site.baseurl }}{{ item.url }}"
-                    >{{ item.title }}
-                </a>
-            </li>
+					href="{{ site.baseurl }}{{ item.url }}"
+					>{{ item.title }}
+				</a>
+			</li>
 
-            {% endfor %}
-        </ul>
-    </nav>
+			{% endfor %}
+		</ul>
+	</nav>
 </div>

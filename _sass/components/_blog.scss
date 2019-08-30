@@ -4,7 +4,16 @@
 	margin: 0 auto;
 	font-size: $default-font-size;
 	position: relative;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+	margin: 0 auto;
 	margin-bottom: 3rem;
+
+	p,
+	h2,
+	ul {
+		max-width: 58rem;
+	}
 
 	&__title {
 		font-size: 4rem;
@@ -13,6 +22,7 @@
 		text-decoration: none;
 		line-height: 1.5;
 		text-transform: capitalize;
+
 		@include respond(tab-port) {
 			font-size: 3rem;
 		}
@@ -41,7 +51,7 @@
 
 	&__date {
 		display: block;
-		margin-bottom: 1.5rem;
+		margin-bottom: 2rem;
 		font-weight: $medium-weight;
 		font-size: 1.6rem;
 
@@ -49,13 +59,14 @@
 			color: $color-white;
 			font-size: 2rem;
 			text-transform: uppercase;
+			margin-bottom: 1.5rem;
 			@include respond(tab-port) {
 				font-size: 1.6rem;
 			}
 		}
 	}
-	&__intro {
+	&__excerpt {
 		font-size: $default-font-size;
-		margin-bottom: 1.5rem;
+		margin-bottom: 2rem;
 	}
 }

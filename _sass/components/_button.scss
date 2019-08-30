@@ -17,7 +17,7 @@
 	}
 
 	&:hover,
-	&:focus,
+	&:active,
 	&:focus {
 		transform: translateY(-0.3rem);
 		box-shadow: 0 1rem 2.5rem rgba($color-black, 0.2);
@@ -28,7 +28,6 @@
 		transform: translateY(0) scale(1.05);
 
 		&::after {
-			transform: scaleX(1.4) scaleY(1.6);
 			opacity: 0;
 		}
 	}
@@ -44,6 +43,23 @@
 		z-index: -1;
 		transition: all 0.4s;
 		background-color: $color-white-gradient;
+	}
+
+	&--basic {
+		&,
+		&:link,
+		&:visited {
+			color: $color-secondary-dark2;
+			font-weight: $medium-weight;
+			border-bottom: 1px solid $color-secondary-dark2;
+			padding: 0;
+		}
+
+		&:hover {
+			transform: scale(1.1);
+			color: $color-secondary-dark2;
+			background-color: unset;
+		}
 	}
 
 	&--dark {

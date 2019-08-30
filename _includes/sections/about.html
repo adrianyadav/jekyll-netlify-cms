@@ -3,18 +3,29 @@
 		<h2 class="heading-secondary u-center-margin u-margin-bottom-medium">
 			{{ site.data.home.sectionAboutTitle }}
 		</h2>
+
 		<div class="profile">
 			<div class="profile__container">
-				<figure class="profile__shape">
-					<img
-						alt="{{ site.data.home.author }}"
-						class="profile__img"
-						loading="lazy"
-						src="{{ site.data.home.profileImage }}"
-						width="150"
-						height="150"
-					/>
-				</figure>
+				<a
+					target="_blank"
+					rel="noopener"
+					href="https://www.linkedin.com/in/aman-adrian-yadav/"
+				>
+					<figure class="profile__shape">
+						<img
+							alt="{{ site.data.home.author }}"
+							class="profile__img"
+							loading="lazy"
+							src="{{ site.data.home.profileImage }}"
+							width="150"
+							height="150"
+						/>
+
+						<figcaption class="profile__caption">
+							Linkedin
+						</figcaption>
+					</figure>
+				</a>
 				<div class="profile__text">
 					<h3 class="heading-tertiary u-margin-bottom-small">
 						{{ site.data.home.sectionAboutSubTitle }}

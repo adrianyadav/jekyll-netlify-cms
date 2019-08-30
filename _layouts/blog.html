@@ -5,19 +5,22 @@ layout: default
 <div class="section" id="blog">
 	{%- if site.posts.size > 0 -%} {%- for post in site.posts -%}
 	<article class="post">
-		<div class="u-center-margin content">
-			<h2 class="u-margin-bottom-none">
-				<a href="{{ post.url | relative_url }}" class="post__title">
-					{{ post.title | escape }}
-				</a>
-			</h2>
-			<time
-				datetime="{{ post.date | date: '%Y-%m-%d' }}"
-				class="post__date post__date--dark"
-			>
-				{{ post.date | date: site.date_format }}
-			</time>
-		</div>
+		<h2 class="u-margin-bottom-none">
+			<a href="{{ post.url | relative_url }}" class="post__title">
+				{{ post.title | escape }}
+			</a>
+		</h2>
+		<time datetime="{{ post.date | date: '%Y-%m-%d' }}" class="post__date">
+			{{ post.date | date: site.date_format }}
+		</time>
+
+		<p class="post__excerpt">
+			{{ post.excerpt | strip_html | truncatewords: 40 }}
+		</p>
+
+		<a href="{{ post.url | relative_url }}" class="btn btn--basic"
+			>Read more</a
+		>
 	</article>
 
 	{%- endfor -%} {%- endif -%}

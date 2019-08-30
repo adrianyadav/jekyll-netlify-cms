@@ -4,8 +4,7 @@
 	box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
 	background-color: rgba($color-white, 0.6);
 	border-radius: 0.3rem;
-	padding: 6rem;
-	padding-left: 9rem;
+	padding: 7rem;
 	font-size: $default-font-size;
 	transform: skewX(-12deg);
 	position: relative;
@@ -13,14 +12,12 @@
 	@include respond(tab-port) {
 		width: 100%;
 		padding: 4rem;
-		padding-left: 7rem;
 		transform: skewX(0);
 	}
 
 	@include respond(phone) {
 		width: 100%;
 		padding: 4rem;
-		padding-left: 7rem;
 	}
 
 	&__container {
@@ -29,15 +26,16 @@
 	}
 
 	&__shape {
-		width: 15rem;
-		height: 15rem;
+		width: 20rem;
+		height: 20rem;
 		float: left;
 		-webkit-shape-outside: circle(50% at 50% 50%);
 		-webkit-clip-path: circle(50% at 50% 50%);
 		clip-path: circle(50% at 50% 50%);
-		transform: translate(-3rem) skewX(12deg);
+		transform: translateY(-2rem) skewX(12deg);
 		position: relative;
 		overflow: hidden;
+		z-index: 1;
 
 		@include respond(tab-port) {
 			left: 50%;
@@ -47,14 +45,14 @@
 
 	&__img {
 		height: 100%;
-		transform: translateX(-1rem) scale(1.4);
+		width: 100%;
 		backface-visibility: hidden;
 		transition: all 0.5s;
 	}
 
 	&__text {
 		transform: skewX(12deg);
-
+		z-index: -1;
 		@include respond(tab-port) {
 			transform: skewX(0);
 			clear: both;
@@ -62,5 +60,31 @@
 	}
 }
 
-@include respond(tab-port) {
+.profile:hover .profile__caption {
+	opacity: 1;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.profile:hover .profile__img {
+	-webkit-transform: translateX(-4rem) scale(1);
+	transform: scale(1);
+	filter: brightness(60%);
+}
+
+.profile__caption {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, 20%);
+	transform: translate(-50%, 20%);
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.7rem;
+	text-align: center;
+	opacity: 0;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }

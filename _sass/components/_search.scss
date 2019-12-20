@@ -1,0 +1,131 @@
+/* Search */
+.search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: scale(0.95);
+  opacity: 0;
+  background: #fff;
+  transition: all .25s ease;
+  &.is-visible {
+    transform: scale(1);
+    z-index: 100;
+    opacity: 1;
+    transition: all .25s ease;
+  }
+}
+
+.search__box {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 250px;
+
+  @media only screen and (max-width: $tab-port) {
+    width: 100%;
+    padding-top: 100px;
+  }
+}
+
+.search__group {
+  position: relative;
+  margin-bottom: 30px;
+
+  .search__close {
+    position: absolute;
+    right: 0;
+    top: 17px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .search__text {
+    font-family: $default-font-family;
+    width: 100%;
+    padding: 20px 20px 20px 0;
+    font-size: 3.5rem;
+    line-height: 40px;
+    border: none;
+    border-bottom: 3px solid $color-primary-dark-2;
+    color: $color-gray-dark;
+    &:focus {
+      color: inherit;
+      outline: 0;
+    }
+    &::placeholder {
+      font-weight: $medium-weight;
+      color: #bbb;
+    }
+    &::-ms-clear {
+      display: none;
+    }
+  }
+}
+
+.search-results-list {
+  height: 55vh;
+  margin: 0 0 0 -5px;
+  padding: 0 0 25px 25px;
+  list-style: decimal;
+  font-family: $default-font-family;
+  font-size: 1.6rem;
+  font-weight: $medium-weight;
+  color: $color-gray-dark;
+  overflow: auto;
+  white-space: normal;
+
+  .search-results__item {
+    padding: 0 0 0 5px;
+    margin-bottom: 10px;
+  }
+
+  
+  .search-results__link {
+    display: block;
+    padding: 20px 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 3px;
+    color: $color-gray-dark;
+    background: $color-grey-light-1;
+    text-decoration: none;
+    transition: $default-transition;
+    overflow: hidden;
+
+    &:hover {
+      background: $background-primary-gradient;
+      transform: translateY(0rem);
+      color: $color-white;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 0%;
+      transform: rotate(-50deg) translateX(-50%);
+      transform-origin: top left;
+      background: $background-primary-gradient;
+      z-index: -1;
+    }
+
+    &:hover::after {
+      height: 900%;
+      transform: rotate(-50deg) translateX(-50%);
+      transition: $easeOutQuad;
+    }
+  }
+
+  .no-results {
+    list-style: none;
+    margin-left: -20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: $color-gray-dark;
+  }
+}

@@ -8,12 +8,17 @@
                 {% if page.url contains item.url
                   %}current
                {% endif %}"
-					href="{{ site.baseurl }}{{ item.url }}"
+					href="{{ site.relativeurl }}{{ item.url }}"
 					>{{ item.title }}
 				</a>
 			</li>
 
 			{% endfor %}
 		</ul>
+		<div class="nav__buttons">
+					{% include icon.html class="icon--search hvr-bounce-in" icon="search"%}
+		</div>
 	</nav>
 </div>
+
+  {% include search.html %}

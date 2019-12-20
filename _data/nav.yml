@@ -1,7 +1,7 @@
 items:
-  - title: Projects
-    url: '#projects'
   - title: Blog
     url: blog
   - title: Contact
     url: '#contact'
+  - title: Projects
+    url: '#projects'

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 3 Life changing books
-categories: ''
+featuredImage: /img/uploads/08.jpg
+tags: Work
 ---
 I hesitate to use "**Life-changing**" as it is way too casually thrown out but it is definitely applicable here. While I was traveling, I was looking for a few audio books to digest on the flight(s) and came across these three books.
 

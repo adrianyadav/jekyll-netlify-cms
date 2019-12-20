@@ -1,6 +1,9 @@
 <div class="navigation">
 	<nav class="nav">
 		<ul class="nav__list">
+			<li class="nav__item">
+				<span href="#" class="nav__link nav__link--menu">Menu</span>
+			</li>
 			{% for item in site.data.nav.items %}
 			<li class="nav__item">
 				<a
@@ -16,9 +19,16 @@
 			{% endfor %}
 		</ul>
 		<div class="nav__buttons">
-					{% include icon.html class="icon--search hvr-bounce-in" icon="search"%}
+			
+			{% include icon.html class="icon--search hvr-bounce-in"
+			icon="search"%}
+			{% include icon.html class="icon--menu"
+			icon="logo"%} 
+			{% include icon.html class="icon--menu"
+			icon="menu"%} 
+			 {% include icon.html class="icon--close-menu" icon="close"%}
 		</div>
 	</nav>
 </div>
 
-  {% include search.html %}
+{% include search.html %}

@@ -1,41 +1,29 @@
 $(document).ready(function() {
 	'use strict';
 
-	var headerOverlay = $('.header__overlay'),
-		menuOpenIcon = $('.nav__icon-menu'),
-		menuCloseIcon = $('.ion-md-close'),
-		menuList = $('.main-nav'),
+	
+		var menuOpenIcon = $('.icon--menu'),
+		menuCloseIcon = $('.icon--close-menu'),
+		menuList = $('.navigation'),
 		searchOpenIcon = $('.icon--search'),
-		searchCloseIcon = $('.icon--close'),
-		searchBox = $('.search');
+		searchCloseIcon = $('.icon--close-search'),
+		searchBox = $('.search'),
 
-	/* =======================
-  // Hide Header
-  ======================= */
-	header();
+		header = $('.header'),
+		main = $('#main');
 
-	function header() {
-		var initialScroll;
-		$(window).scroll(function() {
-			var scroll = $(this).scrollTop();
-			if (scroll > initialScroll && initialScroll > 100) {
-				$('.header').addClass('is-hide');
-			} else {
-				$('.header').removeClass('is-hide');
-			}
-			initialScroll = scroll;
-		});
-	}
 
 	/* =======================
   // Menu and Search
   ======================= */
 	menuOpenIcon.click(function() {
 		menuOpen();
+		addOverlay();
 	});
 
 	menuCloseIcon.click(function() {
 		menuClose();
+		removeOverlay();
 	});
 
 	searchOpenIcon.click(function() {
@@ -46,19 +34,15 @@ $(document).ready(function() {
 		searchClose();
 	});
 
-	headerOverlay.click(function() {
-		menuClose();
-		searchClose();
-	});
 
 	function menuOpen() {
-		menuList.addClass('is-open');
-		headerOverlay.addClass('is-visible');
+		menuList.addClass('navigation--active');
+		addOverlay();
 	}
 
 	function menuClose() {
-		menuList.removeClass('is-open');
-		headerOverlay.removeClass('is-visible');
+		menuList.removeClass('navigation--active');
+		removeOverlay();
 	}
 
 	function searchOpen() {
@@ -69,10 +53,19 @@ $(document).ready(function() {
 		searchBox.removeClass('is-visible');
 	}
 
+	function addOverlay() {
+		header.addClass("overlay");
+		main.addClass("overlay");
+	}
+
+	function removeOverlay() {
+		header.removeClass("overlay");
+		main.removeClass("overlay");
+	}
+
 	/* =======================
   // Zoom Image
   ======================= */
 	$('.page img, .post img').attr('data-action', 'zoom');
 	$('.page a img, .post a img').removeAttr('data-action', 'zoom');
-
 });

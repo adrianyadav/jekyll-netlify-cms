@@ -6,6 +6,68 @@
 	width: 100%;
 	z-index: 10;
 
+	&.navigation--active {
+		right: 0;
+
+		.nav__buttons {
+			@include respond(phone) {
+				background: none;
+				position: initial;
+    		right: 0;
+			}
+		}
+
+		.icon--close-menu {
+				opacity: 1;
+				visibility: visible;
+			}
+
+			.icon--menu {
+				opacity: 0;
+				visibility: hidden;
+			}
+
+			.icon--search {
+				display: none;
+			}
+
+			.icon--close-search {
+				fill: $color-secondary-dark2;
+				position: absolute;
+				right: 40px;
+				top: 13px;
+			}
+	}
+
+	.icon--close-menu {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.icon--menu {
+		opacity: 0;
+		visibility: hidden;
+		@include respond(phone) {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+		@include respond(phone) {
+		
+			position: fixed;
+			top: 0;
+			left: inherit;
+			right: -300px;
+			bottom: 0;
+			transform: none;
+			z-index: 100;
+			width: 300px;
+			height: 100vh;
+			transition: right 0.5s cubic-bezier(0.7, 0.4, 0, 1);
+			background: #fff;
+		
+	}
 
 	.nav {
 		position: relative;
@@ -15,11 +77,28 @@
 			list-style-type: none;
 			margin-left: 0;
 			@include absCenter;
-
 			@include respond(tab-port) {
 				width: 32rem;
 				margin: 0 auto;
 				display: block;
+			}
+			@include respond(phone) {
+				width: 30rem;
+				top: 13rem;
+			}
+		}
+
+		&__buttons {
+			@include respond(phone) {
+				position: absolute;
+				background: $background-primary-gradient-light;
+    		right: 300px;
+				width: 100vw;
+				display: flex;
+    		justify-content: space-between;
+				.icon--menu, .icon--search {
+					fill: $color-white;
+				}
 			}
 		}
 
@@ -38,6 +117,44 @@
 			transition: $default-transition;
 			box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
 			letter-spacing: 0.05rem;
+			&.nav__link--menu {
+				display: none;
+				@include respond(phone) {
+				text-transform: capitalize;
+				font-weight: $light-weight;
+				color: $color-gray-dark;
+				z-index: 1;
+				position: relative;
+				display: inline-block;
+				&:after {
+					content: '';
+					border-bottom: 2px solid $color-grey-light-1;
+					background: inherit;
+					height: 100%;
+					width: 80%;
+					@include absCenter;
+				}
+
+				&:hover {
+					box-shadow: initial;
+					background-color: initial;
+					color: initial;
+					transform:  initial;
+				}
+				}
+			}
+			@include respond(phone) {
+				box-shadow: none;
+				text-align: left;
+				width: 100%;
+				padding-left: 4rem;
+				text-transform: capitalize;
+				font-weight: $medium-weight;
+				color: $color-gray-dark;
+				&:not(last-child) {
+					margin-bottom: 0.5rem;
+				}
+			}
 			&:hover,
 			&:focus,
 			&:active {

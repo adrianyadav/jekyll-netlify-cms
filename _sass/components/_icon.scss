@@ -1,6 +1,12 @@
+	.skill .icon {
+		margin-top: 0;
+		margin-bottom: 2rem;
+	}
+
 .icon {
 	width: 6rem;
-	margin-bottom: 2rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
 	display: inline-block;
 	fill: url(#gradient-horizontal) $color-primary;
 	-webkit-background-clip: text;
@@ -10,23 +16,48 @@
 		margin-right: auto;
 	}
 
+	&--menu {
+		width: 3.2rem;
+		height: 3.2rem;
+		cursor: pointer;
+		fill: $color-secondary-dark2;
+		margin-top: 1rem;
+		margin-left: 1.5rem;
+		@include respond(phone) {
+			float: right;
+			margin-right: 1.5rem;
+		}
+	}
+
+	&--close-search, &--close-menu {
+			fill:  $color-primary-dark-2;
+			width: 3.2rem;
+			height: 3.2rem;
+			margin-right: -15px;
+			cursor: pointer;
+	}
+
+	&--close-menu {
+		position: absolute;
+		right: 3.5rem;
+    top: 1.5rem;
+	}
+
+
 	&--search {
 		float: right;
+		@include respond(phone) {
+			float: left;
+			margin-left: 1.5rem;
+		}
 		margin-top: 1rem;
 		margin-right: 1.5rem;
 		width: 3.2rem;
 		height: 3.2rem;
 		cursor: pointer;
-		fill: $color-secondary-dark2;
+		fill: $color-primary-dark-2;
 	}
 
-	&--close {
-		fill:  $color-primary-dark-2;
-		width: 3.2rem;
-		height: 3.2rem;
-		margin-right: -15px;
-		cursor: pointer;
-	}
 
 	&--logo {
 		fill: $color-white;

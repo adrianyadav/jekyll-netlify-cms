@@ -10,6 +10,24 @@
 		margin-right: auto;
 	}
 
+	&--search {
+		float: right;
+		margin-top: 1rem;
+		margin-right: 1.5rem;
+		width: 3.2rem;
+		height: 3.2rem;
+		cursor: pointer;
+		fill: $color-secondary-dark2;
+	}
+
+	&--close {
+		fill:  $color-primary-dark-2;
+		width: 3.2rem;
+		height: 3.2rem;
+		margin-right: -15px;
+		cursor: pointer;
+	}
+
 	&--logo {
 		fill: $color-white;
 		width: 10rem;

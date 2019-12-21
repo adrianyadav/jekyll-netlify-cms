@@ -151,6 +151,7 @@
 				text-transform: capitalize;
 				font-weight: $medium-weight;
 				color: $color-gray-dark;
+				margin-left: 0;
 				&:not(last-child) {
 					margin-bottom: 0.5rem;
 				}
@@ -161,7 +162,7 @@
 				box-shadow: none;
 				background-color: $color-primary;
 				color: $color-white;
-				transform: translateY(0) scale(1.05);
+				transform: translateY(0) scale(1.00);
 			}
 		}
 	}

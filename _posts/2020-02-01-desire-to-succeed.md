@@ -18,4 +18,4 @@ From then on, he sold pani puri's and made bets among the people at the training
 
 A group of panthers running along side each other are fast that is certain. But the prey they are after has to be even faster as it is a matter of survival. 
 
-Ultimately, those that **have** to succeed will find a way to succeed.
+Ultimately,  I think when you are driven into a corner - you are more likely to find a way out.

@@ -643,6 +643,7 @@ a:hover, a:active {
 
 .subscribe__input {
   display: inline-block;
+  color: #1e242c;
   background-color: #f7f7f7f7;
   margin-bottom: 0rem;
   max-width: 42rem; }

@@ -478,6 +478,35 @@ a:hover, a:active {
     font-size: 1.8rem;
     margin-bottom: 2rem; }
 
+/* Share */
+.post__share {
+  margin-bottom: 20px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem; }
+  .post__share .share__title {
+    margin: 50px 0 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8rem;
+    line-height: 16px; }
+  .post__share .share__list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 0; }
+  .post__share .share__item {
+    width: 25%;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    border-left: none;
+    list-style-type: none; }
+    .post__share .share__item:first-child {
+      border-left: 1px solid #dfdfdf; }
+  .post__share .share__link {
+    display: block;
+    padding: 15px 0;
+    font-size: 20px;
+    color: #3f76a3; }
+
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;

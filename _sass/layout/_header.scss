@@ -42,10 +42,15 @@
 	}
 
 	&__text-box {
-		@include absCenter;
-		top: 47.5%;
-		text-align: center;
+		position: relative;
+		top: 50%;
+		transform: translate(0, -50%);
+		text-align: left;
+		max-width: 78rem;
 		width: 100%;
+		margin: 0 auto;
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
 
 		.heading-primary {
 			margin-bottom: 1.5rem;
@@ -68,7 +73,7 @@
 
 		&__text-box {
 			width: 100%;
-			padding: 1rem;
+			padding: 2rem;
 
 			> h1 {
 				margin-bottom: 1.5rem;

@@ -1,0 +1,33 @@
+<div class="subscribe u-margin-bottom-medium">
+	<h2>Sign up to updates</h2>
+	<p>I'll send you an email when there's a new article to read.</p>
+	<form
+		novalidate=""
+		action="https://app.convertkit.com/forms/1211852/subscriptions"
+		method="post"
+	>
+		<input type="hidden" name="fields[url]" value="{{ post.url }}" />
+		<label for="email_address">
+			Your email address
+		</label>
+
+		<div class="subscribe__field">
+			<input
+				aria-label="Your email address"
+				id="email_address"
+				name="email_address"
+				required
+				type="email"
+				class="contact__input subscribe__input"
+			/>
+			<button
+				class="btn btn--reverse  contact__btn subscribe__submit"
+				id="submit"
+				type="submit"
+				value="submit"
+			>
+				Submit
+			</button>
+		</div>
+	</form>
+</div>

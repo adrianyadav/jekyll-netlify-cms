@@ -84,6 +84,18 @@
 		}
 	}
 
+	&--reverse {
+		background-color: $color-primary;
+		color: $color-white;
+		&:hover,
+		&:active,
+		&:focus {
+			background-color: $color-white-gradient;
+			color: $color-secondary-dark;
+			box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+		}
+	}
+
 	&--animated {
 		animation: 0.5s ease-out 0.75s moveInBottom;
 		animation-fill-mode: backwards;

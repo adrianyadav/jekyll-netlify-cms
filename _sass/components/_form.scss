@@ -65,3 +65,27 @@
 		margin-bottom: 1rem;
 	}
 }
+
+.subscribe {
+	&__field {
+		display: flex;
+	}
+	&__input {
+		display: inline-block;
+		background-color: $color-grey-light-1;
+		margin-bottom: 0rem;
+		max-width: 42rem;
+
+		&:focus,
+		&:active {
+			// override autofill-selected
+			background-color: $color-grey-light-1 !important;
+			outline: 3px solid $color-primary;
+		}
+	}
+
+	&__submit {
+		display: inline-block;
+		margin-left: 1rem;
+	}
+}

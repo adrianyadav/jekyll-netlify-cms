@@ -13,30 +13,30 @@
 			@include respond(phone) {
 				background: none;
 				position: initial;
-    		right: 0;
+				right: 0;
 			}
 		}
 
 		.icon--close-menu {
-				opacity: 1;
-				visibility: visible;
-			}
+			opacity: 1;
+			visibility: visible;
+		}
 
-			.icon--menu {
-				opacity: 0;
-				visibility: hidden;
-			}
+		.icon--menu {
+			opacity: 0;
+			visibility: hidden;
+		}
 
-			.icon--search {
-				display: none;
-			}
+		.icon--search {
+			display: none;
+		}
 
-			.icon--close-search {
-				fill: $color-secondary-dark2;
-				position: absolute;
-				right: 40px;
-				top: 13px;
-			}
+		.icon--close-search {
+			fill: $color-secondary-dark2;
+			position: absolute;
+			right: 40px;
+			top: 13px;
+		}
 	}
 
 	.icon--close-menu {
@@ -53,20 +53,18 @@
 		}
 	}
 
-		@include respond(phone) {
-		
-			position: fixed;
-			top: 0;
-			left: inherit;
-			right: -300px;
-			bottom: 0;
-			transform: none;
-			z-index: 100;
-			width: 300px;
-			height: 100vh;
-			transition: right 0.5s cubic-bezier(0.7, 0.4, 0, 1);
-			background: #fff;
-		
+	@include respond(phone) {
+		position: fixed;
+		top: 0;
+		left: inherit;
+		right: -300px;
+		bottom: 0;
+		transform: none;
+		z-index: 100;
+		width: 300px;
+		height: 100vh;
+		transition: right 0.5s cubic-bezier(0.7, 0.4, 0, 1);
+		background: #fff;
 	}
 
 	.nav {
@@ -92,11 +90,12 @@
 			@include respond(phone) {
 				position: absolute;
 				background: $background-primary-gradient-light;
-    		right: 300px;
+				right: 300px;
 				width: 100vw;
 				display: flex;
-    		justify-content: space-between;
-				.icon--menu, .icon--search {
+				justify-content: space-between;
+				.icon--menu,
+				.icon--search {
 					fill: $color-white;
 				}
 			}
@@ -120,27 +119,27 @@
 			&.nav__link--menu {
 				display: none;
 				@include respond(phone) {
-				text-transform: capitalize;
-				font-weight: $light-weight;
-				color: $color-gray-dark;
-				z-index: 1;
-				position: relative;
-				display: inline-block;
-				&:after {
-					content: '';
-					border-bottom: 2px solid $color-grey-light-1;
-					background: inherit;
-					height: 100%;
-					width: 80%;
-					@include absCenter;
-				}
+					text-transform: capitalize;
+					font-weight: $light-weight;
+					color: $color-gray-dark;
+					z-index: 1;
+					position: relative;
+					display: inline-block;
+					&:after {
+						content: '';
+						border-bottom: 2px solid $color-grey-light-1;
+						background: inherit;
+						height: 100%;
+						width: 80%;
+						@include absCenter;
+					}
 
-				&:hover {
-					box-shadow: initial;
-					background-color: initial;
-					color: initial;
-					transform:  initial;
-				}
+					&:hover {
+						box-shadow: initial;
+						background-color: initial;
+						color: initial;
+						transform: initial;
+					}
 				}
 			}
 			@include respond(phone) {
@@ -162,7 +161,7 @@
 				box-shadow: none;
 				background-color: $color-primary;
 				color: $color-white;
-				transform: translateY(0) scale(1.00);
+				transform: translateY(0) scale(1);
 			}
 		}
 	}

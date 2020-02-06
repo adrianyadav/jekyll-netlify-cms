@@ -1,6 +1,6 @@
 items:
   - title: Home
-    url: /
+    url: '#'
   - title: Blog
     url: blog
   - title: Contact

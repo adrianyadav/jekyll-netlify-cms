@@ -604,10 +604,12 @@ a:hover, a:active {
     color: #ffffff;
     margin-bottom: 0.7rem; }
   .contact__btn {
-    float: right;
+    float: left;
     font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
     font-weight: 100; }
+    .contact__btn:focus {
+      outline: 3px solid #07689f; }
   .contact__input, .contact__textarea {
     font-family: 'Roboto', sans-serif;
     display: block;
@@ -624,7 +626,7 @@ a:hover, a:active {
     .contact__input:focus, .contact__textarea:focus {
       color: #1e242c;
       background-color: white;
-      outline: 0; }
+      outline: 3px solid #07689f; }
       .contact__input:focus::placeholder, .contact__textarea:focus::placeholder {
         color: #1e242c;
         font-weight: 300; }
@@ -640,6 +642,9 @@ a:hover, a:active {
 
 .subscribe__field {
   display: flex; }
+  @media (max-width: 37.5em) {
+    .subscribe__field {
+      display: block; } }
 
 .subscribe__input {
   display: inline-block;
@@ -647,6 +652,10 @@ a:hover, a:active {
   background-color: #f7f7f7f7;
   margin-bottom: 0rem;
   max-width: 42rem; }
+  @media (max-width: 37.5em) {
+    .subscribe__input {
+      width: 100%;
+      margin-bottom: 1rem; } }
   .subscribe__input:focus, .subscribe__input:active {
     background-color: #f7f7f7f7 !important;
     outline: 3px solid #07689f; }
@@ -654,6 +663,13 @@ a:hover, a:active {
 .subscribe__submit {
   display: inline-block;
   margin-left: 1rem; }
+  .subscribe__submit:focus {
+    outline: 3px solid #07689f; }
+  @media (max-width: 37.5em) {
+    .subscribe__submit {
+      margin-left: 0;
+      margin-bottom: 1rem;
+      width: 100%; } }
 
 .skill {
   display: flex;

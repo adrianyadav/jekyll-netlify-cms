@@ -74,6 +74,10 @@ h2 {
 .paragraph,
 p {
 	font-size: $default-font-size;
+	line-height: 3.5rem;
+		@include respond(phone) {
+		font-size: 4rem;
+	}
 	&:not(last-child) {
 		margin-bottom: $default-margin-bottom;
 	}

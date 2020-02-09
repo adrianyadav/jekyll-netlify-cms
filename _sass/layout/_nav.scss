@@ -170,7 +170,7 @@
 		box-shadow: none;
 		background-color: $color-primary;
 		color: $color-white;
-		transform: translateY(0) scale(1.05);
+		transform: translateY(0);
 		&::after {
 			background-color: $color-primary;
 		}

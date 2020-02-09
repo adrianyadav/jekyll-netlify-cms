@@ -4,6 +4,7 @@
 	"description": "Landing page for adrianyadav",
 	"main": "index.js",
 	"scripts": {
+		"go": "bundle exec jekyll server --watch && npm-run-all --parallel devserver watch:sass",
 		"watch:sass": "node-sass _sass/main.scss assets/main.css -w",
 		"devserver": "live-server",
 		"start": "npm-run-all --parallel devserver watch:sass",

@@ -9,18 +9,7 @@
 			{{ site.data.home.sectionContactSubTitle }}
 		</h3>
 	</div>
-	<form class="contact" data-netlify="true">
-		<label class="contact__label" for="name">
-			Your name
-		</label>
-		<input
-			aria-label="You name"
-			id="name"
-			name="name"
-			placeholder="First name"
-			type="text"
-			class="contact__input"
-		/>
+	<form novalidate class="contact" data-netlify="true">
 		<label class="contact__label" for="email">
 			Your email address
 		</label>
@@ -28,7 +17,6 @@
 			aria-label="Your email address"
 			id="email"
 			name="email"
-			placeholder="Email address"
 			required
 			type="email"
 			class="contact__input"
@@ -40,7 +28,6 @@
 			aria-label="You message"
 			id="message"
 			name="message"
-			placeholder="Message"
 			class="contact__textarea"
 		></textarea>
 		<button

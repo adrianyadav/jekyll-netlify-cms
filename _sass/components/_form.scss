@@ -18,10 +18,14 @@
 	}
 
 	&__btn {
-		float: right;
+		float: left;
 		font-family: 'Roboto', sans-serif;
 		font-size: $default-font-size;
 		font-weight: $light-weight;
+
+		&:focus {
+			outline: 3px solid $color-primary;
+		}
 	}
 
 	&__input,
@@ -42,7 +46,7 @@
 		&:focus {
 			color: $color-secondary-dark2;
 			background-color: white;
-			outline: 0;
+			outline: 3px solid $color-primary;
 
 			&::placeholder {
 				color: $color-secondary-dark2;
@@ -69,6 +73,9 @@
 .subscribe {
 	&__field {
 		display: flex;
+		@include respond(phone) {
+			display: block;
+		}
 	}
 	&__input {
 		display: inline-block;
@@ -76,6 +83,10 @@
 		background-color: $color-grey-light-1;
 		margin-bottom: 0rem;
 		max-width: 42rem;
+		@include respond(phone) {
+			width: 100%;
+			margin-bottom: 1rem;
+		}
 
 		&:focus,
 		&:active {
@@ -88,5 +99,13 @@
 	&__submit {
 		display: inline-block;
 		margin-left: 1rem;
+		&:focus {
+			outline: 3px solid $color-primary;
+		}
+		@include respond(phone) {
+			margin-left: 0;
+			margin-bottom: 1rem;
+			width: 100%;
+		}
 	}
 }

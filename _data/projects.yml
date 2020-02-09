@@ -12,7 +12,7 @@ items:
       * Templating engine: Nunjucks
       * Category: Work
     projectGithubRepo: false
-    projectLiveLink: 'https://nibtravel.com/'
+    projectLiveLink: 'http://www.nibtravel.com/'
     projectName: nib Travel
   - body: |-
       * React

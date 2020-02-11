@@ -975,7 +975,7 @@ a:hover, a:active {
   .header--blog {
     height: 67vh;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-    background-image: linear-gradient(to right bottom, rgba(7, 104, 159, 0.85), rgba(162, 213, 242, 0.85)), url(../../img/contact-unsplash.jpg);
+    background-image: linear-gradient(to right bottom, rgba(3, 63, 99, 0.75), rgba(63, 118, 163, 0.85)), url(../../img/contact-unsplash.jpg);
     z-index: 2; }
   @media (min-width: 1600px) {
     .header {

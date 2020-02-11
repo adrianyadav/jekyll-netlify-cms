@@ -10,8 +10,8 @@
 		clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 		background-image: linear-gradient(
 				to right bottom,
-				rgba($color-primary, 0.85),
-				rgba($color-primary-light, 0.85)
+				rgba($color-primary-dark-2, 0.75),
+				rgba($color-primary-dark, 0.85)
 			),
 			url(../../img/contact-unsplash.jpg);
 		z-index: 2;

@@ -971,7 +971,7 @@ a:hover, a:active {
   height: 95vh;
   width: auto;
   clip-path: polygon(0 0, 100% 20vh, 100% 75vh, 0 100%);
-  background-image: linear-gradient(to right bottom, rgba(7, 104, 159, 0.85), rgba(162, 213, 242, 0.85)), url(../../img/hero-unsplash-1x.jpg); }
+  background-image: linear-gradient(to right bottom, rgba(3, 63, 99, 0.75), rgba(63, 118, 163, 0.85)), url(../../img/hero-unsplash-1x.jpg); }
   .header--blog {
     height: 67vh;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);

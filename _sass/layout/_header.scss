@@ -6,7 +6,7 @@
 	width: auto;
 	clip-path: polygon(0 0, 100% 20vh, 100% 75vh, 0 100%);
 	&--blog {
-		height: 55vh;
+		height: 67vh;
 		clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 		background-image: linear-gradient(
 				to right bottom,
@@ -55,7 +55,7 @@
 		.heading-primary {
 			margin-bottom: 1.5rem;
 			&--blog {
-				margin-bottom: 0;
+				margin-bottom: 1rem;
 			}
 		}
 	}

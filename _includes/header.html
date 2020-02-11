@@ -16,8 +16,22 @@
 <header class="header header--blog">
 	<div class="header__text-box">
 		<h1 class="heading-primary heading-primary--blog">
-			Almost there - check your email
+			Now check your email
 		</h1>
+		<p class="heading-text">
+			Almost there — just click the link in your email.
+		</p>
+	</div>
+</header>
+{% elsif page.url contains "confirmation" %}
+<header class="header header--blog">
+	<div class="header__text-box">
+		<h1 class="heading-primary heading-primary--blog">
+			You've signed up
+		</h1>
+		<p class="heading-text">
+			There's nothing left to do.
+		</p>
 	</div>
 </header>
 {% else %}

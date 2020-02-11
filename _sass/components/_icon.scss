@@ -1,7 +1,7 @@
-	.skill .icon {
-		margin-top: 0;
-		margin-bottom: 2rem;
-	}
+.skill .icon {
+	margin-top: 0;
+	margin-bottom: 2rem;
+}
 
 .icon {
 	width: 6rem;
@@ -16,7 +16,6 @@
 		margin-right: auto;
 	}
 
-
 	&--menu {
 		width: 3.2rem;
 		height: 3.2rem;
@@ -30,20 +29,20 @@
 		}
 	}
 
-	&--close-search, &--close-menu {
-			fill:  $color-primary-dark-2;
-			width: 3.2rem;
-			height: 3.2rem;
-			margin-right: -15px;
-			cursor: pointer;
+	&--close-search,
+	&--close-menu {
+		fill: $color-primary-dark-2;
+		width: 3.2rem;
+		height: 3.2rem;
+		margin-right: -15px;
+		cursor: pointer;
 	}
 
 	&--close-menu {
 		position: absolute;
 		right: 3.5rem;
-    top: 1.5rem;
+		top: 1.5rem;
 	}
-
 
 	&--search {
 		float: right;
@@ -59,12 +58,11 @@
 		fill: $color-primary-dark-2;
 	}
 
-
 	&--logo {
 		fill: $color-white;
 		width: 10rem;
 		margin-bottom: 0;
-
+		transition: fill 0.25s ease-in;
 		&:hover {
 			fill: $color-primary;
 		}

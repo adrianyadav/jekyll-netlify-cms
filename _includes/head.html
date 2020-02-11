@@ -2,7 +2,7 @@
 	<meta charset="utf-8" />
 	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	{% feed_meta %} {% seo %}
+	{% feed_meta %} {% seo title=false %}
 
 	<link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}" />
 
@@ -16,4 +16,9 @@
 	/>
 
 	{% if site.google_analytics %} {% include analytics.html %} {% endif %}
+
+	<title>
+		{% if page.url == "/" %} {{ site.title }} {% else %} {{ page.title}} |
+		Adrian Yadav | Developer, Sydney, AUS. {% endif %}
+	</title>
 </head>

@@ -269,12 +269,13 @@ body {
   font-weight: 100;
   letter-spacing: 0.75rem; }
   .heading-primary--blog {
-    font-size: 4rem;
-    font-weight: 100;
+    font-size: 5.5rem;
+    font-weight: 300;
     color: #ffffff;
     text-decoration: none;
     line-height: 1.5;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    margin-bottom: 1rem; }
     @media (max-width: 56.25em) {
       .heading-primary--blog {
         font-size: 3rem; } }
@@ -308,6 +309,13 @@ body {
   @media (max-width: 37.5em) {
     .heading-tertiary {
       font-size: 2rem; } }
+
+.heading-text {
+  font-size: 2.8rem;
+  font-weight: 100;
+  display: block;
+  margin-bottom: 1.5rem;
+  color: #ffffff; }
 
 h2 {
   font-size: 3rem;
@@ -841,7 +849,8 @@ a:hover, a:active {
   .icon--logo {
     fill: #ffffff;
     width: 10rem;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    transition: fill 0.25s ease-in; }
     .icon--logo:hover {
       fill: #07689f; }
 
@@ -964,7 +973,7 @@ a:hover, a:active {
   clip-path: polygon(0 0, 100% 20vh, 100% 75vh, 0 100%);
   background-image: linear-gradient(to right bottom, rgba(7, 104, 159, 0.85), rgba(162, 213, 242, 0.85)), url(../../img/hero-unsplash-1x.jpg); }
   .header--blog {
-    height: 55vh;
+    height: 67vh;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     background-image: linear-gradient(to right bottom, rgba(7, 104, 159, 0.85), rgba(162, 213, 242, 0.85)), url(../../img/contact-unsplash.jpg);
     z-index: 2; }
@@ -987,7 +996,7 @@ a:hover, a:active {
     .header__text-box .heading-primary {
       margin-bottom: 1.5rem; }
       .header__text-box .heading-primary--blog {
-        margin-bottom: 0; }
+        margin-bottom: 1rem; }
 
 @media (max-width: 37.5em) {
   .header {

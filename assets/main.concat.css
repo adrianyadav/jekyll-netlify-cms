@@ -1219,8 +1219,8 @@ a:hover, a:active {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     font-size: 1.8rem;
     font-weight: 100;
     color: #ffffff;

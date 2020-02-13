@@ -1,7 +1,14 @@
 <footer class="footer">
-	<p class="footer--text">
-		<span class="footer__copyright">&copy; {{ 'now' | date: '%Y' }} </span>
-		|
-		<span class="footer__author"> {{ site.data.home.author }}</span>
+	<div class="footer__content content">
+		<div class="footer__left">
+			<p class="footer__author"> {{ site.data.home.author }}</p>
+		</div>
+		<div class="footer__right">
+			<ul class="footer__links">
+				<li><a target="_blank" href="{{ site.data.home.github }}">Github</a></li>
+				<li><a target="_blank" href="{{ site.data.home.linkedin }}">Linkedin</a></li>
+				<li><a target="_blank" href="/blog">Blog</a></li>
+			</div>
+		</div>
 	</p>
 </footer>

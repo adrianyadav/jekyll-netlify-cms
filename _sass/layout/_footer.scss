@@ -1,14 +1,33 @@
 .footer {
-	height: 7rem;
+	display: flex;
 	position: relative;
 	background: $color-gray-dark-3;
 
-	&--text {
-		@include absCenter;
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		padding-top: 20px;
+		padding-bottom: 20px;
 		font-size: $default-font-size;
 		font-weight: $light-weight;
 		color: $color-white;
+		margin-bottom: 0;
 	}
+
+	&__links {
+		list-style-type: none;
+		margin-bottom: 0;
+		a {
+			color: $color-white;
+			transition: $default-transition;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
 	&__copyright {
 		color: $color-white;
 	}

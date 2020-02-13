@@ -49,27 +49,27 @@
 		&,
 		&:link,
 		&:visited {
-			color: $color-secondary-dark2;
+			color: $color-secondary-dark-2;
 			font-weight: $medium-weight;
-			border-bottom: 1px solid $color-secondary-dark2;
+			border-bottom: 1px solid $color-secondary-dark-2;
 			padding: 0;
 		}
 
 		&:hover {
 			transform: scale(1.1);
-			color: $color-secondary-dark2;
+			color: $color-secondary-dark-2;
 			background-color: unset;
 		}
 	}
 
 	&--dark {
-		background-color: $color-secondary-dark2;
+		background-color: $color-secondary-dark-2;
 		color: $color-white;
 		padding: 1.5rem 4rem;
 		transition: all 0.4s;
 
 		&::after {
-			background-color: $color-secondary-dark2;
+			background-color: $color-secondary-dark-2;
 			color: $color-white;
 		}
 

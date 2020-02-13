@@ -88,21 +88,6 @@ p {
 	}
 }
 
-.breadcrumb {
-	margin-bottom: 2rem;
-	text-align: center;
-	&__link {
-		&:link,
-		&:visited {
-			color: $color-primary;
-		}
-		&:hover,
-		&:active {
-			color: $color-secondary-dark2;
-		}
-	}
-}
-
 a {
 	&:link,
 	&:visited {
@@ -110,7 +95,7 @@ a {
 	}
 	&:hover,
 	&:active {
-		color: $color-secondary-dark2;
+		color: $color-secondary-dark-2;
 	}
 }
 

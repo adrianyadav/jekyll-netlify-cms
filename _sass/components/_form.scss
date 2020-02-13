@@ -37,19 +37,19 @@
 		padding: 1rem 1.5rem;
 		border-width: 0;
 		margin-bottom: 1rem;
-		background: $color-secondary-dark2;
+		background: $color-secondary-dark-2;
 		font-size: $default-font-size;
 		font-weight: $light-weight;
 		color: $color-white;
 		transition: $easeInSine;
 
 		&:focus {
-			color: $color-secondary-dark2;
+			color: $color-secondary-dark-2;
 			background-color: white;
 			outline: 3px solid $color-primary;
 
 			&::placeholder {
-				color: $color-secondary-dark2;
+				color: $color-secondary-dark-2;
 				font-weight: $medium-weight;
 			}
 		}
@@ -79,7 +79,7 @@
 	}
 	&__input {
 		display: inline-block;
-		color: $color-secondary-dark2;
+		color: $color-secondary-dark-2;
 		background-color: $color-grey-light-1;
 		margin-bottom: 0rem;
 		max-width: 42rem;

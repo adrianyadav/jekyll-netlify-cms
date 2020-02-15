@@ -6,6 +6,6 @@ I've always wonder what the best way to create a blog is from a developer experi
 
 In this series, we will be making a blog editable via Netlify CMS.
 
-The final product will look like: <http://adrianyadav-blog.netlify.com/> and we will make every bit of content on the page editable via an admin interface **Netlify** provides
+The final product will look like: <http://adrianyadav-blog.netlify.com/> and we will make every bit of content on the page editable via an admin interface **Netlify** provides.
 
 ## Let's get started

@@ -2,9 +2,7 @@
 layout: post
 title: Creating a blog with Jekyll + Netlify CMS part 1
 ---
-I've always wonder what the best way to create a blog is from a developer experience as well as a client one.
-
-Wordpress for me was too much out of the box and included a lot of stuff I didn't really need. I stumbled upon using [Jekyll](https://jekyllrb.com/){:target="_blank"} (a static blog generator) with [Netlify](https://www.netlify.com/){:target="_blank"} for hosting as well as [Netlify CMS](https://www.netlifycms.org/){:target="_blank"} for content management.
+I've always wonder what the best way to create a blog is - meaning it should be both development friendly and easy for clients to edit. I stumbled upon using [Jekyll](https://jekyllrb.com/){:target="_blank"} (a static blog generator) with [Netlify](https://www.netlify.com/){:target="_blank"} for hosting as well as [Netlify CMS](https://www.netlifycms.org/){:target="_blank"} for content management. This stack has been my go to for creating blogs, it's super easy to get started and fun to work with.
 
 In this series, we will be making a blog editable via Netlify CMS.
 

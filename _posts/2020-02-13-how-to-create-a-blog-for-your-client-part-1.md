@@ -123,21 +123,6 @@ Your head.html file should end up like the following:
 	/>
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script
-	async
-	src="https://www.googletagmanager.com/gtag/js?id=UA-93042573-3"
-></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag() {
-		dataLayer.push(arguments);
-	}
-	gtag('js', new Date());
-
-	gtag('config', 'UA-93042573-3');
-</script>
-
 </head>
 ```
 

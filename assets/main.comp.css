@@ -289,13 +289,10 @@ body {
     line-height: 1.5;
     text-transform: capitalize;
     margin-bottom: 1rem; }
-    @media (max-width: 56.25em) {
-      .heading-primary--blog {
-        line-height: 3rem;
-        font-size: 3rem; } }
   @media (max-width: 37.5em) {
     .heading-primary {
-      font-size: 4rem; } }
+      font-size: 4rem;
+      line-height: 6rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;

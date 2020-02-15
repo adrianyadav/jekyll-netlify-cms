@@ -20,13 +20,10 @@ body {
 		line-height: 1.5;
 		text-transform: capitalize;
 		margin-bottom: 1rem;
-		@include respond(tab-port) {
-			line-height: 3rem;
-			font-size: 3rem;
-		}
 	}
 	@include respond(phone) {
 		font-size: 4rem;
+		line-height: 6rem;
 	}
 }
 .heading-secondary {

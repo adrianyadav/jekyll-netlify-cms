@@ -12,7 +12,7 @@ The final product will look like: <http://adrianyadav-blog.netlify.com/>{:target
 
 If you are ever unsure of how a file should look like: take a look at the [completed repo](https://github.com/adrianyadav/jekyll-netlify-cms-blog){:target="_blank"}.
 
-If you see the command "Code" it's set to opens visual studio code, feel free to use whatever text editor you want.
+If you see the command "Code" in the snippets, it's set to opens visual studio code, feel free to use whatever text editor you want.
 
 ## Let's get started
 
@@ -25,7 +25,7 @@ bundle
 jekyll serve --livereload
 ```
 
-Open up <http://127.0.0.1:4000/>{:target="_blank"} in Google Chrome and you see the following:
+Open up <http://127.0.0.1:4000/>{:target="_blank"} in the browser and you should see the following:
 
 ![Adrian's Blog](/img/uploads/blog-running.jpg)
 
@@ -97,7 +97,7 @@ collections:
 
 ## Enable identity and git gateway:
 
-Follow the instructons on [Netlify Docs](https://www.netlifycms.org/docs/add-to-your-site/#enable-identity-and-git-gateway). Create a user for yourself and enable git gateway too.
+Follow the instructons on [Netlify Docs](https://www.netlifycms.org/docs/add-to-your-site/#enable-identity-and-git-gateway){:target="_blank"}. Create a user for yourself and enable git gateway too.
 
 ```
 code \_includes/head.html
@@ -120,7 +120,7 @@ Your head.html file should end up like the following:
 		rel="stylesheet"
 	/>
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
+...
 </head>
 ```
 

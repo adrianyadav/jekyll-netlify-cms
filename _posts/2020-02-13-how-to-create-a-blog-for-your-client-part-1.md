@@ -2,6 +2,8 @@
 layout: post
 title: Creating a blog with Jekyll + Netlify CMS part 1
 ---
+
+
  I've always wonder what the best way to create a blog is from a developer experience as well as a client one. Wordpress for me was too much out of the box and a lot of stuff I didn't really need. I stumbled upon using Jekyll (a static blog generator) with Netlify CMS (headless CMS) and am loving  how easy and intuitive everything is.
 
 In this series, we will be making a blog editable via Netlify CMS.
@@ -23,11 +25,11 @@ Open up http://127.0.0.1:4000/ in Google Chrome and you see the following:
 
 ![Adrian's Blog](/img/uploads/blog-running.jpg)
 
-Let's commit everything.
+Let's commit everything to Git.
 
 ```
 git init
-git remote add origin <your origin here>
+git remote set-url origin <your-origin-here>
 git add --all
 git commit -am "initial commit"
 git push origin master
@@ -44,6 +46,9 @@ If all goes well, Netlify will deploy your site live on a randomly generated URL
 
 ## Adding Nelify CMS to the blog
 
+```
+mkdir admin && cd admin && touch index.html
+code index.html
 
 
-
+```

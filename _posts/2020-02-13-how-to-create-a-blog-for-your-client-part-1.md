@@ -80,12 +80,6 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 media_folder: 'assets/uploads'
-collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: '_posts/'
-    fields:
-      - { name: Title }
 ```
 
 ## Enable identity and git gateway:
@@ -141,4 +135,5 @@ Your Head.html file should end up like this
 </head>
 ```
 
+Let's commit everything and push.
 

@@ -2,7 +2,8 @@
 layout: post
 title: Creating a blog with Jekyll + Netlify CMS part 1
 ---
-I've always wonder what the best way to create a blog is from a developer experience as well as a client one. Wordpress for me was too much out of the box and a lot of stuff I didn't really need. I stumbled upon using Jekyll (a static blog generator) with Netlify CMS (headless CMS) and am loving  how easy and intuitive everything is.
+
+I've always wonder what the best way to create a blog is from a developer experience as well as a client one. Wordpress for me was too much out of the box and a lot of stuff I didn't really need. I stumbled upon using Jekyll (a static blog generator) with Netlify CMS (headless CMS) and am loving how easy and intuitive everything is.
 
 In this series, we will be making a blog editable via Netlify CMS.
 
@@ -16,7 +17,7 @@ I've already created a repo to help kickstart off things
 git clone git@github.com:adrianyadav/jekyll-template-starter.git my-blog
 cd my-blog
 bundle
-jekyll serve --livereload                                                   
+jekyll serve --livereload
 ```
 
 Open up http://127.0.0.1:4000/ in Google Chrome and you see the following:
@@ -31,14 +32,14 @@ git remote set-url origin <your-origin-here>
 git add --all
 git commit -am "initial commit"
 git push origin master
-jekyll serve --livereload                                                                                          
+jekyll serve --livereload
 ```
 
 ## Connecting the repo to Netlify
 
 Sign up for an account on https://www.netlify.com/ and log in. Hit the create a new site button and connect it to your git account and select the repository. And finally hit deploy.
 
-(If you get stuck follow on from <https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/#connecting-to-netlify> 
+(If you get stuck follow on from <https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/#connecting-to-netlify>
 
 If all goes well, Netlify will deploy your site live on a randomly generated URL like <https://adoring-murdock-f38c3d.netlify.com/>
 
@@ -92,13 +93,13 @@ https://www.netlifycms.org/docs/add-to-your-site/#enable-identity-and-git-gatewa
 
 Enable Git Gateway as well.
 
- You will get an email, where you can confirm your account.
+You will get an email, where you can confirm your account.
 
 ```
 code _includes/head.html
 ```
 
-add the following: 
+add the following:
 
 ```
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -135,12 +136,7 @@ Your Head.html file should end up like this
 	gtag('config', 'UA-93042573-3');
 </script>
 
-<style>
-	{% capture include_to_scssify %}
-	  {% include main.scss %}
-	{% endcapture %}
-	{{ include_to_scssify | scssify }}
-</style>
+
 ```
 
 </head>
@@ -154,7 +150,7 @@ git commit -am "added netlify cms"
 git push origin master"
 ```
 
-Every time you push to git, your netlify site will redeploy. 
+Every time you push to git, your netlify site will redeploy.
 
 Now, check your email and you should have received one from Nelify.
 
@@ -215,7 +211,7 @@ jekyll serve --livereload
 http://127.0.0.1:4000/admin/
 ```
 
-Create a new post through the GUI and in few seconds you should see it at top: 
+Create a new post through the GUI and in few seconds you should see it at top:
 
 <https://adoring-murdock-f38c3d.netlify.com/> and <https://adoring-murdock-f38c3d.netlify.com/2020/02/15/testpost-123.html>
 

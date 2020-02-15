@@ -2,19 +2,17 @@
 layout: post
 title: Creating a blog with Jekyll + Netlify CMS part 1
 ---
-I've always wonder what the best way to create a blog is from a developer experience as well as a client one.
-
-Wordpress for me was too much out of the box and included a lot of stuff I didn't really need. I stumbled upon using [Jekyll](https://jekyllrb.com/) (a static blog generator) with [Netlify](https://www.netlify.com/) for hosting as well as [Netlify CMS](https://www.netlifycms.org/) for content management.
+I've always wonder what the best way to create a blog is - meaning it should be both development friendly and easy for clients to edit. I stumbled upon using [Jekyll](https://jekyllrb.com/){:target="_blank"} (a static blog generator) with [Netlify](https://www.netlify.com/){:target="_blank"} for hosting as well as [Netlify CMS](https://www.netlifycms.org/){:target="_blank"} for content management. This stack has been my go to for creating blogs, it's super easy to get started and fun to work with.
 
 In this series, we will be making a blog editable via Netlify CMS.
 
-The final product will look like: <http://adrianyadav-blog.netlify.com/> and we will make every bit of content on the page editable via an admin interface Netlify provides.
+The final product will look like: <http://adrianyadav-blog.netlify.com/>{:target="_blank"} and we will make every bit of content on the page editable via an admin interface Netlify provides.
 
 ## Few notes
 
-If you are ever unsure of how a file should look like: take a look at the [completed repo](ttps://github.com/adrianyadav/jekyll-netlify-cms-blog).
+If you are ever unsure of how a file should look like: take a look at the [completed repo](https://github.com/adrianyadav/jekyll-netlify-cms-blog){:target="_blank"}.
 
-If you see the command "Code" it's set to opens visual studio code, feel free to use whatever text editor you want.
+If you see the command "Code" in the snippets, it's set to opens visual studio code, feel free to use whatever text editor you want.
 
 ## Let's get started
 
@@ -27,7 +25,7 @@ bundle
 jekyll serve --livereload
 ```
 
-Open up <http://127.0.0.1:4000/> in Google Chrome and you see the following:
+Open up <http://127.0.0.1:4000/>{:target="_blank"} in the browser and you should see the following:
 
 ![Adrian's Blog](/img/uploads/blog-running.jpg)
 
@@ -44,9 +42,9 @@ jekyll serve --livereload
 
 ## Connecting the repo to Netlify
 
-Sign up for an account on <https://www.netlify.com/> and log in. Hit the create a new site button and connect it to your git account, select the repository and hit deploy.
+Sign up for an account on <https://www.netlify.com/>{:target="_blank"} and log in. Hit the create a new site button and connect it to your git account, select the repository and hit deploy.
 
-If you get stuck follow on from [here](https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/#connecting-to-netlify).
+If you get stuck follow on from [here](https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/#connecting-to-netlify){:target="_blank"}.
 
 If all goes well, Netlify will deploy your site live on a randomly generated URL like <https://adoring-murdock-f38c3d.netlify.com/>.
 
@@ -99,7 +97,7 @@ collections:
 
 ## Enable identity and git gateway:
 
-Follow the instructons on [Netlify Docs](https://www.netlifycms.org/docs/add-to-your-site/#enable-identity-and-git-gateway). Create a user for yourself and enable git gateway too.
+Follow the instructons on [Netlify Docs](https://www.netlifycms.org/docs/add-to-your-site/#enable-identity-and-git-gateway){:target="_blank"}. Create a user for yourself and enable git gateway too.
 
 ```
 code \_includes/head.html
@@ -122,7 +120,7 @@ Your head.html file should end up like the following:
 		rel="stylesheet"
 	/>
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
+...
 </head>
 ```
 
@@ -134,9 +132,7 @@ git commit -am "added netlify cms"
 git push origin master"
 ```
 
-Every time you push to git, your netlify site will redeploy.
-
-Now, check your email and you should have received one from Nelify.
+Every time you push to git, your netlify site will redeploy. Now, check your email and you should have received one from Nelify.
 
 ![accept-link](/img/uploads/you've-been-invited.png)
 
@@ -144,7 +140,7 @@ Click on "accept the invite link" which will let you create a password for your 
 
 add /admin to your site and login, e.g. <https://adoring-murdock-f38c3d.netlify.com/admin>
 
-Finally you should get the below:
+You should get the below:
 
 ![](/img/uploads/netlify-admin.png)
 
@@ -182,7 +178,7 @@ collections: # A list of collections the CMS should be able to edit
         }
 ```
 
-Commit and push
+Commit and push.
 
 ```
 git commit -am "feat: posts"
@@ -208,7 +204,7 @@ Remember to sync your local with the live version everytime you create a new pos
 git pull origin master
 ```
 
-## Now for the fun stuff
+## Next steps
 
 Now that all the setup is done, we can move on the fun stuff. In the next part, we will make the rest of the site editable via netlify (the header, footer and about page).
 

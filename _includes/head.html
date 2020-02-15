@@ -15,8 +15,14 @@
 		rel="stylesheet"
 	/>
 
-	{% if site.google_analytics %} {% include analytics.html %} {% endif %}
+	{% if site.google_analytics %} {% include analytics.html %} {% endif %} {%
+	if page.url contains 'part' %}
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
 
+	<script>
+		hljs.initHighlightingOnLoad();
+	</script>
+	{% endif %}
 	<title>
 		{% if page.url == "/" %} {{ site.title }} {% else %} {{ page.title}} |
 		Adrian Yadav | Developer, Sydney, AUS. {% endif %}

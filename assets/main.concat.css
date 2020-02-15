@@ -27,6 +27,9 @@ html {
 body {
   box-sizing: border-box; }
 
+img {
+  width: 100%; }
+
 ul,
 ol {
   margin-bottom: 1.5rem;
@@ -278,6 +281,7 @@ body {
   font-weight: 100;
   letter-spacing: 0.75rem; }
   .heading-primary--blog {
+    line-height: 7rem;
     font-size: 5.5rem;
     font-weight: 300;
     color: #ffffff;
@@ -287,6 +291,7 @@ body {
     margin-bottom: 1rem; }
     @media (max-width: 56.25em) {
       .heading-primary--blog {
+        line-height: 3rem;
         font-size: 3rem; } }
   @media (max-width: 37.5em) {
     .heading-primary {
@@ -1282,3 +1287,91 @@ a:hover, a:active {
   @media (max-width: 56.25em) {
     .section-contact {
       padding: 10rem 0; } }
+
+/*
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+*/
+pre {
+  margin-left: -5rem;
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  background: #f8f8f8;
+  overflow-x: scroll;
+  font-family: 'Fira Mono', Monaco, 'Courier New', 'Courier', monospace; }
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8; }
+
+.hljs-comment,
+.hljs-quote {
+  color: #998;
+  font-style: italic; }
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #333;
+  font-weight: bold; }
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #008080; }
+
+.hljs-string,
+.hljs-doctag {
+  color: #d14; }
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #900;
+  font-weight: bold; }
+
+.hljs-subst {
+  font-weight: normal; }
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold; }
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #000080;
+  font-weight: normal; }
+
+.hljs-regexp,
+.hljs-link {
+  color: #009926; }
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #990073; }
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0086b3; }
+
+.hljs-meta {
+  color: #999;
+  font-weight: bold; }
+
+.hljs-deletion {
+  background: #fdd; }
+
+.hljs-addition {
+  background: #dfd; }
+
+.hljs-emphasis {
+  font-style: italic; }
+
+.hljs-strong {
+  font-weight: bold; }

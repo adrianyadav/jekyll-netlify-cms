@@ -12,6 +12,7 @@ body {
 	letter-spacing: 0.75rem;
 
 	&--blog {
+		line-height: 7rem;
 		font-size: 5.5rem;
 		font-weight: $medium-weight;
 		color: $color-white;
@@ -20,6 +21,7 @@ body {
 		text-transform: capitalize;
 		margin-bottom: 1rem;
 		@include respond(tab-port) {
+			line-height: 3rem;
 			font-size: 3rem;
 		}
 	}

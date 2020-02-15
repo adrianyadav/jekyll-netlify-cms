@@ -80,6 +80,13 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 media_folder: 'assets/uploads'
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "_posts/"
+    fields:
+      - { name: Title }
+
 ```
 
 ## Enable identity and git gateway:
@@ -137,3 +144,10 @@ Your Head.html file should end up like this
 
 Let's commit everything and push.
 
+```
+git add --all
+git commit -am "added netlify cms"
+git push origin master"
+```
+
+O

@@ -1021,7 +1021,7 @@ a:hover, a:active {
     height: 55vh; }
     .header--blog {
       clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
-      height: 45vh; }
+      height: 50vh; }
     .header__text-box {
       width: 100%;
       padding: 2rem; }

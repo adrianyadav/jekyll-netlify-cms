@@ -25,7 +25,7 @@ bundle
 jekyll serve --livereload
 ```
 
-Open up <http://127.0.0.1:4000/> in Google Chrome and you see the following:
+Open up <http://127.0.0.1:4000/>{:target="_blank"} in Google Chrome and you see the following:
 
 ![Adrian's Blog](/img/uploads/blog-running.jpg)
 

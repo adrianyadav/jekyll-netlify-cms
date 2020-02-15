@@ -2,7 +2,7 @@
 layout: post
 title: Creating a blog with Jekyll + Netlify CMS part 1
 ---
-
+![]()
 
  I've always wonder what the best way to create a blog is from a developer experience as well as a client one. Wordpress for me was too much out of the box and a lot of stuff I didn't really need. I stumbled upon using Jekyll (a static blog generator) with Netlify CMS (headless CMS) and am loving  how easy and intuitive everything is.
 
@@ -86,15 +86,18 @@ collections:
     folder: "_posts/"
     fields:
       - { name: Title }
-
 ```
 
 ## Enable identity and git gateway:
-https://www.netlifycms.org/docs/add-to-your-site/#enable-identity-and-git-gateway
 
-``` 
+https://www.netlifycms.org/docs/add-to-your-site/#enable-identity-and-git-gateway and create a user for yourself.
+
+Enable Git Gateway as well.
+
+ You will get an email, where you can confirm your account.
+
+```
 code _includes/head.html
-
 ```
 
 add the following: 
@@ -106,8 +109,8 @@ add the following:
 
 
 Your Head.html file should end up like this
-
 ```
+
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -118,29 +121,32 @@ Your Head.html file should end up like this
 	/>
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script
-		async
-		src="https://www.googletagmanager.com/gtag/js?id=UA-93042573-3"
-	></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-93042573-3');
-	</script>
-
-	<style>
-		{% capture include_to_scssify %}
-		  {% include main.scss %}
-		{% endcapture %}
-		{{ include_to_scssify | scssify }}
-	</style>
-</head>
 ```
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script
+	async
+	src="https://www.googletagmanager.com/gtag/js?id=UA-93042573-3"
+></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-93042573-3');
+</script>
+
+<style>
+	{% capture include_to_scssify %}
+	  {% include main.scss %}
+	{% endcapture %}
+	{{ include_to_scssify | scssify }}
+</style>
+```
+
+</head>
+\\\\\`\\\\\``
 
 Let's commit everything and push.
 
@@ -150,4 +156,73 @@ git commit -am "added netlify cms"
 git push origin master"
 ```
 
-O
+Every time you push to git, your netlify site will redeploy. 
+
+Now, check your email and you should have received one from Nelify.
+
+![accept-link](/img/uploads/new-site.png)
+
+Click on "accept the invite link" which will let you create a password for your Netlify account.
+
+add /admin to your site and login: https://adoring-murdock-f38c3d.netlify.com/admin/
+
+Finally you should get the below:
+
+![](/img/uploads/netlify-admin.png)
+
+## Let's add the ability for users to create and delete posts
+
+Open up your netlify /admin/config.yml and add the following:
+
+```
+collections: # A list of collections the CMS should be able to edit
+  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Post" # Used in the UI, ie.: "New Post"
+    folder: "_posts" # The path to the folder where the documents are stored
+    sort: "date:desc" # Default is title:asc      d
+    description: "Manage your posts here"
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} -- {{year}}/{{month}}/{{day}}"
+    fields: # The fields each document in this collection have
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string", tagname: "h1" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Categories",
+          name: "categories",
+          widget: "string",
+          required: false,
+        }
+    meta: # Meta data fields. Just like fields, but without any preview element
+      - {
+          label: "Publish Date",
+          name: "date",
+          widget: "datetime",
+          format: "YYYY-MM-DD hh:mm:ss",
+        }
+```
+
+Commit and push
+
+```
+git commit -am "feat: posts";
+git push origin master"
+```
+
+You can also access /admin locally
+
+```
+jekyll serve --livereload
+http://127.0.0.1:4000/admin/
+```
+
+Create a new post through the GUI and in few seconds you should see it at top: 
+
+<https://adoring-murdock-f38c3d.netlify.com/> and <https://adoring-murdock-f38c3d.netlify.com/2020/02/15/testpost-123.html>
+
+## Congrats,
+
+Now that all the setup is done, we can move on the fun stuff. In the next part, we will make the rest of the site editable via netlify (the header, footer and about page).
+
+Stay tuned.

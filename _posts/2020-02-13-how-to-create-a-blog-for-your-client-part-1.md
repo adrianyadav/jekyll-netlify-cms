@@ -140,7 +140,7 @@ Click on "accept the invite link" which will let you create a password for your 
 
 add /admin to your site and login, e.g. <https://adoring-murdock-f38c3d.netlify.com/admin>
 
-Finally you should get the below:
+You should get the below:
 
 ![](/img/uploads/netlify-admin.png)
 
@@ -178,7 +178,7 @@ collections: # A list of collections the CMS should be able to edit
         }
 ```
 
-Commit and push
+Commit and push.
 
 ```
 git commit -am "feat: posts"
@@ -204,7 +204,7 @@ Remember to sync your local with the live version everytime you create a new pos
 git pull origin master
 ```
 
-## Now for the fun stuff
+## Next steps
 
 Now that all the setup is done, we can move on the fun stuff. In the next part, we will make the rest of the site editable via netlify (the header, footer and about page).
 

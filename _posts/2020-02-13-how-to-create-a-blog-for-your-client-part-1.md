@@ -132,9 +132,7 @@ git commit -am "added netlify cms"
 git push origin master"
 ```
 
-Every time you push to git, your netlify site will redeploy.
-
-Now, check your email and you should have received one from Nelify.
+Every time you push to git, your netlify site will redeploy. Now, check your email and you should have received one from Nelify.
 
 ![accept-link](/img/uploads/you've-been-invited.png)
 

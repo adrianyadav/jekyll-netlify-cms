@@ -49,6 +49,96 @@ If all goes well, Netlify will deploy your site live on a randomly generated URL
 ```
 mkdir admin && cd admin && touch index.html
 code index.html
+```
 
+Copy the following into index.html
 
 ```
+<!-- admin/index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Manager</title>
+  </head>
+  <body>
+    <!-- Include the script that builds the page and powers Netlify CMS -->
+    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  </body>
+</html>
+```
+
+Create the config file with the following contents
+
+```
+touch _config.yml
+
+# config.yml
+
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+media_folder: 'assets/uploads'
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    folder: '_posts/'
+    fields:
+      - { name: Title }
+```
+
+## Enable identity and git gateway:
+https://www.netlifycms.org/docs/add-to-your-site/#enable-identity-and-git-gateway
+
+``` 
+code _includes/head.html
+
+```
+
+add the following: 
+
+```
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+``
+
+
+Your Head.html file should end up like this
+
+```
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	{% feed_meta %} {% seo %}
+	<link
+		href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700&display=swap"
+		rel="stylesheet"
+	/>
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script
+		async
+		src="https://www.googletagmanager.com/gtag/js?id=UA-93042573-3"
+	></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-93042573-3');
+	</script>
+
+	<style>
+		{% capture include_to_scssify %}
+		  {% include main.scss %}
+		{% endcapture %}
+		{{ include_to_scssify | scssify }}
+	</style>
+</head>
+```
+
+

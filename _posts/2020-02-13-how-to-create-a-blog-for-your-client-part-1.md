@@ -4,15 +4,15 @@ title: Creating a blog with Jekyll + Netlify CMS part 1
 ---
 I've always wonder what the best way to create a blog is from a developer experience as well as a client one.
 
-Wordpress for me was too much out of the box and included a lot of stuff I didn't really need. I stumbled upon using [Jekyll](https://jekyllrb.com/) (a static blog generator) with [Netlify](https://www.netlify.com/) for hosting as well as [Netlify CMS](https://www.netlifycms.org/) for content management.
+Wordpress for me was too much out of the box and included a lot of stuff I didn't really need. I stumbled upon using [Jekyll](https://jekyllrb.com/){:target="_blank"} (a static blog generator) with [Netlify](https://www.netlify.com/){:target="_blank"} for hosting as well as [Netlify CMS](https://www.netlifycms.org/){:target="_blank"} for content management.
 
 In this series, we will be making a blog editable via Netlify CMS.
 
-The final product will look like: <http://adrianyadav-blog.netlify.com/> and we will make every bit of content on the page editable via an admin interface Netlify provides.
+The final product will look like: <http://adrianyadav-blog.netlify.com/>{:target="_blank"} and we will make every bit of content on the page editable via an admin interface Netlify provides.
 
 ## Few notes
 
-If you are ever unsure of how a file should look like: take a look at the [completed repo](ttps://github.com/adrianyadav/jekyll-netlify-cms-blog).
+If you are ever unsure of how a file should look like: take a look at the [completed repo](ttps://github.com/adrianyadav/jekyll-netlify-cms-blog){:target="_blank"}.
 
 If you see the command "Code" it's set to opens visual studio code, feel free to use whatever text editor you want.
 
@@ -44,9 +44,9 @@ jekyll serve --livereload
 
 ## Connecting the repo to Netlify
 
-Sign up for an account on <https://www.netlify.com/> and log in. Hit the create a new site button and connect it to your git account, select the repository and hit deploy.
+Sign up for an account on <https://www.netlify.com/>{:target="_blank"} and log in. Hit the create a new site button and connect it to your git account, select the repository and hit deploy.
 
-If you get stuck follow on from [here](https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/#connecting-to-netlify).
+If you get stuck follow on from [here](https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/#connecting-to-netlify){:target="_blank"}.
 
 If all goes well, Netlify will deploy your site live on a randomly generated URL like <https://adoring-murdock-f38c3d.netlify.com/>.
 

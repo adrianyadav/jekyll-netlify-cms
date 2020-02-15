@@ -10,7 +10,7 @@ The final product will look like: <http://adrianyadav-blog.netlify.com/>{:target
 
 ## Few notes
 
-If you are ever unsure of how a file should look like: take a look at the [completed repo](ttps://github.com/adrianyadav/jekyll-netlify-cms-blog){:target="_blank"}.
+If you are ever unsure of how a file should look like: take a look at the [completed repo](https://github.com/adrianyadav/jekyll-netlify-cms-blog){:target="_blank"}.
 
 If you see the command "Code" it's set to opens visual studio code, feel free to use whatever text editor you want.
 

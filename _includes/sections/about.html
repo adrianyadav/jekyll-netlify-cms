@@ -12,14 +12,20 @@
 					href="{{ site.data.home.linkedin }}"
 				>
 					<figure class="profile__shape">
-						<img
-							alt="{{ site.data.home.author }}"
-							class="profile__img"
-							loading="lazy"
-							src="{{ site.data.home.profileImage }}"
-							width="150"
-							height="150"
-						/>
+						<picture>
+							<source srcset="{{ site.data.home.profileImage |
+							replace: "jpg", "webp" }} type="image/webp" />
+							<source srcset="{{ site.data.home.profileImage }}
+							type="image/jpeg" />
+							<img
+								alt="{{ site.data.home.author }}"
+								class="profile__img"
+								loading="lazy"
+								src="{{ site.data.home.profileImage }}"
+								width="150"
+								height="150"
+							/>
+						</picture>
 
 						<figcaption class="profile__caption">
 							Linkedin

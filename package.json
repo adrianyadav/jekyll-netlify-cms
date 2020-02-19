@@ -13,7 +13,7 @@
 		"prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" assets/main.concat.css -o assets/main.prefix.css",
 		"compress:css": "node-sass assets/main.prefix.css assets/main.css --output-style compressed",
 		"build:css": "npm-run-all compile:sass concat:css prefix:css compress:css",
-		"minify:js": "uglifyjs --compress --mangle --output js/master.min.js -- js/vendors/* js/common.js"
+		"minify:js": "uglifyjs --compress --mangle --output js/master.min.js -- js/vendors/* js/common.js js/search.js"
 	},
 	"author": "Adrian Yadav",
 	"license": "ISC",

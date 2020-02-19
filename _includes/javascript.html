@@ -1,27 +1,8 @@
 {% if jekyll.environment == "production" %}
-<script>
-	SimpleJekyllSearch({
-		searchInput: document.getElementById('js-search-input'),
-		resultsContainer: document.getElementById('js-results-container'),
-		json: '{{site.relativeurl}}/search.json',
-		searchResultTemplate:
-			'<li class="search-results__item"><a class="search-results__link" href="{url}">{title}</a></li>',
-		noResultsText: '<li class="no-results">No results found</li>'
-	});
-</script>
 <script src="{{ site.relativeurl }}/js/master.min.js"></script>
 {% else %}
 <script src="{{ site.relativeurl }}/js/vendors/jquery-3.4.1.min.js"></script>
 <script src="{{ site.relativeurl }}/js/vendors/simple-jekyll-search.min.js"></script>
-<script>
-	SimpleJekyllSearch({
-		searchInput: document.getElementById('js-search-input'),
-		resultsContainer: document.getElementById('js-results-container'),
-		json: '{{site.relativeurl}}/search.json',
-		searchResultTemplate:
-			'<li class="search-results__item"><a class="search-results__link" href="{url}">{title}</a></li>',
-		noResultsText: '<li class="no-results">No results found</li>'
-	});
-</script>
 <script src="{{ site.relativeurl }}/js/common.js"></script>
+<script src="{{ site.relativeurl }}/js/search.js"></script>
 {% endif %}

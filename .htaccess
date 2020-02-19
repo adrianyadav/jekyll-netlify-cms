@@ -16,3 +16,4 @@ RewriteRule (.+)\.(jpe?g|png)$ $1.webp [T=image/webp,E=accept:1]
 
 AddType image/webp .webp
 
+ErrorDocument 404 http://www.adrianyadav.com/404/

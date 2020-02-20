@@ -135,7 +135,7 @@ git push origin master"
 
 Every time you push to git, your netlify site will redeploy. Now, check your email and you should have received one from Nelify.
 
-![accept-link](/img/uploads/you've-been-invited.png)
+![accept-link](/img/uploads/you've-been-invited.jpg)
 
 Click on "accept the invite link" which will let you create a password for your Netlify account.
 
@@ -143,7 +143,7 @@ add /admin to your site and login, e.g. <https://adoring-murdock-f38c3d.netlify.
 
 You should get the below:
 
-![](/img/uploads/netlify-admin.png)
+![](/img/uploads/netlify-admin.jpg)
 
 ## Let's add the ability for users to create and delete posts
 
@@ -195,9 +195,9 @@ http://127.0.0.1:4000/admin/
 
 Create a new post through the GUI and in few seconds you should see it at top:
 
-<https://adoring-murdock-f38c3d.netlify.com/> and <https://adoring-murdock-f38c3d.netlify.com/2020/02/15/testpost-123.html>
+<https://adoring-murdock-f38c3d.netlify.com/>
 
-![created-post](/img/uploads/created-post.png)
+![created-post](/img/uploads/youve-been-invited.jpg)
 
 Remember to sync your local with the live version everytime you create a new post.
 

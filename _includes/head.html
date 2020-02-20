@@ -13,9 +13,8 @@
 
 	{% if site.google_analytics %} {% include analytics.html %} {% endif %} {%
 	if page.url contains 'part' %}
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
-
-	<script>
+	<script defer src="../js/vendors/hijs.js"></script>
+	<script defer>
 		hljs.initHighlightingOnLoad();
 	</script>
 	{% endif %}

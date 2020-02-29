@@ -9,6 +9,9 @@
 	"dependencies": {
 		"qs": "^6.9.1",
 		"staticman": "eduardoboucas/staticman#2be29f7",
+		"@octokit/app": "^4.1.0",
+		"@octokit/request": "^5.3.1",
+		"@octokit/rest": "^16.35.0",
 		"url-pattern": "^1.0.3",
 		"yarn": "^1.22.0"
 	}

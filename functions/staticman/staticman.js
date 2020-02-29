@@ -30,7 +30,7 @@ exports.handler = (event, context, callback) => {
 	let options = body.options || {};
 };
 try {
-	const StaticmanAPI = require('staticman/lib/Staticman');
+	const StaticmanAPI = require('./server.js');
 	const api = new StaticmanAPI(params);
 
 	api.start(port => {

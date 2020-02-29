@@ -15,7 +15,7 @@
 		"build:css": "npm-run-all compile:sass concat:css prefix:csspos compress:css",
 		"minify:js": "uglifyjs --compress --mangle --output js/main.min.js -- js/vendors/* js/common.js js/search.js js/lazy.js",
 		"compress:images": "./img/uploads/img2webp.sh",
-		"postinstall": "cd functions/staticman && npm install yarn && yarn"
+		"postinstall": "cd functions/staticman && yarn"
 	},
 	"author": "Adrian Yadav",
 	"license": "ISC",
@@ -27,8 +27,5 @@
 		"postcss-cli": "^7.1.0",
 		"tar": "^6.0.1",
 		"uglify-js": "^3.8.0"
-	},
-	"dependencies": {
-		"yarn": "^1.22.0"
 	}
 }

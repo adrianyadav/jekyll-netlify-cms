@@ -19,15 +19,7 @@ exports.handler = (event, context, callback) => {
 	const body = qs.parse(event.body);
 	const options = body.options || {};
 
-	staticman
-		.processEntry(body.fields, options)
-		.then(() => {
-			callback(null, {
-				statusCode: 200,
-				body: 'Success'
-			});
-		})
-		.catch(error => {
-			callback(error);
-		});
+	staticman.start(port => {
+		console.log('Staticman API running on port', port);
+	});
 };

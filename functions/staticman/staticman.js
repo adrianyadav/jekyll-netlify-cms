@@ -28,14 +28,6 @@ exports.handler = (event, context, callback) => {
 	staticman.setUserAgent(event.headers['user-agent']);
 	body = qs.parse(event.body);
 	let options = body.options || {};
-};
-try {
-	const StaticmanAPI = require('./server.js');
+	const StaticmanAPI = require('staticman/lib/Staticman');
 	const api = new StaticmanAPI(params);
-
-	api.start(port => {
-		console.log('Staticman API running on port', port);
-	});
-} catch (e) {
-	console.error(e);
-}
+};

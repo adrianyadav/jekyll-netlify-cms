@@ -16,6 +16,7 @@ exports.handler = (event, context, callback) => {
   staticman.setConfigPath();
   staticman.setIp(event.headers['client-ip']);
   staticman.setUserAgent(event.headers['user-agent']);
+  
 
   const body = qs.parse(event.body);
   const options = body.options || {};

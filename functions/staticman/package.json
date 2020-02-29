@@ -9,7 +9,7 @@
 	"dependencies": {
 		"@octokit/rest": "^17.0.0",
 		"qs": "^6.9.1",
-		"staticman": "eduardoboucas/staticman#2be29f7",
+		"staticman": "eduardoboucas/staticman",
 		"url-pattern": "^1.0.3",
 		"yarn": "^1.22.0"
 	}

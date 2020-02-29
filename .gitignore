@@ -4,3 +4,5 @@ _site
 .users.yml
 node_modules
 functions/staticman/node_modules
+staticman
+staticman.pub

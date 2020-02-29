@@ -97,4 +97,6 @@ exclude:
         "src",
         "css",
         "_sass",
+        "package.json",
+        "package-lock.json",
     ]

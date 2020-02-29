@@ -1,3 +1,7 @@
 [build]
-  command = "yarn"
+  command = "yarn && jekyll build"
   functions = "functions"
+  publish = "_site"
+
+[build.environment]
+  JEKYLL_ENV = "production"

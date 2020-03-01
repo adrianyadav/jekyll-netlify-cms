@@ -3,7 +3,6 @@ _site
 .jekyll-metadata
 .users.yml
 node_modules
-functions/staticman/node_modules
 staticman
 staticman.pub
 package-lock.json

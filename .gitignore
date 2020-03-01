@@ -6,3 +6,6 @@ node_modules
 staticman
 staticman.pub
 package-lock.json
+
+# Local Netlify folder
+.netlify

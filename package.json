@@ -11,7 +11,7 @@
 		"compile:sass": "node-sass _sass/main.scss assets/main.comp.css",
 		"concat:css": "concat -o assets/main.concat.css assets/main.comp.css",
 		"prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" assets/main.concat.css -o assets/main.prefix.css",
-		"compress:css": "node-sass assets/main.prefix.css assets/main.css --output-style compressed",
+		"compress:css": "node-sass assets/main.prefix.css assets/main.css --output-style compre ssed",
 		"build:css": "npm-run-all compile:sass concat:css prefix:csspos compress:css",
 		"minify:js": "uglifyjs --compress --mangle --output js/main.min.js -- js/vendors/* js/common.js js/search.js js/lazy.js",
 		"compress:images": "./img/uploads/img2webp.sh",

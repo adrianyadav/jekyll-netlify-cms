@@ -70,7 +70,7 @@
 	}
 }
 
-.subscribe {
+.form {
 	&__field {
 		display: flex;
 		@include respond(phone) {
@@ -78,7 +78,6 @@
 		}
 	}
 	&__input {
-		display: inline-block;
 		color: $color-secondary-dark-2;
 		background-color: $color-grey-light-1;
 		margin-bottom: 0rem;
@@ -88,6 +87,17 @@
 			margin-bottom: 1rem;
 		}
 
+		&:focus,
+		&:active {
+			// override autofill-selected
+			background-color: $color-grey-light-1 !important;
+			outline: 3px solid $color-primary;
+		}
+	}
+
+	&__textarea {
+		color: $color-secondary-dark-2;
+		background-color: $color-grey-light-1;
 		&:focus,
 		&:active {
 			// override autofill-selected

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Creating a blog with Jekyll + Netlify CMS part 1
+comments: true
 ---
 
 I've always wondered what the best way to create a blog is - meaning it should be both development friendly and easy for clients to edit. I stumbled upon using [Jekyll](https://jekyllrb.com/){:target="\_blank"} (a static blog generator) with [Netlify](https://www.netlify.com/){:target="\_blank"} for hosting as well as [Netlify CMS](https://www.netlifycms.org/){:target="\_blank"} for content management. This stack has been my go to for creating blogs, it's super easy to get started and fun to work with.
@@ -135,7 +136,7 @@ git push origin master"
 
 Every time you push to git, your netlify site will redeploy. Now, check your email and you should have received one from Nelify.
 
-![accept-link](/img/uploads/you've-been-invited.jpg)
+![accept-link](/img/uploads/youve-been-invited.jpg)
 
 Click on "accept the invite link" which will let you create a password for your Netlify account.
 

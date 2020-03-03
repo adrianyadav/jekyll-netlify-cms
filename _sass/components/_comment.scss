@@ -1,0 +1,69 @@
+/*
+   Comments
+   ========================================================================== */
+
+.post__comments {
+}
+
+.post__comments-form {
+	&.disabled {
+		input,
+		button,
+		textarea,
+		label {
+			pointer-events: none;
+			cursor: not-allowed;
+			filter: alpha(opacity=65);
+			box-shadow: none;
+			opacity: 0.65;
+		}
+	}
+
+	.js-notice {
+		font-size: 0.8rem;
+	}
+}
+
+.comment {
+	display: grid;
+	grid-template-columns: min-content auto;
+	column-gap: 2rem;
+}
+
+.comment__avatar-wrapper {
+}
+
+.comment__avatar {
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+}
+
+.comment__content-wrapper {
+}
+
+.comment__author {
+	display: grid;
+	grid-template-columns: max-content max-content max-content;
+	grid-column-gap: 0.5rem;
+	align-items: center;
+	&-text {
+		margin: 0;
+		font-size: 1.6rem;
+		font-weight: $heavy-weight;
+		color: $default-font-color;
+
+		@include respond(phone) {
+			font-size: 2rem;
+		}
+	}
+}
+
+.comment__date {
+	&-text {
+		font-size: 1.6rem;
+		margin-bottom: 1.5rem;
+		color: $default-font-color;
+		text-transform: capitalize;
+	}
+}

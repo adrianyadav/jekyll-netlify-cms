@@ -1,11 +1,10 @@
 ---
 layout: default
+comments: true
 ---
 
 <article class="post section" id="post">
 	<div class="u-center-margin content ">
-		{{ content }} {%- include subscribe.html -%}
-		<!-- {% include
-		disqus-comments.html %} -->
+		{{ content }} {%- include subscribe.html -%} {% include comments.html %}
 	</div>
 </article>

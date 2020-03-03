@@ -1,0 +1,80 @@
+{% if page.comments == true %}
+<section class="post__comments">
+	{% if site.data.comments[page.slug] %}
+	<!-- Start static comments -->
+	<h3 class="heading-tertiary u-margin-bottom-small">Comments</h3>
+
+	<div id="comments" class="js-comments">
+		{% assign comments = site.data.comments[page.slug] | sort %} {% for
+		comment in comments %} {% assign avatar = comment[1].avatar %} {% assign
+		email = comment[1].email %} {% assign name = comment[1].name %} {%
+		assign url = comment[1].url %} {% assign date = comment[1].date %} {%
+		assign message = comment[1].message %} {% include comment.html
+		index=forloop.index avatar=avatar email=email name=name url=url
+		date=date message=message %} {% endfor %}
+	</div>
+	<!-- End static comments -->
+	{% endif %}
+</section>
+<section>
+	<form
+		id="comment-form"
+		class="comments js-form form comments"
+		method="post"
+		action="https://www.adrianyadav.com/.netlify/functions/staticman/adrianyadav/adrianyadav-netlify/master/comments"
+	>
+		<h3 class="heading-tertiary u-margin-bottom-small">
+			Leave a comment
+		</h3>
+		<p>Your email address will not be published.</p>
+		<p class="hidden js-notice"></p>
+		<span class="js-notice-text"></span>
+		<div class="two-col">
+			<label class="form__label" for="name">
+				Your name
+			</label>
+			<input
+				aria-label="Your name"
+				id="name"
+				name="fields[name]"
+				required=""
+				type="text"
+				class="contact__input form__input"
+			/>
+			<label class="form__label" for="email">
+				Your email address
+			</label>
+
+			<input
+				aria-label="Your email address"
+				id="email"
+				name="fields[email]"
+				required=""
+				type="email"
+				class="contact__input form__input"
+			/>
+		</div>
+
+		<div>
+			<label class="form__label" for="message">
+				Your message
+			</label>
+
+			<textarea
+				aria-label="You message"
+				id="message"
+				name="fields[message]"
+				class="form__textarea contact__textarea"
+			></textarea>
+		</div>
+		<fieldset class="hidden">
+			<input type="hidden" name="options[slug]" value="{{ page.slug }}" />
+			<input type="hidden" name="fields[hidden]" />
+		</fieldset>
+		<input
+			class="btn btn--reverse  contact__btn form__submit"
+			type="submit"
+		/>
+	</form>
+</section>
+{% endif %}

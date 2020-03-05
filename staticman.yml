@@ -74,7 +74,7 @@ comments:
   reCaptcha:
     enabled: true
     siteKey: "6Lf16t4UAAAAAKDEe8SwZwgcUh9hNVt8EnM4hN8I"
-    secret: "KlTy8Xl6M18AvDBabXFimo6pdcTG7SE8wDu/bmJEtnarFVW4EJ4Hy2ZGjlSWIMSZk1i/0yA+//cWWDcw1yez45tiLa9R4hGNGNsXwXsC79J9m28Nic3XaMUpm49154CpzjmA+14Msgib7fIcJ0ttQdZ/NJaVMmNxOes4Orn2BnI="
+    secret: "M5jh0JyVxyRtZxhnPy2dgpV9sbF6Q7efAQHfj3JLLv7b7RWj5Z6EkjGKyuKD3y800loeGXf3PQkdN6qU2ugVndZYyBuaeuXL5gQQ5aolLKI3P6f2w8h/STzQH6KoVpfPJjbAUdKTJnAzblcnnaUU8Jhf8d3m0lZB3OMDcmZtA5s="
 
   # List of transformations to apply to any of the fields supplied. Keys are
   # the name of the field and values are possible transformation types.

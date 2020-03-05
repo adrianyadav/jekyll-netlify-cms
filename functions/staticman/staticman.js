@@ -3,7 +3,7 @@ const UrlPattern = require('url-pattern');
 const Staticman = require('staticman/lib/Staticman');
 
 const pattern = new UrlPattern(
-	'/.netlify/functions/staticman/:username/:repository/:branch/:property'
+	'/.netlify/functions/staticman/:username/:repository/:branch/:property(/)'
 );
 
 exports.handler = (event, context, callback) => {

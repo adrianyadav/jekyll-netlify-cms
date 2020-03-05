@@ -41,7 +41,8 @@ date_format: "%d %b %Y"
 # Recaptcha
 reCaptcha:
     siteKey: "6Lf16t4UAAAAAKDEe8SwZwgcUh9hNVt8EnM4hN8I"
-    secret: "6Lf16t4UAAAAAIImTeuJkXsFRL4CK6v_Gh7noYEm"
+    secret: "
+M5jh0JyVxyRtZxhnPy2dgpV9sbF6Q7efAQHfj3JLLv7b7RWj5Z6EkjGKyuKD3y800loeGXf3PQkdN6qU2ugVndZYyBuaeuXL5gQQ5aolLKI3P6f2w8h/STzQH6KoVpfPJjbAUdKTJnAzblcnnaUU8Jhf8d3m0lZB3OMDcmZtA5s="
 
 # GA
 google_analytics: "UA-93042573-1"

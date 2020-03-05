@@ -19,10 +19,17 @@
 <section>
 	<form
 		id="comment-form"
-		class="comments js-form form comments"
+		class="comments js-form form post__comments-form"
 		method="post"
 		action="https://www.adrianyadav.com/.netlify/functions/staticman/adrianyadav/adrianyadav-netlify/master/comments"
 	>
+		<input type="hidden" name="options[slug]" value="{{ page.slug }}" />
+		<input type="hidden" name="fields[hidden]" />
+		<input
+			type="hidden"
+			name="options[redirect]"
+			value="https://www.adrianyadav.com/thanks"
+		/>
 		<h3 class="heading-tertiary u-margin-bottom-small">
 			Leave a comment
 		</h3>
@@ -67,13 +74,10 @@
 				class="form__textarea contact__textarea"
 			></textarea>
 		</div>
-		<fieldset class="hidden">
-			<input type="hidden" name="options[slug]" value="{{ page.slug }}" />
-			<input type="hidden" name="fields[hidden]" />
-		</fieldset>
 		<input
 			class="btn btn--reverse  contact__btn form__submit"
 			type="submit"
+			id="comment-form-submit"
 		/>
 	</form>
 </section>

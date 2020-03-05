@@ -23,6 +23,13 @@ $color-gray-dark-3: #333;
 $color-white: #ffffff;
 $color-black: #000;
 
+//  NOTICE
+$gray: #4c4c4c;
+$success-color: mix($gray, #2ecc71, 15%);
+$warning-color: mix($gray, #f3bc15, 15%);
+$danger-color: mix($gray, #dc081d, 15%);
+$info-color: mix($gray, #427ab8, 15%);
+
 // SEARCH
 
 $color-white-gradient: rgba($color-white, 1);

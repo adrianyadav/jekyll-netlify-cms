@@ -77,9 +77,13 @@
 			display: block;
 		}
 	}
+	&__label {
+		display: block;
+		margin-bottom: 0.7rem;
+	}
 	&__input {
 		color: $color-secondary-dark-2;
-		background-color: $color-grey-light-1;
+		background-color: $color-grey-light-1 !important;
 		margin-bottom: 0rem;
 		max-width: 42rem;
 		@include respond(phone) {

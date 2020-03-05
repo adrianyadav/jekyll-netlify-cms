@@ -40,8 +40,8 @@ date_format: "%d %b %Y"
 
 # Recaptcha
 reCaptcha:
-    siteKey: "6Lfx6d4UAAAAADvOseqzXuAHaS3n8zAk_3Yhhk1r"
-    secret: "6Lfx6d4UAAAAANd6uK3Tz0p2LgIwpaECzyXgYxXm"
+    siteKey: "6Lf16t4UAAAAAKDEe8SwZwgcUh9hNVt8EnM4hN8I"
+    secret: "6Lf16t4UAAAAAIImTeuJkXsFRL4CK6v_Gh7noYEm"
 
 # GA
 google_analytics: "UA-93042573-1"

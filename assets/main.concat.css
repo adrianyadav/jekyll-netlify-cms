@@ -269,6 +269,20 @@ blockquote {
 .overlay {
   opacity: 0.7; }
 
+.two-col {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: column;
+  grid-column-gap: 1rem;
+  margin-bottom: 1rem; }
+  @media (max-width: 37.5em) {
+    .two-col {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+      grid-auto-flow: row;
+      column-gap: 0; } }
+
 /* roboto-100 - latin */
 @font-face {
   font-family: 'Roboto';
@@ -527,6 +541,55 @@ a:hover, a:active {
   .content__excerpt {
     font-size: 1.8rem;
     margin-bottom: 2rem; }
+  .post__comments,
+  .content__comments {
+    margin-bottom: 1.5rem; }
+
+/*
+   Comments
+   ========================================================================== */
+.post__comments-form.disabled input,
+.post__comments-form.disabled button,
+.post__comments-form.disabled textarea,
+.post__comments-form.disabled label {
+  pointer-events: none;
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  box-shadow: none;
+  opacity: 0.65; }
+
+.post__comments-form .js-notice {
+  font-size: 0.8rem; }
+
+.comment {
+  display: grid;
+  grid-template-columns: min-content auto;
+  column-gap: 2rem; }
+
+.comment__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px; }
+
+.comment__author {
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  grid-column-gap: 0.5rem;
+  align-items: center; }
+  .comment__author-text {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #3b3d41; }
+    @media (max-width: 37.5em) {
+      .comment__author-text {
+        font-size: 2rem; } }
+
+.comment__date-text {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: #3b3d41;
+  text-transform: capitalize; }
 
 .card {
   perspective: 150rem;
@@ -691,33 +754,43 @@ a:hover, a:active {
     min-height: 10rem;
     margin-bottom: 1rem; }
 
-.subscribe__field {
+.form__field {
   display: flex; }
   @media (max-width: 37.5em) {
-    .subscribe__field {
+    .form__field {
       display: block; } }
 
-.subscribe__input {
-  display: inline-block;
+.form__label {
+  display: block;
+  margin-bottom: 0.7rem; }
+
+.form__input {
   color: #1e242c;
-  background-color: #f7f7f7f7;
+  background-color: #f7f7f7f7 !important;
   margin-bottom: 0rem;
   max-width: 42rem; }
   @media (max-width: 37.5em) {
-    .subscribe__input {
+    .form__input {
       width: 100%;
       margin-bottom: 1rem; } }
-  .subscribe__input:focus, .subscribe__input:active {
+  .form__input:focus, .form__input:active {
     background-color: #f7f7f7f7 !important;
     outline: 3px solid #07689f; }
 
-.subscribe__submit {
+.form__textarea {
+  color: #1e242c;
+  background-color: #f7f7f7f7; }
+  .form__textarea:focus, .form__textarea:active {
+    background-color: #f7f7f7f7 !important;
+    outline: 3px solid #07689f; }
+
+.form__submit {
   display: inline-block;
   margin-left: 1rem; }
-  .subscribe__submit:focus {
+  .form__submit:focus {
     outline: 3px solid #07689f; }
   @media (max-width: 37.5em) {
-    .subscribe__submit {
+    .form__submit {
       margin-left: 0;
       margin-bottom: 1rem;
       width: 100%; } }
@@ -779,7 +852,8 @@ a:hover, a:active {
   font-weight: 100;
   background-color: white;
   color: #1b242f;
-  padding: 1.5rem 4rem; }
+  padding: 1.5rem 4rem;
+  margin-left: 0; }
 
 .btn:hover, .btn:active, .btn:focus {
   transform: translateY(-0.3rem);
@@ -900,6 +974,171 @@ a:hover, a:active {
 #gradient-horizontal {
   --color-primary-dark: #3f76a3;
   --color-primary: #a2d5f2; }
+
+/* ==========================================================================
+   NOTICE TEXT BLOCKS
+   ========================================================================== */
+/**
+ * Default Kramdown usage (no indents!):
+ * <div class="notice" markdown="1">
+ * #### Headline for the Notice
+ * Text for the notice
+ * </div>
+ */
+/* default notice */
+.notice {
+  margin: 2em 0;
+  padding: 1em;
+  background-color: #e6f0f5;
+  border-top: 0.25em solid #83b4cf;
+  border-bottom: 0.25em solid #83b4cf; }
+  .notice h4 {
+    margin-top: 0 !important;
+    margin-bottom: 0.75em;
+    line-height: 1 !important; }
+  .page-content .notice h4 {
+    /* using at-root to override .page-content h4 font size */
+    margin-bottom: 0;
+    font-size: 1rem; }
+  .page-content .notice a {
+    border-bottom-width: 2px;
+    box-shadow: none !important; }
+    .page-content .notice a:hover {
+      background-color: transparent !important; }
+  .notice p {
+    margin-bottom: 0; }
+    .notice p a {
+      border-bottom: 1px solid #83b4cf !important; }
+  .notice h4 + p {
+    /* remove space above paragraphs that appear directly after notice headline */
+    margin-top: 0;
+    padding-top: 0; }
+  .notice code {
+    background-color: #b5d2e2; }
+
+/* info notice */
+.notice--info {
+  margin: 2em 0;
+  padding: 1em;
+  background-color: #ecf1f6;
+  border-top: 0.25em solid #a2b9d4;
+  border-bottom: 0.25em solid #a2b9d4; }
+  .notice--info h4 {
+    margin-top: 0 !important;
+    margin-bottom: 0.75em;
+    line-height: 1 !important; }
+  .page-content .notice--info h4 {
+    /* using at-root to override .page-content h4 font size */
+    margin-bottom: 0;
+    font-size: 1rem; }
+  .page-content .notice--info a {
+    border-bottom-width: 2px;
+    box-shadow: none !important; }
+    .page-content .notice--info a:hover {
+      background-color: transparent !important; }
+  .notice--info p {
+    margin-bottom: 0; }
+    .notice--info p a {
+      border-bottom: 1px solid #a2b9d4 !important; }
+  .notice--info h4 + p {
+    /* remove space above paragraphs that appear directly after notice headline */
+    margin-top: 0;
+    padding-top: 0; }
+  .notice--info code {
+    background-color: #c7d5e5; }
+
+/* warning notice */
+.notice--warning {
+  margin: 2em 0;
+  padding: 1em;
+  background-color: #fbf7e8;
+  border-top: 0.25em solid #edd58e;
+  border-bottom: 0.25em solid #edd58e; }
+  .notice--warning h4 {
+    margin-top: 0 !important;
+    margin-bottom: 0.75em;
+    line-height: 1 !important; }
+  .page-content .notice--warning h4 {
+    /* using at-root to override .page-content h4 font size */
+    margin-bottom: 0;
+    font-size: 1rem; }
+  .page-content .notice--warning a {
+    border-bottom-width: 2px;
+    box-shadow: none !important; }
+    .page-content .notice--warning a:hover {
+      background-color: transparent !important; }
+  .notice--warning p {
+    margin-bottom: 0; }
+    .notice--warning p a {
+      border-bottom: 1px solid #edd58e !important; }
+  .notice--warning h4 + p {
+    /* remove space above paragraphs that appear directly after notice headline */
+    margin-top: 0;
+    padding-top: 0; }
+  .notice--warning code {
+    background-color: #f4e6bb; }
+
+/* success notice */
+.notice--success {
+  margin: 2em 0;
+  padding: 1em;
+  background-color: #ebf8f0;
+  border-top: 0.25em solid #99dcb5;
+  border-bottom: 0.25em solid #99dcb5; }
+  .notice--success h4 {
+    margin-top: 0 !important;
+    margin-bottom: 0.75em;
+    line-height: 1 !important; }
+  .page-content .notice--success h4 {
+    /* using at-root to override .page-content h4 font size */
+    margin-bottom: 0;
+    font-size: 1rem; }
+  .page-content .notice--success a {
+    border-bottom-width: 2px;
+    box-shadow: none !important; }
+    .page-content .notice--success a:hover {
+      background-color: transparent !important; }
+  .notice--success p {
+    margin-bottom: 0; }
+    .notice--success p a {
+      border-bottom: 1px solid #99dcb5 !important; }
+  .notice--success h4 + p {
+    /* remove space above paragraphs that appear directly after notice headline */
+    margin-top: 0;
+    padding-top: 0; }
+  .notice--success code {
+    background-color: #c2ead3; }
+
+/* danger notice */
+.notice--danger {
+  margin: 2em 0;
+  padding: 1em;
+  background-color: #f9e7e9;
+  border-top: 0.25em solid #e38992;
+  border-bottom: 0.25em solid #e38992; }
+  .notice--danger h4 {
+    margin-top: 0 !important;
+    margin-bottom: 0.75em;
+    line-height: 1 !important; }
+  .page-content .notice--danger h4 {
+    /* using at-root to override .page-content h4 font size */
+    margin-bottom: 0;
+    font-size: 1rem; }
+  .page-content .notice--danger a {
+    border-bottom-width: 2px;
+    box-shadow: none !important; }
+    .page-content .notice--danger a:hover {
+      background-color: transparent !important; }
+  .notice--danger p {
+    margin-bottom: 0; }
+    .notice--danger p a {
+      border-bottom: 1px solid #e38992 !important; }
+  .notice--danger h4 + p {
+    /* remove space above paragraphs that appear directly after notice headline */
+    margin-top: 0;
+    padding-top: 0; }
+  .notice--danger code {
+    background-color: #eeb8bd; }
 
 /* Search */
 .search {
@@ -1213,16 +1452,16 @@ a:hover, a:active {
     content: '';
     display: table;
     clear: both; }
-  .row [class^="col-"] {
+  .row [class^='col-'] {
     float: left; }
-    .row [class^="col-"]:not(:last-child) {
+    .row [class^='col-']:not(:last-child) {
       margin-right: 6rem; }
       @media (max-width: 56.25em) {
-        .row [class^="col-"]:not(:last-child) {
+        .row [class^='col-']:not(:last-child) {
           margin-right: 0;
           margin-bottom: 6rem; } }
     @media (max-width: 56.25em) {
-      .row [class^="col-"] {
+      .row [class^='col-'] {
         width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }

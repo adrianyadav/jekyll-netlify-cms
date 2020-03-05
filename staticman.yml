@@ -71,6 +71,11 @@ comments:
   # an error will be thrown.
   requiredFields: ["name", "email", "message"]
 
+    reCaptcha:
+    enabled: true
+    siteKey: "6Lfx6d4UAAAAADvOseqzXuAHaS3n8zAk_3Yhhk1r"
+    secret: "AZ8FdlItzOdPbpWhOU9TBHIW8d1U9WhmGNdiE6k9sSQ4z44MloEHFFYDKgGP9tqvxCjkMinap0NCCnXMDxodZqnVt4Y3FEZ4tLzVzaTEBWX5MgoTcnI1p6X2ldpa4kLX22CooJoyKBDNsm1aS9JbvTLW7EdrLYRbHIxdziJe034="
+
   # List of transformations to apply to any of the fields supplied. Keys are
   # the name of the field and values are possible transformation types.
   transforms:

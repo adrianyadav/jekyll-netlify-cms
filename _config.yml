@@ -38,6 +38,11 @@ date_format: "%d %b %Y"
 #header_pages:
 # - about.html
 
+# Recaptcha
+reCaptcha:
+    siteKey: "6Lfx6d4UAAAAADvOseqzXuAHaS3n8zAk_3Yhhk1r"
+    secret: "6Lfx6d4UAAAAANd6uK3Tz0p2LgIwpaECzyXgYxXm"
+
 # GA
 google_analytics: "UA-93042573-1"
 

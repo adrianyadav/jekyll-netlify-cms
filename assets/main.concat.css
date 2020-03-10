@@ -104,8 +104,6 @@ blockquote {
 .hvr-sweep-to-right {
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   -webkit-transition-property: color;
@@ -198,7 +196,9 @@ blockquote {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s; }
 
-.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+.hvr-bounce-in:hover,
+.hvr-bounce-in:focus,
+.hvr-bounce-in:active {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
   -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
@@ -988,10 +988,8 @@ a:hover, a:active {
 /* default notice */
 .notice {
   margin: 2em 0;
-  padding: 1em;
-  background-color: #e6f0f5;
-  border-top: 0.25em solid #83b4cf;
-  border-bottom: 0.25em solid #83b4cf; }
+  padding: 2rem;
+  background-color: #e6f0f5; }
   .notice h4 {
     margin-top: 0 !important;
     margin-bottom: 0.75em;
@@ -1019,10 +1017,8 @@ a:hover, a:active {
 /* info notice */
 .notice--info {
   margin: 2em 0;
-  padding: 1em;
-  background-color: #ecf1f6;
-  border-top: 0.25em solid #a2b9d4;
-  border-bottom: 0.25em solid #a2b9d4; }
+  padding: 2rem;
+  background-color: #ecf1f6; }
   .notice--info h4 {
     margin-top: 0 !important;
     margin-bottom: 0.75em;
@@ -1050,10 +1046,8 @@ a:hover, a:active {
 /* warning notice */
 .notice--warning {
   margin: 2em 0;
-  padding: 1em;
-  background-color: #fbf7e8;
-  border-top: 0.25em solid #edd58e;
-  border-bottom: 0.25em solid #edd58e; }
+  padding: 2rem;
+  background-color: #fbf7e8; }
   .notice--warning h4 {
     margin-top: 0 !important;
     margin-bottom: 0.75em;
@@ -1081,10 +1075,8 @@ a:hover, a:active {
 /* success notice */
 .notice--success {
   margin: 2em 0;
-  padding: 1em;
-  background-color: #ebf8f0;
-  border-top: 0.25em solid #99dcb5;
-  border-bottom: 0.25em solid #99dcb5; }
+  padding: 2rem;
+  background-color: #ebf8f0; }
   .notice--success h4 {
     margin-top: 0 !important;
     margin-bottom: 0.75em;
@@ -1112,10 +1104,8 @@ a:hover, a:active {
 /* danger notice */
 .notice--danger {
   margin: 2em 0;
-  padding: 1em;
-  background-color: #f9e7e9;
-  border-top: 0.25em solid #e38992;
-  border-bottom: 0.25em solid #e38992; }
+  padding: 2rem;
+  background-color: #f9e7e9; }
   .notice--danger h4 {
     margin-top: 0 !important;
     margin-bottom: 0.75em;

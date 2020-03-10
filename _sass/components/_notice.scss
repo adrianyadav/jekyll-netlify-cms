@@ -12,10 +12,8 @@
 
 @mixin notice($notice-color) {
 	margin: 2em 0;
-	padding: 1em;
+	padding: 2rem;
 	background-color: mix(#fff, $notice-color, 90%);
-	border-top: 0.25em solid mix(#fff, $notice-color, 50%);
-	border-bottom: 0.25em solid mix(#fff, $notice-color, 50%);
 
 	h4 {
 		margin-top: 0 !important; // override

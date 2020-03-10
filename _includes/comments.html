@@ -25,7 +25,7 @@
 	>
 		<input type="hidden" name="options[slug]" value="{{ page.slug }}" />
 		<input type="hidden" name="fields[hidden]" />
-		<input
+		<!-- <input
 			type="hidden"
 			name="options[reCaptcha][siteKey]"
 			value="6Lf16t4UAAAAAKDEe8SwZwgcUh9hNVt8EnM4hN8I"
@@ -34,13 +34,14 @@
 			type="hidden"
 			name="options[reCaptcha][secret]"
 			value="GfvoZAKXjED9gg1EXdPbfvam60uv4041N09ZBLg7gJ/+SBp4raxlLPjkOctnSa01l7klD67xnCTAU6RQddAwOkkf6smas2XBhfKFWhFE1ysajv6xF5pkl2LIfAKXbBdqQjU1OttVnd9D9bbLZ0amMBkDOv5swEjZBs51KmR3sx8="
-		/>
+		/> -->
 		<h3 class="heading-tertiary u-margin-bottom-small">
 			Leave a comment
 		</h3>
 		<p>Your email address will not be published.</p>
-		<p class="hidden js-notice"></p>
-		<span class="js-notice-text"></span>
+		<div class="hidden js-notice">
+			<p class="js-notice-text"></p>
+		</div>
 		<div class="two-col">
 			<label class="form__label" for="name">
 				Your name
@@ -79,11 +80,11 @@
 				class="form__textarea contact__textarea"
 			></textarea>
 		</div>
-		<div
+		<!-- <div
 			class="g-recaptcha"
 			data-sitekey="6Lf16t4UAAAAAKDEe8SwZwgcUh9hNVt8EnM4hN8I"
 		></div>
-		<br />
+		<br /> -->
 		<input
 			class="btn btn--reverse  contact__btn form__submit"
 			type="submit"

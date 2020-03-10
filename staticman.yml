@@ -72,9 +72,9 @@ comments:
   requiredFields: ["name", "email", "message"]
 
   reCaptcha:
-    enabled: true
-    siteKey: "6Lf16t4UAAAAAKDEe8SwZwgcUh9hNVt8EnM4hN8I"
-    secret: "GfvoZAKXjED9gg1EXdPbfvam60uv4041N09ZBLg7gJ/+SBp4raxlLPjkOctnSa01l7klD67xnCTAU6RQddAwOkkf6smas2XBhfKFWhFE1ysajv6xF5pkl2LIfAKXbBdqQjU1OttVnd9D9bbLZ0amMBkDOv5swEjZBs51KmR3sx8="
+    enabled: false
+    # siteKey: "6Lf16t4UAAAAAKDEe8SwZwgcUh9hNVt8EnM4hN8I"
+    # secret: "GfvoZAKXjED9gg1EXdPbfvam60uv4041N09ZBLg7gJ/+SBp4raxlLPjkOctnSa01l7klD67xnCTAU6RQddAwOkkf6smas2XBhfKFWhFE1ysajv6xF5pkl2LIfAKXbBdqQjU1OttVnd9D9bbLZ0amMBkDOv5swEjZBs51KmR3sx8="
 
   # List of transformations to apply to any of the fields supplied. Keys are
   # the name of the field and values are possible transformation types.

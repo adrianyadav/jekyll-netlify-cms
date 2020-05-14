@@ -7,52 +7,50 @@
 			{{ site.data.home.sectionProjectTitle }}
 		</h2>
 	</div>
-	<div class="row">
+	<div class="cards">
 		{% for item in site.data.projects.items %} {% assign projectName =
 		item.projectName | replace_first: ' ', '' | downcase %}
 
-		<div class="col-1-of-3">
-			<div class="card">
-				<div class="card__side card__side--front">
-					<div class="card__picture card__picture--{{ projectName }}">
-						&nbsp;
-					</div>
-					<h3 class="card__heading">
-						<span
-							class="card__heading-span card__heading-span--{{
+		<div class="card">
+			<div class="card__side card__side--front">
+				<div class="card__picture card__picture--{{ projectName }}">
+					&nbsp;
+				</div>
+				<h3 class="card__heading">
+					<span
+						class="card__heading-span card__heading-span--{{
 								projectName
 							}}"
-							>{{ item.projectName }}</span
-						>
-					</h3>
-					<div class="card__details">
-						{{ item.body | markdownify }}
-					</div>
+						>{{ item.projectName }}</span
+					>
+				</h3>
+				<div class="card__details">
+					{{ item.body | markdownify }}
 				</div>
-				<div
-					class="card__side card__side--back card__side--back-{{
+			</div>
+			<div
+				class="card__side card__side--back card__side--back-{{
 						projectName
 					}}"
-				>
-					<div class="card__cta">
-						{% if item.projectGithubRepo == true %}
-						<a
-							class="btn btn--white"
-							href="{{ item.projectLiveLink }}"
-							target="_blank"
-							rel="noopener"
-							>Github repo
-						</a>
-						{% else %}
-						<a
-							class="btn btn--white"
-							href="{{ item.projectLiveLink }}"
-							rel="noopener"
-							target="_blank"
-							>Visit website
-						</a>
-						{% endif %}
-					</div>
+			>
+				<div class="card__cta">
+					{% if item.projectGithubRepo == true %}
+					<a
+						class="btn btn--white"
+						href="{{ item.projectLiveLink }}"
+						target="_blank"
+						rel="noopener"
+						>Github repo
+					</a>
+					{% else %}
+					<a
+						class="btn btn--white"
+						href="{{ item.projectLiveLink }}"
+						rel="noopener"
+						target="_blank"
+						>Visit website
+					</a>
+					{% endif %}
 				</div>
 			</div>
 		</div>

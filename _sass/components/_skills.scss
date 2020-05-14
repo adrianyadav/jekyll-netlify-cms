@@ -1,5 +1,98 @@
+@mixin skill-reverse {
+	transform: translateY(0rem);
+	background: $background-primary-gradient;
+
+	.skill__icon,
+	.skill__title,
+	.skill__description {
+		color: $color-white;
+		fill: $color-white;
+	}
+}
+
+@mixin skill-reverse-after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200%;
+	height: 0%;
+	transform: rotate(-50deg) translateX(-50%);
+	transform-origin: top left;
+	background: $background-primary-gradient;
+	z-index: -1;
+}
+
+.skills {
+	// fallback to flex
+	display: flex;
+	width: min-content;
+	margin: 0 auto;
+	@supports (display: grid) {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+		@include respond(phone) {
+			grid-gap: 2rem;
+		}
+	}
+}
+
 .skill {
 	display: flex;
+	width: 100%;
+	min-width: 220px;
+	@supports (display: grid) {
+		width: initial;
+		min-width: 220px;
+	}
+
+	&--reverse {
+		grid-column: 2;
+		grid-row: 3;
+		@include skill-reverse();
+
+		&::before {
+			@include skill-reverse-after();
+			height: 150%;
+			transform: rotate(-50deg) translateX(-50%);
+		}
+
+		&:after {
+			background: rgba($color-white, 0.8);
+		}
+	}
+
+	&:nth-child(2) {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 3;
+		grid-row-end: 4;
+	}
+
+	&:nth-child(3) {
+		grid-column-start: 2;
+		grid-row-start: 4;
+	}
+
+	&:nth-child(4) {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 3;
+		grid-row-end: 4;
+	}
+
+	&:nth-child(5) {
+		grid-column-start: 2;
+	}
+	&.skill {
+		@include respond(phone) {
+			grid-column-start: auto;
+			grid-column-end: auto;
+			grid-row-start: auto;
+			grid-row-end: auto;
+		}
+	}
+
 	flex-direction: column;
 	justify-content: center;
 	height: 30.5rem;
@@ -25,28 +118,11 @@
 	}
 
 	&:hover {
-		transform: translateY(0rem);
-		background: $background-primary-gradient;
-
-		.skill__icon,
-		.skill__title,
-		.skill__description {
-			color: $color-white;
-			fill: $color-white;
-		}
+		@include skill-reverse();
 	}
 
 	&:after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 200%;
-		height: 0%;
-		transform: rotate(-50deg) translateX(-50%);
-		transform-origin: top left;
-		background: $background-primary-gradient;
-		z-index: -1;
+		@include skill-reverse-after();
 	}
 
 	&:hover::after {

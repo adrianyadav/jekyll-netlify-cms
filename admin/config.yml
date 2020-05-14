@@ -1,3 +1,5 @@
+---
+---
 backend:
   name: git-gateway
   branch: master # Branch to update (master by default)
@@ -17,13 +19,27 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string", tagname: "h1" }
-      - { label: "Body", name: "body", widget: "markdown" }
       - {
           label: "Categories",
           name: "categories",
           widget: "string",
           required: false,
         }
+
+      - { label: "Body", name: "body", widget: "markdown" }
+      - label: Comments
+        name: comments
+        widget: list
+        file: "_data/comments.yml"
+        fields:
+          - label: "Comments"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "author", name: "author", widget: string }
+              - { label: "comment", name: "comment", widget: string }
+              - { label: "date", name: "date", widget: string }
+
     meta: # Meta data fields. Just like fields, but without any preview element
       - {
           label: "Publish Date",

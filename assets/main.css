@@ -593,9 +593,10 @@ a:hover, a:active {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 340px));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 340px));
   margin: 0 auto;
-  width: 100%; }
+  width: 100%;
+  justify-content: space-evenly; }
 
 .card {
   perspective: 150rem;
@@ -1039,7 +1040,7 @@ a:hover, a:active {
     margin-bottom: 0;
     transition: fill 0.25s ease-in; }
     .icon--logo:hover {
-      fill: #07689f; }
+      fill: #033f63; }
 
 #gradient-horizontal {
   --color-primary-dark: #3f76a3;

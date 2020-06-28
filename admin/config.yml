@@ -1,5 +1,3 @@
----
----
 backend:
   name: git-gateway
   branch: master # Branch to update (master by default)
@@ -40,13 +38,6 @@ collections: # A list of collections the CMS should be able to edit
               - { label: "comment", name: "comment", widget: string }
               - { label: "date", name: "date", widget: string }
 
-    meta: # Meta data fields. Just like fields, but without any preview element
-      - {
-          label: "Publish Date",
-          name: "date",
-          widget: "datetime",
-          format: "YYYY-MM-DD hh:mm:ss",
-        }
   - name: "homepage"
     label: "Homepage"
     description: "Manage homepage here"

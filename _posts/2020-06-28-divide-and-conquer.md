@@ -5,9 +5,11 @@ comments: []
 ---
 I think one of the most important skills a person can have is the ability to break up a large task into smaller bits. When we achieve a small task, we get into the rhythm and which makes the next task less daunting.
 
-The reason why you should make your bed in the morning is that it's a small task which helps build momentum: you start your day already having accomplished something early. If you can't make your bed in the morning then something harder like going to the gym in the morning is going to be impossible.
+The reason why you should make your bed in the morning is that it's a small task which helps build **momentum**: you start your day with a small win. 
 
-I think starting your day with micro tasks, making your bed, doing a 1min breathing exercise, reading a paragraph of a book etc helps build solid momentum and allows you to tackle harder tasks with a good mindset.
+I think starting your day with micro tasks, making your bed, doing a 1min breathing exercise, reading a paragraph of a book, exercising - helps you get into a rhythm and mindset for taking the day on. Each task is harder than the previous.
+
+## Projects
 
 Often, when we think of a project  (assignment, construction, app etc) - it seems a bit daunting. For example, if I have a 2500 word assignment - my brain automatically thinks what a massive amount of effort it's going to take, which means I'll put it off until the last possible moment. 
 
@@ -38,9 +40,3 @@ So here, I just broke the assignment into 15 steps. During the initial bit, the 
 What's also important here is, that each step  is very specific and not vague (write 250 words). It's easy for me to start the assignment and as I tick the parts, I gain a small victory which helps me flow to the next bit.
 
 If you are able to break down a project in to small and achievable units of work(s) then you can trick your mind into doing something it doesn't initially want to.
-
-
-
- 
-
-

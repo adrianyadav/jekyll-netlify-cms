@@ -3,11 +3,11 @@ layout: post
 title: Divide and conquer
 comments: []
 ---
-I think one of the most important skills a person can have is the ability to break up a large task into smaller bits. We can't jump into the hard stuff right away - we need to ease ourselves into it. When we achieve a small task, we get into the rhythm and this makes transitioning into harder task(s) easier.
+I think one of the most important skills a person can have is the ability to break up a large task into smaller bits. We can't jump into the hard stuff right away - we need to ease ourselves into it. When we achieve a small task, we get into the rhythm and this makes transitioning into harder tasks easier.
 
-The reason why you should make your bed in the morning is that it's a small task which helps build **momentum**: you start your day with a small win. The importance of this is, not that you made your bed - it's that you tricked your mind into doing something it probably didn't want to.
+The reason why you should make your bed in the morning is that it's a small task which helps build **momentum**: you start your day with a small win. The outcome of this is, not that you made your bed - it's that you tricked your mind into doing something it probably didn't want to.
 
-Starting your day with micro tasks, making your bed, doing a 1min breathing exercise, reading a paragraph of a book, exercising, etc - gives you a head start in the day. By the time, you roll into work - you've already achieved a few things and the endorphins will flow.
+Starting your day with micro tasks, making your bed, doing a 1min breathing exercise, reading a paragraph of a book, exercising lightly, etc - gives you a head start in the day. By the time, you roll into work - you've already achieved a few things and the endorphins will flow.
 
 ## Starting a project
 
@@ -17,7 +17,7 @@ However if I reframe my thinking, it becomes a bit easier. Let's say I have 10 d
 
 While, thinking of the assignment in 250 words per day helped - it didn't exactly help me start the assignment. This is because the 250 word goal wasn't very specific and my brain thinks that even that 250 words is too much effort to start with. 
 
-Once, I get into the flow - I can probably smash out 500-1000 words in a few hours no problems - the problem is getting into the flow to begin with.
+Once, I get into the flow - I can probably smash out 500-1000 words in a few hours no problem - the the real blocker is getting into the flow to begin with.
 
 So let's think of another way to break down the project.
 
@@ -29,11 +29,9 @@ So let's think of another way to break down the project.
 
    ...
 
-So here, I just broke the assignment into a few steps. During the initial bit, the tasks are fairly simple, during the middle it ramps up and by the end it tapers off. This makes more sense to us rather than a consistent amount of effort every day.
+So here, I just broke the assignment into a few steps. During the initial phase, the tasks are fairly simple, and in the middle it ramps up, by the end it tapers off. This makes more sense to us rather than a consistent amount of effort every day.
 
 ![Bellcurve](/img/uploads/bellcurve.gif "Normal disbjituion ")
-
-
 
 What's also important here is, that each step  is very specific and not vague (e.g. write 250 words). It's easy for me to start the assignment and as I tick off each part, I gain a small victory which helps me flow to the next bit.
 

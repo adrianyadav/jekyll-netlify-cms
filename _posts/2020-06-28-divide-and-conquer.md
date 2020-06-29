@@ -31,7 +31,7 @@ So let's think of another way to break down the project.
 
 So here, I just broke the assignment into a few steps. During the initial phase, the tasks are fairly simple, and in the middle it ramps up, by the end it tapers off. This makes more sense to us rather than a consistent amount of effort every day.
 
-![Bellcurve](/img/uploads/bellcurve.gif "Normal disbjituion ")
+![Bellcurve](/img/uploads/bellcurve.gif "Normal distribution")
 
 What's also important here is, that each step  is very specific and not vague (e.g. write 250 words). It's easy for me to start the assignment and as I tick off each part, I gain a small victory which helps me flow to the next bit.
 

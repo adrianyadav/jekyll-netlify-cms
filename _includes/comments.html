@@ -1,7 +1,6 @@
 {% if page.comments == true %}
-<section class="post__comments">
+<!-- <section class="post__comments">
 	{% if site.data.comments[page.slug] %}
-	<!-- Start static comments -->
 	<h2>Comments</h2>
 
 	<div id="comments" class="js-comments">
@@ -14,27 +13,13 @@
 		date=date message=message %} {% endfor %}
 	</div>
 	<!-- End static comments -->
-	{% endif %}
+{% endif %}
 </section>
 <section>
-	<form
-		id="comment-form"
-		class="comments js-form form post__comments-form"
-		method="post"
-		action="https://www.adrianyadav.com/.netlify/functions/staticman/adrianyadav/adrianyadav-netlify/master/comments"
-	>
+	<form id="comment-form" class="comments js-form form post__comments-form" method="post"
+		action="https://www.adrianyadav.com/.netlify/functions/staticman/adrianyadav/adrianyadav-netlify/master/comments">
 		<input type="hidden" name="options[slug]" value="{{ page.slug }}" />
 		<input type="hidden" name="fields[hidden]" />
-		<!-- <input
-			type="hidden"
-			name="options[reCaptcha][siteKey]"
-			value="6Lf16t4UAAAAAKDEe8SwZwgcUh9hNVt8EnM4hN8I"
-		/>
-		<input
-			type="hidden"
-			name="options[reCaptcha][secret]"
-			value="GfvoZAKXjED9gg1EXdPbfvam60uv4041N09ZBLg7gJ/+SBp4raxlLPjkOctnSa01l7klD67xnCTAU6RQddAwOkkf6smas2XBhfKFWhFE1ysajv6xF5pkl2LIfAKXbBdqQjU1OttVnd9D9bbLZ0amMBkDOv5swEjZBs51KmR3sx8="
-		/> -->
 		<h3 class="heading-tertiary u-margin-bottom-small">
 			Leave a comment
 		</h3>
@@ -46,26 +31,14 @@
 			<label class="form__label" for="name">
 				Your name
 			</label>
-			<input
-				aria-label="Your name"
-				id="name"
-				name="fields[name]"
-				required=""
-				type="text"
-				class="contact__input form__input"
-			/>
+			<input aria-label="Your name" id="name" name="fields[name]" required="" type="text"
+				class="contact__input form__input" />
 			<label class="form__label" for="email">
 				Your email address
 			</label>
 
-			<input
-				aria-label="Your email address"
-				id="email"
-				name="fields[email]"
-				required=""
-				type="email"
-				class="contact__input form__input"
-			/>
+			<input aria-label="Your email address" id="email" name="fields[email]" required="" type="email"
+				class="contact__input form__input" />
 		</div>
 
 		<div>
@@ -73,23 +46,10 @@
 				Your message
 			</label>
 
-			<textarea
-				aria-label="You message"
-				id="message"
-				name="fields[message]"
-				class="form__textarea contact__textarea"
-			></textarea>
+			<textarea aria-label="You message" id="message" name="fields[message]"
+				class="form__textarea contact__textarea"></textarea>
 		</div>
-		<!-- <div
-			class="g-recaptcha"
-			data-sitekey="6Lf16t4UAAAAAKDEe8SwZwgcUh9hNVt8EnM4hN8I"
-		></div>
-		<br /> -->
-		<input
-			class="btn btn--reverse  contact__btn form__submit"
-			type="submit"
-			id="comment-form-submit"
-		/>
+		<input class="btn btn--reverse  contact__btn form__submit" type="submit" id="comment-form-submit" />
 	</form>
-</section>
+</section> -->
 {% endif %}

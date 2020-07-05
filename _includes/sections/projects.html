@@ -17,38 +17,25 @@
 					&nbsp;
 				</div>
 				<h3 class="card__heading">
-					<span
-						class="card__heading-span card__heading-span--{{
+					<span class="card__heading-span card__heading-span--{{
 								projectName
-							}}"
-						>{{ item.projectName }}</span
-					>
+							}}">{{ item.projectName }}</span>
 				</h3>
 				<div class="card__details">
 					{{ item.body | markdownify }}
 				</div>
 			</div>
-			<div
-				class="card__side card__side--back card__side--back-{{
+			<div class="card__side card__side--back card__side--back-{{
 						projectName
-					}}"
-			>
+					}}">
 				<div class="card__cta">
 					{% if item.projectGithubRepo == true %}
-					<a
-						class="btn btn--white"
-						href="{{ item.projectLiveLink }}"
-						target="_blank"
-						rel="noopener"
-						>Github repo
+					<a class="btn btn--white" href="{{ item.projectLiveLink }}" target="_blank" rel="noopener">Github
+						repo
 					</a>
 					{% else %}
-					<a
-						class="btn btn--white"
-						href="{{ item.projectLiveLink }}"
-						rel="noopener"
-						target="_blank"
-						>Visit website
+					<a class="btn btn--white" href="{{ item.projectLiveLink }}" rel="noopener" target="_blank">Visit
+						website
 					</a>
 					{% endif %}
 				</div>

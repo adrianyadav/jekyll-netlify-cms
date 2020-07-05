@@ -7,17 +7,3 @@ items:
     projectGithubRepo: true
     projectLiveLink: 'https://github.com/adrianyadav/adrianyadav-netlify'
     projectName: adrianyadav
-  - body: |-
-      * HTML5/CSS (SASS)
-      * Templating engine: Nunjucks
-      * Category: Work
-    projectGithubRepo: false
-    projectLiveLink: 'http://www.nibtravel.com/'
-    projectName: nib Travel
-  - body: |-
-      * React
-      * Landing page
-      * Category: Work
-    projectGithubRepo: false
-    projectLiveLink: 'https://www.upaged.com/'
-    projectName: uPaged

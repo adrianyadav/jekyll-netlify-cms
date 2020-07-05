@@ -1,31 +1,31 @@
 {
-	"name": "adrianyadav",
-	"version": "1.0.0",
-	"description": "Landing page for adrianyadav",
-	"main": "index.js",
-	"scripts": {
-		"go": "bundle exec jekyll server --watch && npm-run-all --parallel devserver watch:sass",
-		"watch:sass": "node-sass _sass/main.scss assets/main.css -w",
-		"devserver": "live-server",
-		"start": "npm-run-all --parallel devserver watch:sass",
-		"compile:sass": "node-sass _sass/main.scss assets/main.comp.css",
-		"concat:css": "concat -o assets/main.concat.css assets/main.comp.css",
-		"prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" assets/main.concat.css -o assets/main.prefix.css",
-		"compress:css": "node-sass assets/main.prefix.css assets/main.css --output-style compre ssed",
-		"build:css": "npm-run-all compile:sass concat:css prefix:css compress:css",
-		"minify:js": "uglifyjs --compress --mangle --output js/main.min.js -- js/vendors/* js/common.js js/search.js js/lazy.js",
-		"compress:images": "./img/uploads/img2webp.sh",
-		"postinstall": "cd functions/staticman && yarn"
-	},
-	"author": "Adrian Yadav",
-	"license": "ISC",
-	"devDependencies": {
-		"autoprefixer": "^9.7.4",
-		"concat": "^1.0.3",
-		"node-sass": "^4.13.1",
-		"npm-run-all": "^4.1.1",
-		"postcss-cli": "^7.1.0",
-		"tar": "^6.0.1",
-		"uglify-js": "^3.8.0"
-	}
+  "name": "adrianyadav",
+  "version": "1.0.0",
+  "description": "Landing page for adrianyadav",
+  "style": "index.js",
+  "scripts": {
+    "go": "bundle exec jekyll server --watch && npm-run-all --parallel devserver watch:sass",
+    "watch:sass": "node-sass _sass/style.scss assets/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass _sass/style.scss assets/style.comp.css",
+    "concat:css": "concat -o assets/style.concat.css assets/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" assets/style.concat.css -o assets/style.prefix.css",
+    "compress:css": "node-sass assets/style.prefix.css assets/style.css --output-style compre ssed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css",
+    "minify:js": "uglifyjs --compress --mangle --output js/main.min.js -- js/vendors/* js/common.js js/search.js js/lazy.js",
+    "compress:images": "./img/uploads/img2webp.sh",
+    "postinstall": "cd functions/staticman && yarn"
+  },
+  "author": "Adrian Yadav",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "concat": "^1.0.3",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^7.1.0",
+    "tar": "^6.0.1",
+    "uglify-js": "^3.8.0"
+  }
 }

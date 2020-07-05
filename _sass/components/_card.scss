@@ -4,7 +4,7 @@
   margin: 0 auto;
   width: 100%;
   justify-content: space-evenly;
-  @include respond(mobile) {
+  @include respond(tab-land) {
     grid-gap: 5rem;
   }
 }
@@ -47,7 +47,7 @@
           $color-nib-primary
         );
       }
-      &-upaged {
+      &-melotta {
         background-image: linear-gradient(
           to right bottom,
           $color-upaged-primary,
@@ -81,7 +81,7 @@
           $color-primary-light,
           $color-primary
         ),
-        url("../img/hero-unsplash-1x.jpg");
+        url('../img/hero-unsplash-1x.jpg');
     }
     &--nibtravel {
       background-image: linear-gradient(
@@ -89,7 +89,7 @@
           $color-nib-primary-light,
           $color-nib-primary
         ),
-        url("../img/nibtravel.jpg");
+        url('../img/nibtravel.jpg');
     }
     &--upaged {
       background-image: linear-gradient(
@@ -97,7 +97,15 @@
           $color-upaged-primary,
           $color-upaged-primary
         ),
-        url("../img/upaged.jpg");
+        url('../img/upaged.jpg');
+    }
+
+    &--melotta {
+      background: linear-gradient(
+        to right bottom,
+        $color-upaged-primary,
+        $color-upaged-primary
+      );
     }
   }
 

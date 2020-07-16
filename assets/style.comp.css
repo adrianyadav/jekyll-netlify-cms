@@ -1327,10 +1327,10 @@ a:hover, a:active {
     z-index: 2; }
   @media (min-width: 1600px) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(7, 104, 159, 0.85), rgba(162, 213, 242, 0.85)), url(../../img/hero-unsplash-2x.jpg); } }
+      background-image: linear-gradient(to right bottom, #033f63 rgba(7, 104, 159, 0.85)), url(../../img/hero-unsplash-2x.jpg); } }
   @media (min-width: 3000px) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(7, 104, 159, 0.85), rgba(162, 213, 242, 0.85)), url(../../img/hero-unsplash-3x.jpg); } }
+      background-image: linear-gradient(to right bottom, #1e242c, rgba(162, 213, 242, 0.85)), url(../../img/hero-unsplash-3x.jpg); } }
   .header__text-box {
     position: relative;
     top: 50%;

@@ -7,8 +7,7 @@ mainButtonUrl: "#projects"
 sectionAboutTitle: about
 profileImage: /img/uploads/adrianyadav.jpg
 sectionAboutSubTitle: Who is this guy
-sectionAboutInfo: >-
-  Currently I am a software developer working for [World
+sectionAboutInfo: Currently I am a software developer working for [World
   Nomads](https://www.worldnomads.com).<br/> I specialise in creating frontend
   solutions which are <span class="highlight">fast</span>, <span
   class="highlight">responsive</span> and <span

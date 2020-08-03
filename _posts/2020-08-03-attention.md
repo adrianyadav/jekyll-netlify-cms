@@ -13,7 +13,7 @@ I'm not saying don't watch those videos or don't buy those awesome shoes. I'm sa
 
 What I'm saying is, when you are set on the task - focus solely on the task at hand in the **present**.
 
-When you open your laptop to do an assignment, just do only that. Open up research, the marketing criteria and start writing. When you've done enough to warrant a break, don't open up any app YouTube, Instagram, or check your messages. Instead do one of the following or a combination: take a walk, meditate, hydrate, read a chapter, listen to a podcast, reflect, think. 
+When you open your laptop to do an assignment, just do only that. Open up research, the marketing criteria and start writing. When you've done enough to warrant a break, don't open up any app like YouTube, Instagram, or check your messages. Instead do one of the following or a combination: take a walk, meditate, hydrate, read a chapter, listen to a podcast, reflect, think. 
 
 You might ask: well when should I check instagram, WhatsApp, Facebook personals, emails - not between crucial tasks, do it as a task itself and not every time you have a few minutes. For example: I will check my instagram for 5 minutes at lunch time. Designate a time. When you lose your attention , you will lose momentum and you will lose the time you set aside to finish the things that matter.
 

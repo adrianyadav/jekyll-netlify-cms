@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Attention
+comments: []
 ---
 Everything that is made has one objective: grab your attention. The messages you receive on facebook, the emails you receive, the posters and ads you see as you walk to the station. Everything is fighting for your attention. Not only is everything fighting for your attention, everything is **designed** to capture your **attention**. 
 

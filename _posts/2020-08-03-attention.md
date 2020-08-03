@@ -9,7 +9,7 @@ The ad for clothing, will show an awesome coat on a supermodel. The ad for shoes
 
 When we keep seeing flashy things around, our brain keeps context switching and there is a small price we pay. We search for a YouTube video that we want to see and after that we get lost in the suggestions. Unrealistic thumbnails and headlines appear making it impossible not to click on them. Every time we shift our attention, there's a price we pay. It may be a few micro seconds, it could be hours once we stumble down a series of cute dog videos - but it all adds up.
 
-I'm not saying don't watch those videos or don't buy those awesome shoes. I'm saying, there is a right place and time to do any particular thing. We need **discipline** now more than other, as people that have crafted those advertisements or videos have done in a scientific way to make your brain respond. We lose time every time we context switch and it adds up. 
+I'm not saying don't watch those videos or don't buy those awesome shoes. I'm saying, there is a right place and time to do any particular thing. We need **discipline** now more than other, as people that have crafted those advertisements or videos have done so using psychological sciences  to make your brain respond. We lose time every time we context switch and it adds up. 
 
 What I'm saying is, when you are set on the task - focus solely on the task at hand in the **present**.
 

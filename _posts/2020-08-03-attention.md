@@ -3,7 +3,7 @@ layout: post
 title: Attention
 comments: []
 ---
-Everything that is made has one objective: grab your attention. The messages you receive on facebook, the emails you receive, the posters and ads you see as you walk to the station. Everything is fighting for your attention. Not only is everything fighting for your attention, everything is **designed** to capture your **attention**. 
+Everything that is made has one objective: grab your attention. The messages your friend sends you on facebook, the emails you receive from your colleagues, the posters you see as you walk to the station. Everything is fighting for your attention. Not only is everything fighting for your attention, everything is **designed** to capture your attention. 
 
 The ad for clothing, will show an awesome coat on a supermodel. The ad for shoes will grab your attention by showing beautiful white sneakers on an athlete.  The ad for sunglasses will show the most stylish looking pair of sun glasses in perfect lighting. This is today's world. We have been swarmed with powerful emotive advertisements, whether it's on your laptop or you're talking a walk to catch a bus, perhaps you notice the massive building sign that says "Deloitte". Even this blog post was created to grab your attention.
 
